@@ -30,6 +30,9 @@ from gym_chess.alphazero import BoardEncoding
 from difflib import SequenceMatcher
 
 #https://python-chess.readthedocs.io/en/latest/
+#https://www.kaggle.com/datasnaek/chess
+#https://towardsdatascience.com/next-word-prediction-with-nlp-and-deep-learning-48b9fe0a17bf
+#https://towardsdatascience.com/exploring-the-next-word-predictor-5e22aeb85d8f
 
 path = r'C:\Users\Octavio\Desktop\Projetos Python\Chess-RL\games.csv'
 df = pd.read_csv(path)
@@ -309,6 +312,7 @@ if __name__ == "__main__":
         pass
 
     batch_size = 64 #256
+    move =""
 
     for e in range(EPISODES):
         engine = chess.engine.SimpleEngine.popen_uci("stockfish")
@@ -341,8 +345,12 @@ if __name__ == "__main__":
                 result = "White" if reward > 0 else "Black"
                 print(f"CHECKMATE! for {result}")
                 done = True
+                break
             elif state.is_stalemate() or state.is_insufficient_material() or state.is_game_over() or state.can_claim_threefold_repetition() or state.can_claim_fifty_moves() or state.can_claim_draw() or state.is_fivefold_repetition() or state.is_seventyfive_moves():
                 done = True
+                break
+            #elif "#" in move:
+            #    done = True
                 
             if done:
                     print(env.render(mode='unicode'))
