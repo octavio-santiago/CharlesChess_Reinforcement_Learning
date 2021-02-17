@@ -29,11 +29,6 @@ from gym_chess.alphazero import BoardEncoding
 
 from difflib import SequenceMatcher
 
-#https://python-chess.readthedocs.io/en/latest/
-#https://www.kaggle.com/datasnaek/chess
-#https://towardsdatascience.com/next-word-prediction-with-nlp-and-deep-learning-48b9fe0a17bf
-#https://towardsdatascience.com/exploring-the-next-word-predictor-5e22aeb85d8f
-
 path = r'C:\Users\Octavio\Desktop\Projetos Python\Chess-RL\games.csv'
 df = pd.read_csv(path)
 df = df.dropna(subset=['moves'])
@@ -529,3 +524,6 @@ if __name__ == "__main__":
     plt.title("Choices")
 
     plt.show()
+
+
+
