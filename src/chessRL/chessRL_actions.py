@@ -14,6 +14,7 @@ import pickle
 from matplotlib import style
 from collections import deque
 import matplotlib.pyplot as plt
+import itertools
 
 from keras.models import Sequential
 from keras.layers import Dense
@@ -32,16 +33,48 @@ import chess
 import chess.engine
 from gym_chess.alphazero import BoardEncoding
 
+from chessRL import make_matrix
+
 from difflib import SequenceMatcher
 
+mapped_val = {
+            '0':0,
+            '1': 1,     # White Pawn
+            '-1': -1,    # Black Pawn
+            '2': 3,     # White Knight
+            '-2': -3,    # Black Knight
+            '3': 3,     # White Bishop
+            '-3': -3,    # Black Bishop
+            '4': 5,     # White Rook
+            '-4': -5,    # Black Rook
+            '5': 9,     # White Queen
+            '-5': -9,    # Black Queen
+            '6': 0,     # White King
+            '-6': 0     # Black King
+            }
 
+def predict(seq_len,model, tokenizer, board, debug = False):
+    next_moves = []
+    input_text = board
+    encoded_text = tokenizer.texts_to_sequences([input_text])[0]
+    pad_encoded = pad_sequences([encoded_text], maxlen=seq_len, truncating='pre')
+    #print(encoded_text, pad_encoded)
+
+    for i in (model.predict(pad_encoded)[0]).argsort()[-3:][::-1]:
+      pred_word = tokenizer.index_word[i]
+      next_moves.append(pred_word)
+      if debug:
+          print("Next word suggestion:",pred_word)
+
+    return next_moves
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
 def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, opening: str=None, idx_open: int=0, debug = False, choice = 2):
     #start
-    if cnt == 0:
+    print("Choice: ",choice)
+    if cnt == 0: 
         if opening == None:
             #random opening
             idx = random.choice([x for x in range(0,len(df['moves']))])
@@ -54,24 +87,59 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
         return move
 
     else:
-        if choice == 0:
+        
+        if choice == 0:  
             if opening != None:
                 if (cnt <= int(df[df['opening_name'] == opening]['opening_ply'].iloc[idx_open])):
                     moves = df[df['opening_name'] == opening]['moves'].iloc[idx_open].split()
                     move = moves[cnt]
+                    print("Option 0 opening")
                     return move
                 else:
-                    for idx,line in enumerate(df[df['opening_name'] == opening]['moves']):
-                        op_idx = int(df[df['opening_name'] == opening]['opening_ply'].iloc[idx])
-                        moves = line.split()[cnt:]
-                        if len(moves) >= 3:
-                            move = moves[2]
-                            #print("teste: ", move)
-                            if move in legal_moves:
-                                print("teste certo: ", move)
-                                return move
+                    print("Option 0 Material Adv")
+                    result = engine.play(state, chess.engine.Limit(time=0.1))
+                    move = state.san(result.move)
+
+                    legal_moves_scores = []
+                    geral_scores = []
+                    for move in legal_moves:
+                        action = state.push_san(move) # Make the move
+                        obs = make_matrix(state)
+                        #material adv
+                        pieces_adv = [mapped_val[str(x)] for x in list(itertools.chain(*obs))]
+                        material_adv = np.sum(pieces_adv)
+                        #print('Material Adv: ', material_adv)
+                        legal_moves_scores.append(material_adv)
+
+                        info = engine.analyse(state, chess.engine.Limit(time=0.1))
+                        mate = info["score"].white().mate()
+                        if mate != None:
+                            if mate < 0:
+                                score = -((20-(-mate)) * 100)
+                            else:
+                                score = (20-mate) * 100
                         else:
-                            return legal_moves[0]
+                            score = info["score"].white().score()
+                            
+                        score = score if score != None else 0
+                        geral_scores.append(score)
+
+                        state.pop()  # Unmake the last move
+                        
+                    #do the best move
+                    #print(legal_moves_scores)
+                    a = min(legal_moves_scores)
+                    b = max(legal_moves_scores)
+                    c = min(geral_scores)
+                    d = max(geral_scores)
+                    n_legal_score = [(x-a)/(b-a) if (b-a) != 0 else 0 for x in legal_moves_scores]
+                    n_geral_score = [(x-c)/(d-c) if (d-c) != 0 else 0 for x in geral_scores]
+                    zipped_lists = zip(n_legal_score, n_geral_score)
+                    final_score = [x + y for (x, y) in zipped_lists]
+                    #move = legal_moves[legal_moves_scores.index(max(legal_moves_scores))]
+                    move = legal_moves[final_score.index(max(final_score))]
+                    return move
+
    
         elif choice == 1:
             df2 = df.copy()
@@ -87,14 +155,17 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                     try:
                         if debug:
                             #similarity
+                            print("Option 1 Similarity")
                             print("Next move: ",moves[moves.index(obs[-1]) + 1])
                             print("game: ",moves[moves.index(obs[-1])-2:moves.index(obs[-1])+2])
+                            
                         move = moves[moves.index(obs[-1]) + 1]
                         if move in legal_moves:
-                            break
+                            return move
+                            #break
                     except:
                         #ML predict
-                        #print("Machine Learning")
+                        print("Option 1 Machine Learning")
                         board = ' '.join([str(elem) for elem in obs])
                         next_moves = predict(seq_len,model, tokenizer, board)
                         move = next_moves
@@ -102,10 +173,12 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                         for i in move:
                             if i in legal_moves:
                                 move = i
-                                break
+                                return move
+                                #break
                 else:
                     #ML predict
                     #print("Machine Learning")
+                    print("Option 1 Machine Learning")
                     board = ' '.join([str(elem) for elem in obs])
                     next_moves = predict(seq_len,model, tokenizer, board)
                     move = next_moves
@@ -120,6 +193,70 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                         
 
         elif choice == 2:
+            if opening != None:
+                if (cnt <= int(df[df['opening_name'] == opening]['opening_ply'].iloc[idx_open])):
+                    moves = df[df['opening_name'] == opening]['moves'].iloc[idx_open].split()
+                    move = moves[cnt]
+                    print("Option 0 opening")
+                    return move
+                else:
+                    print("Option 2 Space")
+                    result = engine.play(state, chess.engine.Limit(time=0.1))
+                    move = state.san(result.move)
+
+                    legal_moves_scores = []
+                    geral_scores = []
+                    for move in legal_moves:
+                        action = state.push_san(move) # Make the move
+                        obs = make_matrix(state)
+                        #Space https://en.wikipedia.org/wiki/Chess_strategy#Space
+                        #attacked
+                        att_space = 0
+                        #ocupied
+                        black_space = list(itertools.chain(*obs))[:32]
+                        occ = [x if x>0 else 0 for x in black_space]
+                        #space
+                        space = np.sum(occ) + att_space
+                        #print("Space: ", space)
+                        legal_moves_scores.append(space)
+
+                        info = engine.analyse(state, chess.engine.Limit(time=0.1))
+                        mate = info["score"].white().mate()
+                        if mate != None:
+                            if mate < 0:
+                                score = -((20-(-mate)) * 100)
+                            else:
+                                score = (20-mate) * 100
+                        else:
+                            score = info["score"].white().score()
+                            
+                        score = score if score != None else 0
+                        geral_scores.append(score)
+
+                        state.pop()  # Unmake the last move
+                        
+                    #do the best move
+                    #print(legal_moves_scores)
+                    a = min(legal_moves_scores)
+                    b = max(legal_moves_scores)
+                    c = min(geral_scores)
+                    d = max(geral_scores)
+                    n_legal_score = [(x-a)/(b-a) if (b-a) != 0 else 0 for x in legal_moves_scores]
+                    n_geral_score = [(x-c)/(d-c) if (d-c) != 0 else 0 for x in geral_scores]
+                    zipped_lists = zip(n_legal_score, n_geral_score)
+                    final_score = [x + y for (x, y) in zipped_lists]
+
+                    print("Final score: ",final_score)
+                    print("Legal moves: ",legal_moves)
+                    move = legal_moves[final_score.index(max(final_score))]
+                    
+                    #move = legal_moves[legal_moves_scores.index(max(legal_moves_scores))]
+                    return move
+
+        elif choice == 3: #stockfish backup
+            print("Option 3 - Exploration Stockfish")
             result = engine.play(state, chess.engine.Limit(time=0.1))
             move = state.san(result.move)
             return move
+            
+            

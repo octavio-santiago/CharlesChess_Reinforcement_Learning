@@ -1,0 +1,13 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2021.05.10"]
+[Round "?"]
+[White "Guest"]
+[Black "Jimmy"]
+[Result "1-0"]
+[TimeControl "-"]
+
+1. e4 e5 2. Nf3 d6 3. d4 d5 4. dxe5 dxe4 5. Qxd8+ Kxd8 6. Ng5 Bf5 7. Nxf7+ Ke7
+8. Nxh8 Ke8 9. Bc4 g5 10. Bxg8 g4 11. Nf7 Be7 12. Nh6 b6 13. Nxf5 Kd8 14. Nxe7
+h5 15. Bd5 Kxe7 16. Bg5+ Ke8 17. Bxa8 a6 18. e6 Kf8 19. Bxe4 a5 20. Nc3 Na6 21.
+O-O-O Kg8 22. Bf6 Nb4 23. Rd8# 1-0

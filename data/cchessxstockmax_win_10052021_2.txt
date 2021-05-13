@@ -1,0 +1,18 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2021.05.10"]
+[Round "?"]
+[White "Guest"]
+[Black "Maximum"]
+[Result "1-0"]
+[TimeControl "-"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 Ne7 5. a3 Bxc3+ 6. bxc3 c5 7. a4 O-O 8. Bd3
+Qa5 9. Bd2 c4 10. Bxh7+ Kxh7 11. Qh5+ Kg8 12. Nf3 f6 13. exf6 gxf6 14. h4 Qc7
+15. Bh6 Nf5 16. Bxf8 Kxf8 17. g4 Ne7 18. Qh6+ Kg8 19. h5 Nec6 20. Qxf6 Qg7 21.
+g5 Qxf6 22. gxf6 Nd7 23. Rg1+ Kh8 24. f7 Ne7 25. h6 Nf8 26. Rg7 Bd7 27. O-O-O e5
+28. Rdg1 Be6 29. dxe5 d4 30. Rg8+ Nxg8 31. Rxg8+ Kh7 32. Ng5+ Kxh6 33. Nxe6 Nxe6
+34. Rxa8 Kg7 35. f8=Q+ Nxf8 36. Rxf8 Kxf8 37. cxd4 c3 38. f4 Ke8 39. Kb1 Kd7 40.
+d5 a6 41. a5 Ke7 42. Ka2 Kf7 43. f5 Ke8 44. Kb3 b6 45. axb6 Kd7 46. f6 Kc8 47.
+e6 Kb7 48. e7 Kxb6 49. e8=Q Ka7 50. f7 a5 51. f8=Q a4+ 52. Qxa4+ Kb7 53. Qc6+
+Ka7 54. Qfa8# 1-0

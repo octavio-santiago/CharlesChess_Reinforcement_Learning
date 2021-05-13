@@ -83,6 +83,7 @@ class DQNAgent:
     def act(self, state):
         ##With probability e select a random action at
         if np.random.rand() <= self.epsilon:
+            #return 3 #lerning with stockfish
             return random.randrange(self.action_size)
         ##otherwise select at = maxa Q∗(φ(st), a; θ)
         act_values = self.model.predict(state)

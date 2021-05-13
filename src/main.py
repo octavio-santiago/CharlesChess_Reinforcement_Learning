@@ -15,6 +15,7 @@ import pickle
 from matplotlib import style
 from collections import deque
 import matplotlib.pyplot as plt
+import itertools
 
 from keras.models import Sequential
 from keras.layers import Dense
@@ -41,7 +42,6 @@ from chessRL import similar
 from chessRL import act
 
 
-
 def create_model(vocabulary_size, seq_len):
     model = Sequential()
     model.add(Embedding(vocabulary_size, seq_len, input_length=seq_len))
@@ -56,30 +56,14 @@ def create_model(vocabulary_size, seq_len):
 
 
 
-
-
-def predict(seq_len,model, tokenizer,board, debug = False):
-    next_moves = []
-    input_text = board
-    encoded_text = tokenizer.texts_to_sequences([input_text])[0]
-    pad_encoded = pad_sequences([encoded_text], maxlen=seq_len, truncating='pre')
-    #print(encoded_text, pad_encoded)
-
-    for i in (model.predict(pad_encoded)[0]).argsort()[-3:][::-1]:
-      pred_word = tokenizer.index_word[i]
-      next_moves.append(pred_word)
-      if debug:
-          print("Next word suggestion:",pred_word)
-
-    return next_moves
-
-
 if __name__ == "__main__":
     #load matches dataset
     path = '../data/games.csv'
     df = pd.read_csv(path)
     df = df.dropna(subset=['moves'])
     df = df[(df['winner'] == 'white') & (df['victory_status'] == 'mate')].reset_index()
+
+    analytics_df = pd.DataFrame()
 
     #load LSTM model
     t_len = 10
@@ -102,7 +86,7 @@ if __name__ == "__main__":
     moving_avg = []
     action_time = []
     choices_time = []
-    EPISODES = 64
+    EPISODES = 32
     SHOW_EVERY = 2
 
     env = gym.make('Chess-v0')
@@ -144,8 +128,8 @@ if __name__ == "__main__":
             obs = make_matrix(state)
             #obs = BoardEncoding(env, history_length=4).action_space
             
-            print(done)
-            print(state.is_game_over())
+            #print(done)
+            #print(state.is_game_over())
             if state.is_checkmate():
                 result = "White" if reward > 0 else "Black"
                 print(f"CHECKMATE! for {result}")
@@ -164,75 +148,250 @@ if __name__ == "__main__":
                     print(f"episode: {e}, reward: {episode_reward}")
                     break
 
-            if e == EPISODES-1:
-                action_time.append(action)
+            #if e == EPISODES-1:
+            #    action_time.append(action)
                 
-            if mode == 'alone':
-                legal_moves = [state.san(x) for x in env.legal_moves]
-                #choose action
-                if cnt % 2 == 0: #white
-                    #print("White turn")
-                    opp = 'Scandinavian Defense: Mieses-Kotroc Variation' 
-                    if cnt == 2:
-                        if move == 'd5':
-                            opp = 'Scandinavian Defense: Mieses-Kotroc Variation' #e4 d5
-                        elif move == 'e5':
-                            opp = 'Scotch Game' #e4 e5
-                            
-                    choice = agent.act(np.reshape(obs, [1, 64]))
-                    print(agent.model.predict(np.reshape(obs, [1, 64])))
-                    choices_time.append(choice)
-                    
-                    move = act(cnt,df,seq_len, model,tokenizer,obs,legal_moves,engine,state,opp,choice)
-                    old_obs = obs.copy()
-                    action = state.push_san(move)
-                    
-                    next_state,reward,done,_ = env.step(action)
+            if mode == 'alone':#########
+                l = list(df[df['opening_eco'] == 'B50']['opening_ply'])[0]
+                if cnt <= l:
+                        #oppening
+                        print("Opening")
+                        m = list(df[df['opening_eco'] == 'B50']['moves'])[0]
+                        m = str(m).split(' ')
+                        #result = engine.play(state, chess.engine.Limit(time=0.1))
+                        
+                        #move = state.san(m[cnt])
+                        move = m[cnt]
+                        history_moves.append(move)
+                        action = state.push_san(move)
+                
+                        #take action
+                        state,reward,done,_ = env.step(action)
+                        
+                if cnt % 2 == 0 and cnt >l:
+                    if cnt <= -1:
+                        #oppening
+                        print("Opening")
+                        result = engine.play(state, chess.engine.Limit(time=0.1))
+                        move = state.san(result.move)
+                        history_moves.append(move)
+                        action = state.push_san(move)
+                
+                        #take action
+                        state,reward,done,_ = env.step(action)
 
-                    info = engine.analyse(state, chess.engine.Limit(time=0.1))
-                    mate = info["score"].white().mate()
-                    score = info["score"].white().score()
-                    score = score if score != None else 0
-                    print("Action: ",choice ," Score:", score, " Mate in: ", mate)
-                    
-                    scores_eps.append(score)
-                    #reward = score if score != None else 0
-                    reward = np.average(scores_eps)
-                    
-                    board_txt = next_state.fen().split()[0]
-                    board_encoded = ''.join(str(ord(c)) for c in board_txt)
-                    #obs = [board_encoded]
-                    obs = make_matrix(state)
-                    
-                    agent.remember(np.reshape(old_obs, [1, 64]), choice, reward, np.reshape(obs, [1, 64]), done)
-                    state = next_state
-                    
-                    episode_reward = reward
-                    
-                else: #black
-                    #print("Black turn")
-                    move = act(cnt,df,seq_len, model,tokenizer,obs,legal_moves,engine,state,choice=2)
-                    action = state.push_san(move)
+                    else:
+                        print("PC turn")
+                        legal_moves = [state.san(x) for x in env.legal_moves]
+                        
+                        # Analysis #https://www.chessprogramming.org/Evaluation
+                        # mobility
+                        #state.pseudo_legal_moves
+                        mob = len(legal_moves)
+                        print('Mobility: ', mob)
+                        # material_adv
+                        mapped_val = {
+                            '0':0,
+                            '1': 1,     # White Pawn
+                            '-1': -1,    # Black Pawn
+                            '2': 3,     # White Knight
+                            '-2': -3,    # Black Knight
+                            '3': 3,     # White Bishop
+                            '-3': -3,    # Black Bishop
+                            '4': 5,     # White Rook
+                            '-4': -5,    # Black Rook
+                            '5': 9,     # White Queen
+                            '-5': -9,    # Black Queen
+                            '6': 0,     # White King
+                            '-6': 0     # Black King
+                            }
+                        pieces_adv = [mapped_val[str(x)] for x in list(itertools.chain(*obs))]
+                        material_adv = np.sum(pieces_adv)
+                        print('Material Adv: ', material_adv)
+                        #NegaMax
+                        wK = list(itertools.chain(*obs)).count(6)
+                        bK = list(itertools.chain(*obs)).count(-6)
+                        wQ = list(itertools.chain(*obs)).count(5)
+                        bQ = list(itertools.chain(*obs)).count(-5)
+                        wR = list(itertools.chain(*obs)).count(4)
+                        bR = list(itertools.chain(*obs)).count(-4)
+                        wB = list(itertools.chain(*obs)).count(3)
+                        bB = list(itertools.chain(*obs)).count(-3)
+                        wN = list(itertools.chain(*obs)).count(2)
+                        bN = list(itertools.chain(*obs)).count(-2)
+                        wP = list(itertools.chain(*obs)).count(1)
+                        bP = list(itertools.chain(*obs)).count(-1)
+                        f = 200*(wK-bK) + 9*(wQ-bQ) + 5*(wR-bR)+ 3*(wB-bB + wN-bN) + 1*(wP-bP)
+                        print("NegaMax: ", f)
+                        
+                        #Space https://en.wikipedia.org/wiki/Chess_strategy#Space
+                        #attacked
+                        att_space = 0
+                        #ocupied
+                        black_space = list(itertools.chain(*obs))[:32]
+                        occ = [x if x>0 else 0 for x in black_space]
+                        #space
+                        space = np.sum(occ) + att_space
+                        print("Space: ", space)
+
+                        #center control
+                        space_list = list(itertools.chain(*obs))
+                        center_list = [space_list[27], space_list[28], space_list[35], space_list[36]]
+                        center_list_val = [mapped_val[str(x)] for x in center_list]
+                        center_control = np.sum(center_list_val)
+                        print("Center Control: ", center_control)      
+                        
+                        #choose action
+                        opp = 'Scandinavian Defense: Mieses-Kotroc Variation' 
+                        if cnt == 2:
+                            if move == 'd5':
+                                opp = 'Scandinavian Defense: Mieses-Kotroc Variation' #e4 d5
+                            elif move == 'e5':
+                                opp = 'Scotch Game' #e4 e5
+                            elif move == 'c6':
+                                opp = 'Caro-Kann Defense' #e4 c6
+                            elif move == 'c5':
+                                opp = 'Sicilian Defense' #e4 c5
+                            elif move == 'e6':
+                                opp = 'French Defense: Knight Variation' #e4 e6
+                                
+                        choice = agent.act(np.reshape(obs, [1, 64]))
+                        print(agent.model.predict(np.reshape(obs, [1, 64])))
+                        choices_time.append(choice)
+                        
+                        move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
+                        old_obs = obs.copy()
+                        action = state.push_san(move)
+                        
+                        next_state,reward,done,_ = env.step(action)
+
+                        info = engine.analyse(state, chess.engine.Limit(time=0.1))
+                        mate = info["score"].white().mate()
+                        if mate != None:
+                            if mate < 0:
+                                score = -((20-(-mate)) * 100)
+                            else:
+                                score = (20-mate) * 100
+                        else:
+                            score = info["score"].white().score()
+                            
+                        score = score if score != None else 0
+                        print("Action: ",choice ," Score:", score, " Mate in: ", mate)
+                        
+                        scores_eps.append(score)
+                        #reward = score if score != None else 0
+                        reward = np.average(scores_eps)
+                        
+                        board_txt = next_state.fen().split()[0]
+                        board_encoded = ''.join(str(ord(c)) for c in board_txt)
+                        #obs = [board_encoded]
+                        obs = make_matrix(state)
+                        
+                        agent.remember(np.reshape(old_obs, [1, 64]), choice, reward, np.reshape(obs, [1, 64]), done)
+                        state = next_state
+                        
+                        episode_reward = reward
+
+                        #append action       
+                        history_moves.append(move)
+
+                        #create Analytics df
+                        analytics = pd.DataFrame({'move':[cnt], 'score':[score], 'mobility':[mob],
+                                                  'material_adv':[material_adv], 'nega_max':[f],
+                                                  'space':[space], 'center_control':[center_control]
+                                                  })
+                        analytics_df = analytics_df.append(analytics)
+                        
+                        ##Sample random minibatch of transitions (φj , aj , rj , φj+1) from D
+                        if len(agent.memory) > batch_size:
+                            #print("train")
+                            ##Set yj = rj for terminal φj+1 or (rj + γ maxa0 Q(φj+1, a0; θ)) for non-terminal φj+1
+                            history = agent.replay(batch_size)
+                            print(history.history['acc'])
+                        
+                        print(f"PC Move {move}")
+                elif cnt % 2 != 0 and cnt >l:
+                    print("Human turn")
+                    valid = False
+                    while not valid:
+                        #move = input("Choose a move: ")
+                        result = engine.play(state, chess.engine.Limit(time=0.1))
+                        move = state.san(result.move)
+                        history_moves.append(move)
+                        try:
+                            action = state.push_san(move)
+                            valid = True
+                        except:
+                            valid = False
+                            history_moves.pop()
+                            print("Wrong move, choosing other move")
                     #take action
                     state,reward,done,_ = env.step(action)
-
-                #append action       
-                history_moves.append(move)
-                
-                ##Sample random minibatch of transitions (φj , aj , rj , φj+1) from D
-                if len(agent.memory) > batch_size:
-                    #print("train")
-                    ##Set yj = rj for terminal φj+1 or (rj + γ maxa0 Q(φj+1, a0; θ)) for non-terminal φj+1
-                    history = agent.replay(batch_size)
-                    print(history.history['acc'])
                 
                 
                 
                 
-            elif mode == "for two":
+            elif mode == "for two": ##########
                 if cnt % 2 == 0:
                     print("PC turn")
                     legal_moves = [state.san(x) for x in env.legal_moves]
+                    
+                    # Analysis #https://www.chessprogramming.org/Evaluation
+                    # mobility
+                    mob = len(legal_moves)
+                    print('Mobility: ', mob)
+                    # material_adv
+                    mapped_val = {
+                        '0':0,
+                        '1': 1,     # White Pawn
+                        '-1': -1,    # Black Pawn
+                        '2': 3,     # White Knight
+                        '-2': -3,    # Black Knight
+                        '3': 3,     # White Bishop
+                        '-3': -3,    # Black Bishop
+                        '4': 5,     # White Rook
+                        '-4': -5,    # Black Rook
+                        '5': 9,     # White Queen
+                        '-5': -9,    # Black Queen
+                        '6': 0,     # White King
+                        '-6': 0     # Black King
+                        }
+                    pieces_adv = [mapped_val[str(x)] for x in list(itertools.chain(*obs))]
+                    material_adv = np.sum(pieces_adv)
+                    print('Material Adv: ', material_adv)
+                    #NegaMax
+                    wK = list(itertools.chain(*obs)).count(6)
+                    bK = list(itertools.chain(*obs)).count(-6)
+                    wQ = list(itertools.chain(*obs)).count(5)
+                    bQ = list(itertools.chain(*obs)).count(-5)
+                    wR = list(itertools.chain(*obs)).count(4)
+                    bR = list(itertools.chain(*obs)).count(-4)
+                    wB = list(itertools.chain(*obs)).count(3)
+                    bB = list(itertools.chain(*obs)).count(-3)
+                    wN = list(itertools.chain(*obs)).count(2)
+                    bN = list(itertools.chain(*obs)).count(-2)
+                    wP = list(itertools.chain(*obs)).count(1)
+                    bP = list(itertools.chain(*obs)).count(-1)
+                    f = 200*(wK-bK) + 9*(wQ-bQ) + 5*(wR-bR)+ 3*(wB-bB + wN-bN) + 1*(wP-bP)
+                    print("NegaMax: ", f)
+                    
+                    #Space https://en.wikipedia.org/wiki/Chess_strategy#Space
+                    #attacked
+                    att_space = 0
+                    #ocupied
+                    black_space = list(itertools.chain(*obs))[:32]
+                    occ = [x if x>0 else 0 for x in black_space]
+                    #space
+                    space = np.sum(occ) + att_space
+                    print("Space: ", space)
+
+                    #center control
+                    space_list = list(itertools.chain(*obs))
+                    center_list = [space_list[27], space_list[28], space_list[35], space_list[36]]
+                    center_list_val = [mapped_val[str(x)] for x in center_list]
+                    center_control = np.sum(center_list_val)
+                    print("Center Control: ", center_control)      
+                    
                     #choose action
                     opp = 'Scandinavian Defense: Mieses-Kotroc Variation' 
                     if cnt == 2:
@@ -240,12 +399,18 @@ if __name__ == "__main__":
                             opp = 'Scandinavian Defense: Mieses-Kotroc Variation' #e4 d5
                         elif move == 'e5':
                             opp = 'Scotch Game' #e4 e5
+                        elif move == 'c6':
+                            opp = 'Caro-Kann Defense' #e4 c6
+                        elif move == 'c5':
+                            opp = 'Sicilian Defense' #e4 c5
+                        elif move == 'e6':
+                            opp = 'French Defense: Knight Variation' #e4 e6
                             
                     choice = agent.act(np.reshape(obs, [1, 64]))
                     print(agent.model.predict(np.reshape(obs, [1, 64])))
                     choices_time.append(choice)
                     
-                    move = act(cnt,df,seq_len, model,tokenizer,obs,legal_moves,engine,state,opp,choice)
+                    move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
                     old_obs = obs.copy()
                     action = state.push_san(move)
                     
@@ -253,7 +418,11 @@ if __name__ == "__main__":
 
                     info = engine.analyse(state, chess.engine.Limit(time=0.1))
                     mate = info["score"].white().mate()
-                    score = info["score"].white().score()
+                    if mate != None:
+                        score = (20-mate) * 100
+                    else:
+                        score = info["score"].white().score()
+                        
                     score = score if score != None else 0
                     print("Action: ",choice ," Score:", score, " Mate in: ", mate)
                     
@@ -273,6 +442,13 @@ if __name__ == "__main__":
 
                     #append action       
                     history_moves.append(move)
+
+                    #create Analytics df
+                    analytics = pd.DataFrame({'move':[cnt], 'score':[score], 'mobility':[mob],
+                                              'material_adv':[material_adv], 'nega_max':[f],
+                                              'space':[space], 'center_control':[center_control]
+                                              })
+                    analytics_df = analytics_df.append(analytics)
                     
                     ##Sample random minibatch of transitions (φj , aj , rj , φj+1) from D
                     if len(agent.memory) > batch_size:
@@ -301,6 +477,10 @@ if __name__ == "__main__":
                 
 
             #print(env.render(mode='unicode'))
+            print(state.is_game_over())
+            if state.is_game_over():
+                done = True
+                break
             cnt += 1
             #print(" ")
 
