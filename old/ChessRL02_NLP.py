@@ -17,7 +17,7 @@ from keras.preprocessing.sequence import pad_sequences
 path = r'C:\Users\Octavio\Desktop\Projetos Python\Chess-RL\games.csv'
 df = pd.read_csv(path)
 df = df.dropna(subset=['moves'])
-df = df[(df['winner'] == 'white') & (df['victory_status'] == 'mate')].reset_index()
+#df = df[(df['winner'] == 'white') & (df['victory_status'] == 'mate')].reset_index()
 '''
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(df['moves'])
@@ -112,8 +112,10 @@ def create_model(vocabulary_size, seq_len, train_inputs, train_targets):
 
 def train(vocabulary_size, seq_len, train_inputs, train_targets,name):
     model = create_model(vocabulary_size, seq_len, train_inputs, train_targets)
-    model.fit(train_inputs,train_targets,epochs=5,verbose=1)
+    history = model.fit(train_inputs,train_targets,epochs=5,verbose=1)
     model.save_weights(name)
+    #save vocabulary_size, seq_len
+    return history
 
 def predict(seq_len,model, tokenizer):
     input_text = input("Insert the board moves: ").strip()
@@ -127,21 +129,25 @@ def predict(seq_len,model, tokenizer):
 
       
 #MAIN
-t_len = 10
+t_len = 3
 model_name = f"chessML_len{t_len}.h5"
 token_name = f"tokenizer_len{t_len}.pkl"
 vocabulary_size, seq_len, train_inputs, train_targets = preproc(df, t_len,token_name)
 
-'''#load
-try:
+mode = 'train'
+#load
+if mode == 'predict':
     with open(token_name, 'rb') as handle:
         tokenizer = pickle.load(handle)
         
     model = create_model(vocabulary_size, seq_len, train_inputs, train_targets)    
     model.load_weights(model_name)
     predict(seq_len,model, tokenizer)
-except:
-    train(vocabulary_size, seq_len, train_inputs, train_targets,model_name)'''
+else:
+    history = train(vocabulary_size, seq_len, train_inputs, train_targets,model_name)
+    hist = pd.DataFrame(history.history)
+    hist['epoch'] = history.epoch
+    print(hist.tail())
       
 
 

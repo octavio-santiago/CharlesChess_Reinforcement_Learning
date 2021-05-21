@@ -1,2 +1,4 @@
-,vocabulary_size,seq_len
-0,2425,9
+,vocabulary_size,seq_len,model
+0,2425,9,chessML_len10.h5
+1,3864,2,chessML_len3.h5
+,,,
