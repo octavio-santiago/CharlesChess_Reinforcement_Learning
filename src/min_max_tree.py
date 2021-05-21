@@ -36,6 +36,8 @@ def Evaluate(player,state):
         return material_adv
     else:
         return - material_adv
+
+    return material_adv
     
 def Search(depth, player, env, state):
     if depth == 0:
@@ -94,7 +96,39 @@ def AlphaSearch(depth, player, env, state, alpha, beta, evaluations, max_depth):
             return 0  
 
     legal_moves = [state.san(x) for x in env.legal_moves]
+    '''#Move Ordering
+    if player == 'white':
+        opp = False
+    else:
+        opp = True
+    #checkmate
+    moves = [x for x in legal_moves if '#' in x]
+    #check
+    moves2 = [x for x in legal_moves if '+' in x]
+    for m in moves2:
+        moves.append(m)
+        
+    #capture
+    for i in [5,4,3,2,1]: #1=pawn
+        #find the oppenent piece
+        squares = state.pieces(i,opp)
+        square_list = [chess.square_name(square) for square in squares]
+        #for square in squares:
+        #    square_list.append(square)    
+        #chess.square_name(21)
+        #see if we are attacking it
+        for j in square_list:
+            capt = [x for x in legal_moves if 'x'+str(j) in x]
+            for k in capt:
+                moves.append(k)
+    
+    #moves = legal_moves
+    myset = set(moves)
+    moves = list(myset)'''
     moves = legal_moves
+    
+    #print(legal_moves)
+    #print(moves)
     
     #best_evaluation = -10000
     for move in moves:
@@ -108,7 +142,7 @@ def AlphaSearch(depth, player, env, state, alpha, beta, evaluations, max_depth):
         env_new = copy.deepcopy(env)
         action = state_new.push_san(move)
         state_new,reward,done,_ = env_new.step(action)
-        evaluation = AlphaSearch(depth -1, player, env_new, state_new, -beta, -alpha, evaluations, depth)
+        evaluation = - AlphaSearch(depth -1, player, env_new, state_new, -beta, -alpha, evaluations, depth)
         if evaluation >= beta:
             return beta
         alpha = max(alpha,evaluation)
@@ -152,6 +186,39 @@ def calculate_min_max_tree(state, env, player, depth):
     evaluations = []
     legal_moves = [state.san(x) for x in env.legal_moves]
     evals = []
+
+    #Move Ordering
+    if player == 'white':
+        opp = False
+    else:
+        opp = True
+    #checkmate
+    moves = [x for x in legal_moves if '#' in x]
+    #check
+    moves2 = [x for x in legal_moves if '+' in x]
+    for m in moves2:
+        moves.append(m)
+        
+    #capture
+    for i in [5,4,3,2,1]: #1=pawn
+        #find the oppenent piece
+        squares = state.pieces(i,opp)
+        square_list = [chess.square_name(square) for square in squares]
+        #for square in squares:
+        #    square_list.append(square)    
+        #chess.square_name(21)
+        #see if we are attacking it
+        for j in square_list:
+            capt = [x for x in legal_moves if 'x'+str(j) in x]
+            for k in capt:
+                moves.append(k)
+    
+    #moves = legal_moves
+    myset = set(moves)
+    legal_moves = list(myset)
+    if len(legal_moves) == 0:
+        legal_moves = [state.san(x) for x in env.legal_moves]
+    
     for move in legal_moves:
         state_new = copy.deepcopy(state)
         env_new = copy.deepcopy(env)
@@ -160,8 +227,10 @@ def calculate_min_max_tree(state, env, player, depth):
         #best_move = Search(depth=5, player ='white', env=env, state=state)
         best_eval = AlphaSearch(depth=depth, player ='white', env=env_new, state=state_new,alpha=-10000, beta=10000,
                             evaluations=evaluations, max_depth=depth)
+        if player == 'black':
+            best_eval = -best_eval
         evals.append(best_eval)
         
-    #print(evals, legal_moves)
+    print(evals, legal_moves)
     best_move = legal_moves[evals.index(max(evals))]
     return best_move

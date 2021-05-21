@@ -141,6 +141,7 @@ state = env.reset()
 
 cnt = 0
 string = "e4 c5 Nc3 Nc6 Qf3 e5"
+string = "e4 c5 Nc3 Nc6 Nd5 e6 Ne7"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -231,7 +232,7 @@ while not state.is_game_over():
         print("LSTM: ",next_moves)
 
         #MinMaxTree
-        best_move = calculate_min_max_tree(state, env, player, depth=4)
+        best_move = calculate_min_max_tree(state, env, player, depth=2)
         print("MinMax Tree: ", best_move)
         
         #MCTS
