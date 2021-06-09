@@ -71,6 +71,7 @@ def calculate_space(state):
     #space
     space = np.sum(occ) + att_space
     print("Space: ", space)
+    return space
 
 def calculate_center_control(state):
     board = make_matrix(state)

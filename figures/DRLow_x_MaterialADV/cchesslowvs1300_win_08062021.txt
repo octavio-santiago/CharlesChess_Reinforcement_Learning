@@ -1,0 +1,15 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2021.06.08"]
+[Round "?"]
+[White "Guest"]
+[Black "Nelson"]
+[Result "*"]
+[TimeControl "-"]
+
+1. e4 e5 2. Nf3 Qf6 3. h3 Qf4 4. Nc3 c6 5. Be2 d5 6. O-O dxe4 7. d4 exf3 8. Bxf4
+fxg2 9. Re1 exf4 10. Kxg2 Bxh3+ 11. Kxh3 Nd7 12. Kg2 a5 13. Bd3+ Kd8 14. Kf1
+Ngf6 15. Bf5 a4 16. d5 Kc7 17. Qf3 Bd6 18. dxc6 bxc6 19. Rad1 a3 20. Rxd6 Kxd6
+21. Qxf4+ Kc5 22. bxa3 Rxa3 23. Re3 Rxc3 24. Rxc3+ Kb6 25. Qd6 Ka6 26. Kg2 Rb8
+27. Qa3+ Kb7 28. Qd6 Ka6 29. Qa3+ Kb7 30. Bxd7 Nxd7 31. Qd6 Kc8 32. Rxc6+ Kd8
+33. Rc7 Ke8 34. Qxd7+ Kf8 *

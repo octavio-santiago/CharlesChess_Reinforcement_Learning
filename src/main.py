@@ -74,8 +74,8 @@ if __name__ == "__main__":
             tokenizer = pickle.load(handle)
 
     stats = pd.read_csv('../logs/train_data_log.csv')
-    vocabulary_size = stats['vocabulary_size'][0]
-    seq_len = stats['seq_len'][0]
+    vocabulary_size = int(stats['vocabulary_size'][0])
+    seq_len = int(stats['seq_len'][0])
 
     model = create_model(vocabulary_size, seq_len)    
     model.load_weights(model_name)
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     moving_avg = []
     action_time = []
     choices_time = []
-    EPISODES = 32
+    EPISODES = 64
     SHOW_EVERY = 2
 
     env = gym.make('Chess-v0')
@@ -104,7 +104,11 @@ if __name__ == "__main__":
     move =""
 
     for e in range(EPISODES):
+        
         engine = chess.engine.SimpleEngine.popen_uci("../stockfish")
+        engine1 = chess.engine.SimpleEngine.popen_uci("../komodo-12.1.1-64bit")
+        engine2 = chess.engine.SimpleEngine.popen_uci("../Houdini_15a_x64")
+        
         epsilon_time.append(agent.epsilon)
         if e % SHOW_EVERY == 0:
                 print(f"on # {e}, epsilon: {agent.epsilon}")
@@ -119,6 +123,14 @@ if __name__ == "__main__":
         mode = "for two"
         
         history_moves = []
+
+        '''string = 'e4 d5 exd5 Qxd5'
+        game = string.split(' ')
+        for move in game:
+            action = state.push_san(move)          
+            #take action
+            state,reward,done,_ = env.step(action)
+            cnt +=1'''
         
         while not done:
             
@@ -151,7 +163,7 @@ if __name__ == "__main__":
             #if e == EPISODES-1:
             #    action_time.append(action)
                 
-            if mode == 'alone':#########
+            if mode == 'alone':#########                    
                 l = list(df[df['opening_eco'] == 'B50']['opening_ply'])[0]
                 if cnt <= l:
                         #oppening
@@ -259,7 +271,14 @@ if __name__ == "__main__":
                         print(agent.model.predict(np.reshape(obs, [1, 64])))
                         choices_time.append(choice)
                         
-                        move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
+                        #many engine
+                        if choice == 0:
+                            move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
+                        elif choice == 1:
+                            move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine1,state,opp,0,choice=choice)
+                        elif choice == 2:
+                            move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine2,state,opp,0,choice=choice)
+                        
                         old_obs = obs.copy()
                         action = state.push_san(move)
                         
@@ -269,9 +288,9 @@ if __name__ == "__main__":
                         mate = info["score"].white().mate()
                         if mate != None:
                             if mate < 0:
-                                score = -((20-(-mate)) * 100)
+                                score = -((20-(-mate)) * 1000)
                             else:
-                                score = (20-mate) * 100
+                                score = (20-mate) * 1000
                         else:
                             score = info["score"].white().score()
                             
@@ -279,8 +298,8 @@ if __name__ == "__main__":
                         print("Action: ",choice ," Score:", score, " Mate in: ", mate)
                         
                         scores_eps.append(score)
-                        #reward = score if score != None else 0
-                        reward = np.average(scores_eps)
+                        reward = score if score != None else 0
+                        #reward = np.average(scores_eps)
                         
                         board_txt = next_state.fen().split()[0]
                         board_encoded = ''.join(str(ord(c)) for c in board_txt)
@@ -410,7 +429,15 @@ if __name__ == "__main__":
                     print(agent.model.predict(np.reshape(obs, [1, 64])))
                     choices_time.append(choice)
                     
-                    move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
+                    #many engine
+                    if choice == 0:
+                        move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine,state,opp,0,choice=choice)
+                    elif choice == 1:
+                        move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine1,state,opp,0,choice=choice)
+                    elif choice == 2:
+                        move = act(cnt,df,seq_len, model,tokenizer,history_moves,legal_moves,engine2,state,opp,0,choice=choice)
+                        
+                        
                     old_obs = obs.copy()
                     action = state.push_san(move)
                     
@@ -419,7 +446,10 @@ if __name__ == "__main__":
                     info = engine.analyse(state, chess.engine.Limit(time=0.1))
                     mate = info["score"].white().mate()
                     if mate != None:
-                        score = (20-mate) * 100
+                        if mate < 0:
+                            score = -((20-(-mate)) * 1000)
+                        else:
+                            score = (20-mate) * 1000
                     else:
                         score = info["score"].white().score()
                         
@@ -427,8 +457,8 @@ if __name__ == "__main__":
                     print("Action: ",choice ," Score:", score, " Mate in: ", mate)
                     
                     scores_eps.append(score)
-                    #reward = score if score != None else 0
-                    reward = np.average(scores_eps)
+                    reward = score if score != None else 0
+                    #reward = np.average(scores_eps)
                     
                     board_txt = next_state.fen().split()[0]
                     board_encoded = ''.join(str(ord(c)) for c in board_txt)
@@ -490,6 +520,8 @@ if __name__ == "__main__":
         
         env.close()
         engine.quit()
+        engine1.quit()
+        engine2.quit()
         episode_rewards.append(episode_reward)
         
     moving_avg = np.convolve(episode_rewards, np.ones((SHOW_EVERY,)) / SHOW_EVERY, mode = "valid")

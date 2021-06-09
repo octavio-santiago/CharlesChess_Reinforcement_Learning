@@ -88,7 +88,7 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
 
     else:
         
-        if choice == 0:  
+        if choice == 4:  
             if opening != None:
                 if (cnt <= int(df[df['opening_name'] == opening]['opening_ply'].iloc[idx_open])):
                     moves = df[df['opening_name'] == opening]['moves'].iloc[idx_open].split()
@@ -141,7 +141,7 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                     return move
 
    
-        elif choice == 1:
+        elif choice == 5:
             df2 = df.copy()
             df2['similarities'] = df2['moves'].apply(lambda x: similar(x.split(), obs))
             df2 = df2.sort_values(by=['similarities'], ascending = False)
@@ -192,7 +192,7 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                     return move
                         
 
-        elif choice == 2:
+        elif choice == 3:
             if opening != None:
                 if (cnt <= int(df[df['opening_name'] == opening]['opening_ply'].iloc[idx_open])):
                     moves = df[df['opening_name'] == opening]['moves'].iloc[idx_open].split()
@@ -253,8 +253,20 @@ def act(cnt,df,seq_len, model, tokenizer, obs, legal_moves, engine, state, openi
                     #move = legal_moves[legal_moves_scores.index(max(legal_moves_scores))]
                     return move
 
-        elif choice == 3: #stockfish backup
-            print("Option 3 - Exploration Stockfish")
+        elif choice == 0: #stockfish backup
+            print("Option 0 - Exploration Stockfish")
+            result = engine.play(state, chess.engine.Limit(time=0.1))
+            move = state.san(result.move)
+            return move
+
+        elif choice == 1: #Komodo
+            print("Option 1 - Exploration Komodo")
+            result = engine.play(state, chess.engine.Limit(time=0.1))
+            move = state.san(result.move)
+            return move
+        
+        elif choice == 2: #Komodo Ribka
+            print("Option 2 - Exploration Ribka")
             result = engine.play(state, chess.engine.Limit(time=0.1))
             move = state.san(result.move)
             return move

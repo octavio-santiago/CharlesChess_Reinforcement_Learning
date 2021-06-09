@@ -2,9 +2,10 @@ import numpy as np
 from collections import defaultdict
 import pickle
 import pandas as pd
+import random
 
 import MCTS
-from min_max_tree import calculate_min_max_tree
+from min_max_tree import calculate_min_max_tree, calculate_min_max_tree2
 
 ######
 
@@ -141,7 +142,8 @@ state = env.reset()
 
 cnt = 0
 string = "e4 c5 Nc3 Nc6 Qf3 e5"
-string = "e4 c5 Nc3 Nc6 Nd5 e6 Ne7"
+string = "e4 e5 Nf3 Qf6 c3 d5 d3 Bd7 exd5 Qd6 c4 Qb4+ Qd2 Qxd2+ Nfxd2 Bc8 Nf3 Bb4+ Bd2 Bd6"
+#string = "e4"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -170,7 +172,8 @@ history_move = []
 for i in string.split(' '):
     history_move.append(i)
 
-    
+engine = chess.engine.SimpleEngine.popen_uci("../stockfish")
+
 while not state.is_game_over():
         print(env.render())
         board_txt = state.fen().split()[0]
@@ -201,8 +204,8 @@ while not state.is_game_over():
 
         #Next Piece predict
         X = board_state
-        max_val,act_values = model.predict(np.reshape(X, [1, 66]))
-        print("Next Piece: ",max_val,act_values)
+        max_val,act_values_pieces = model.predict(np.reshape(X, [1, 66]))
+        print("Next Piece: ",max_val,act_values_pieces )
 
         #Result predict
         X = board_state
@@ -232,8 +235,10 @@ while not state.is_game_over():
         print("LSTM: ",next_moves)
 
         #MinMaxTree
-        best_move = calculate_min_max_tree(state, env, player, depth=2)
-        print("MinMax Tree: ", best_move)
+        #best_move = calculate_min_max_tree(state, env, player, depth=2, mode='stockfish', engine=engine)
+        if cnt % 2 == 0:
+            best_move = calculate_min_max_tree2(state, env, player, depth=2, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+            print("MinMax Tree: ", best_move)
         
         #MCTS
         #root,selected_node,weights,material_adv = MCTS.calculate_MCTS(state = state, env = env,filter_prop='next_piece' ,filter_moves=pieces_ordered, par='material_adv')
@@ -242,7 +247,12 @@ while not state.is_game_over():
         #print(selected_node.material_adv)
         #print(material_adv)
 
-        move = input("Insira um valor: ")
+        if cnt % 2 == 0:
+            move = best_move
+        else:
+            #legal_moves = [state.san(x) for x in env.legal_moves]
+            #move = legal_moves[random.randrange(len(legal_moves))]
+            move = input("Insira um valor: ")
         history_move.append(move)
         action = state.push_san(move)
         cnt +=1

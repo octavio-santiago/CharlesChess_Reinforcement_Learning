@@ -1,0 +1,14 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2021.06.08"]
+[Round "?"]
+[White "Guest"]
+[Black "Sven"]
+[Result "1-0"]
+[TimeControl "-"]
+
+1. e4 c6 2. c3 Nh6 3. d4 b6 4. Bxh6 gxh6 5. Ne2 a5 6. Qd2 a4 7. Ng3 Bb7 8. Bd3
+d6 9. Na3 Bg7 10. f4 Nd7 11. Rf1 Bc8 12. e5 d5 13. Nh5 Bf8 14. O-O-O b5 15. f5
+Qb6 16. Rf4 Ba6 17. Qe2 Bc8 18. e6 Nf6 19. Nxf6+ exf6 20. exf7+ Kxf7 21. Re1 Bd7
+22. Qf2 Rd8 23. Re3 Bc8 24. Qh4 Qa7 25. Qh5+ Kg8 26. Rg4+ Qg7 27. Rxg7+ Bxg7 28.
+Nxb5 cxb5 29. Re7 Rf8 30. Qf3 Rd8 31. Qg3 h5 32. Qxg7# 1-0

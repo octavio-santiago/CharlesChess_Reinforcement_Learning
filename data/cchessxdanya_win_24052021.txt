@@ -1,0 +1,20 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2021.05.24"]
+[Round "?"]
+[White "Guest"]
+[Black "Danya"]
+[Result "*"]
+[TimeControl "-"]
+
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Qb6 5. Nf3 Bd7 6. Be2 Bb5 7. Bxb5+ Qxb5 8. a4
+Qd7 9. Be3 c4 10. O-O Nc6 11. Ng5 h6 12. Nh3 Nge7 13. Nf4 Nf5 14. Qg4 O-O-O 15.
+Nd2 Kb8 16. b4 Be7 17. Qe2 h5 18. Nxh5 Bxb4 19. cxb4 Nfxd4 20. Qd1 Nf5 21. Bg5
+Nfd4 22. b5 Nxe5 23. Ng3 Nd3 24. Bxd8 Rxd8 25. Nf3 Nb3 26. Ra3 Nbc5 27. Ne1 e5
+28. Nxd3 Nxd3 29. Rxd3 cxd3 30. Qxd3 Qc7 31. Rd1 g6 32. Qf3 d4 33. h4 Qc2 34.
+Nf1 f5 35. Re1 d3 36. Rxe5 Qxa4 37. h5 d2 38. Re7 Qxb5 39. Qf4+ Ka8 40. Nxd2
+gxh5 41. Nc4 Qc5 42. Rf7 Qd5 43. Rxf5 Qd1+ 44. Kh2 Qg4 45. Qxg4 hxg4 46. Kg3 a6
+47. Kxg4 Rd4+ 48. Rf4 Rd1 49. Rf8+ Ka7 50. Kf3 Rc1 51. Rf4 Rc3+ 52. Kg4 b5 53.
+Rf7+ Kb8 54. Na5 Rc5 55. f4 b4 56. Rb7+ Kc8 57. Nb3 Kxb7 58. Nxc5+ Kc6 59. Nb3
+Kd5 60. f5 Kd6 61. Kg5 Ke7 62. Kg6 Kf8 63. f6 Kg8 64. f7+ Kf8 65. Kf6 a5 66. Nc5
+a4 Nd7#*
