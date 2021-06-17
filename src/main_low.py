@@ -169,7 +169,7 @@ if __name__ == "__main__":
     moving_avg = []
     action_time = []
     choices_time = []
-    EPISODES = 256
+    EPISODES = 16
     SHOW_EVERY = 2
 
     env = gym.make('Chess-v0')
@@ -213,6 +213,7 @@ if __name__ == "__main__":
         string = 'e4 c5 Nf3 d6'
         string = 'e4 c5 Nf3 d6 a4 Nf6 Nc3 Nc6 d4 cxd4 Nxd4 e5 Nxc6 bxc6 Bc4 Be7 Qd3 O-O O-O h6 b4 Be6 Rd1 Qc7 Bxe6 fxe6 Qc4 Qd7 Qe2 d5 Ba3 Rf7 a5 Raf8 Rf1 Bd6 Rae1 h5 a6 Qe7 Rb1 Bc7 f3 h4 Na4 Nh5 Qe3 Nf4'
         string = 'e4 c5 Nf3 d6 a4 Nf6 Nc3 Nc6 d4 cxd4 Nxd4 e5 Nxc6 bxc6 Bc4 Be7 Qd3 O-O O-O h6 b4 Be6 Rd1 Qc7'
+        string = 'e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6'
         string = 'e4'
         game = string.split(' ')
         for move in game:
@@ -409,6 +410,7 @@ if __name__ == "__main__":
                         #reward = np.average(scores_eps)
                         reward = score
                         reward = reward/1000
+                        scores_eps.append(reward)
                         
                         board_txt = next_state.fen().split()[0]
                         board_encoded = ''.join(str(ord(c)) for c in board_txt)
@@ -422,7 +424,7 @@ if __name__ == "__main__":
                         agent.remember(np.reshape(old_obs, [1, state_size]), choice, reward, np.reshape(obs, [1, state_size]), done)
                         state = next_state
                         
-                        episode_reward = reward
+                        episode_reward = np.average(scores_eps)
 
                         #append action       
                         history_moves.append(move)
@@ -582,11 +584,12 @@ if __name__ == "__main__":
                     score = score if score != None else 0
                     print("Action: ",choice ," Score:", score, " Mate in: ", mate)
                     
-                    scores_eps.append(score)
+                    
                     #reward = score if score != None else 0
                     #reward = np.average(scores_eps)
                     reward = score
                     reward = reward/1000
+                    scores_eps.append(reward)
                     
                     board_txt = next_state.fen().split()[0]
                     board_encoded = ''.join(str(ord(c)) for c in board_txt)
@@ -600,7 +603,7 @@ if __name__ == "__main__":
                     agent.remember(np.reshape(old_obs, [1, state_size]), choice, reward, np.reshape(obs, [1, state_size]), done)
                     state = next_state
                     
-                    episode_reward = reward
+                    episode_reward = np.average(scores_eps)
 
                     #append action       
                     history_moves.append(move)

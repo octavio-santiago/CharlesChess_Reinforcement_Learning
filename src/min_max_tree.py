@@ -108,9 +108,11 @@ def Evaluate_development(player,env, state):
     if player == 'white':
         white_space = list(itertools.chain(*board))[33:57] 
         occ = [x if x>0 else 0 for x in white_space]
+        occ = [x if x<6 else 0 for x in occ] # remove king
     else:
         black_space = list(itertools.chain(*board))[8:32]
         occ = [x if x<0 else 0 for x in black_space]
+        occ = [x if x>-6 else 0 for x in occ] # remove king
         
     #space
     space = abs(np.sum(occ)) + att_space
@@ -244,7 +246,7 @@ def AlphaSearch(depth, player, env, state, alpha, beta, evaluations, max_depth, 
             evaluation = evaluation["score"].white().score()
             if mate != None:
                 evaluation = (20-mate) * 1000
-            evaluation = abs(evaluation)
+            evaluation = evaluation
         #evaluations.append(evaluation)
         #evaluations.append(lines)
         #print(env.render())
@@ -429,7 +431,7 @@ def calculate_min_max_tree(state, env, player, depth, mode, engine=None):
         if len(df[df['evals'] == max_val]) > 5:
             df = df[df['evals'] == max_val]
         else:   
-            df = df.iloc[:5,:]
+            df = df.iloc[:,:]
     df = df.sort_values('scores',ascending=False)
     print(df)
     #best_move = legal_moves[evals.index(max(evals))]
@@ -442,6 +444,7 @@ def calculate_min_max_tree2(state, env, player, depth, mode, engine=None, list_m
     evals = []
     legal_moves = [state.san(x) for x in env.legal_moves]
     list_moves = [x for x in list_moves if x in legal_moves]
+    move_orig = copy.deepcopy(list_moves)
     moves = list_moves
     
     #checkmate
@@ -497,6 +500,9 @@ def calculate_min_max_tree2(state, env, player, depth, mode, engine=None, list_m
     #moves = legal_moves
     myset = set(moves)
     legal_moves = list(myset)
+
+    if mode == 'stockfish':
+        legal_moves = move_orig
     if len(legal_moves) == 0:
         legal_moves = [state.san(x) for x in env.legal_moves]
     
@@ -507,7 +513,7 @@ def calculate_min_max_tree2(state, env, player, depth, mode, engine=None, list_m
         action = state_new.push_san(move)
         state_new,reward,done,_ = env_new.step(action)
         #best_move = Search(depth=5, player ='white', env=env, state=state)
-        best_eval = AlphaSearch(depth=depth, player =player, env=env_new, state=state_new,alpha=-10000, beta=10000,
+        best_eval = AlphaSearch(depth=depth, player = player, env=env_new, state=state_new,alpha=-10000, beta=10000,
                             evaluations=evaluations, max_depth=depth, mode=mode, engine=engine)
         #if player == 'black':
         #    best_eval = -best_eval

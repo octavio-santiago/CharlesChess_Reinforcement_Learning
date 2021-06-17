@@ -1,0 +1,18 @@
+[Event "Casual Blitz game"]
+[Site "https://lichess.org/jqUsshtl"]
+[Date "2021.06.10"]
+[White "Anonymous"]
+[Black "Anonymous"]
+[Result "1-0"]
+[UTCDate "2021.06.10"]
+[UTCTime "00:26:23"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[Variant "Standard"]
+[TimeControl "300+3"]
+[ECO "C53"]
+[Opening "Italian Game: Classical Variation"]
+[Termination "Time forfeit"]
+[Annotator "lichess.org"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 { C53 Italian Game: Classical Variation } h6 5. b4 Bb6 6. b5 Na5 7. Bxf7+ Kxf7 8. Nxe5+ Ke7 9. Ng6+ Kf7 10. Nxh8+ Kf6 11. Qf3+ Ke7 12. Qf7+ Kd6 13. Qd5+ { Black left the game. } 1-0

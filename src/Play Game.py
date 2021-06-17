@@ -143,7 +143,7 @@ state = env.reset()
 cnt = 0
 string = "e4 c5 Nc3 Nc6 Qf3 e5"
 string = "e4 e5 Nf3 Qf6 c3 d5 d3 Bd7 exd5 Qd6 c4 Qb4+ Qd2 Qxd2+ Nfxd2 Bc8 Nf3 Bb4+ Bd2 Bd6"
-#string = "e4"
+string = "e4"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -173,6 +173,7 @@ for i in string.split(' '):
     history_move.append(i)
 
 engine = chess.engine.SimpleEngine.popen_uci("../stockfish")
+df1 = pd.read_pickle("../data/pgn/chess_deep_memory.pkl")
 
 while not state.is_game_over():
         print(env.render())
@@ -236,9 +237,22 @@ while not state.is_game_over():
 
         #MinMaxTree
         #best_move = calculate_min_max_tree(state, env, player, depth=2, mode='stockfish', engine=engine)
+        #if cnt % 2 == 0:
+        #    best_move = calculate_min_max_tree2(state, env, player, depth=2, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+        #    print("MinMax Tree: ", best_move)
+
+        #Player
         if cnt % 2 == 0:
-            best_move = calculate_min_max_tree2(state, env, player, depth=2, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
-            print("MinMax Tree: ", best_move)
+            player = 'white'
+            df2 = df1[df1['board'] == str(obs)]
+            next_moves = []
+            if len(df1) >=0:
+                next_moves = list(df2['next_move'])
+                print('Next moves Player: ', next_moves)
+            
+            best_move = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+            print("Player: ", best_move)
+            
         
         #MCTS
         #root,selected_node,weights,material_adv = MCTS.calculate_MCTS(state = state, env = env,filter_prop='next_piece' ,filter_moves=pieces_ordered, par='material_adv')

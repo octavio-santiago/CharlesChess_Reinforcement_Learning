@@ -1,0 +1,17 @@
+[Event "contra o computador"]
+[Site "Chess.com"]
+[Date "2021.06.09"]
+[Round "?"]
+[White "octavio27ja"]
+[Black "Antonio"]
+[Result "0-1"]
+[TimeControl "-"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Nxe5 Nxe5 8.
+dxe5 Nc5 9. Bb3 Nxb3 10. cxb3 Qe7 11. Qf3 c6 12. Nc3 b4 13. Ne4 Qe6 14. Bg5 h6
+15. Bh4 Qxe5 16. Bg3 Qd4 17. Qe2 Be7 18. Kh1 O-O 19. Rfd1 Qa7 20. Nd6 Bg5 21.
+Be5 a5 22. Bxg7 Kxg7 23. Qe5+ f6 24. Qe7+ Kg8 25. Nxc8 Rf7 26. Qe4 Rxc8 27. Re1
+f5 28. Qe8+ Rxe8 29. Rxe8+ Rf8 30. Rxf8+ Kxf8 31. Kg1 Bf6 32. Rd1 d5 33. g4 fxg4
+34. Kg2 Qh7 35. Rc1 Qe4+ 36. Kg1 Kg7 37. Rf1 Bxb2 38. Rd1 Kg6 39. Kf1 Qh1+ 40.
+Ke2 Qf3+ 41. Ke1 Bc3+ 42. Kf1 Qxd1+ 43. Kg2 Qf3+ 44. Kg1 Bd4 45. h3 Qxf2+ 46.
+Kh1 Qg1# 0-1
