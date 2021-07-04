@@ -3,6 +3,7 @@ from collections import defaultdict
 import pickle
 import pandas as pd
 import random
+import matplotlib.pyplot as plt
 
 import MCTS
 from min_max_tree import calculate_min_max_tree, calculate_min_max_tree2
@@ -143,6 +144,7 @@ state = env.reset()
 cnt = 0
 string = "e4 c5 Nc3 Nc6 Qf3 e5"
 string = "e4 e5 Nf3 Qf6 c3 d5 d3 Bd7 exd5 Qd6 c4 Qb4+ Qd2 Qxd2+ Nfxd2 Bc8 Nf3 Bb4+ Bd2 Bd6"
+string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7"
 string = "e4"
 game = string.split(' ')
 for move in game:
@@ -175,11 +177,15 @@ for i in string.split(' '):
 engine = chess.engine.SimpleEngine.popen_uci("../stockfish")
 df1 = pd.read_pickle("../data/pgn/chess_deep_memory.pkl")
 
+move_white_memory = []
+move_black_memory = []
+
 while not state.is_game_over():
         print(env.render())
         board_txt = state.fen().split()[0]
         board_encoded = ''.join(str(ord(c)) for c in board_txt)
         obs = make_matrix(state)
+        print(str(obs))
         
         if cnt % 2 == 0:
             print("White") #board, player, oppening
@@ -244,14 +250,35 @@ while not state.is_game_over():
         #Player
         if cnt % 2 == 0:
             player = 'white'
-            df2 = df1[df1['board'] == str(obs)]
+            #df2 = df1[df1['white'].isin(['Kasparov, Garry','Kasparov, G.','Kasparov Garry (RUS)'])]
+            df2 = df1[df1['black'].isin(['Carlsen, Magnus','Carlsen, M.','Carlsen,M'])]
+            df2 = df2[df2['board'] == str(obs)]
             next_moves = []
-            if len(df1) >=0:
-                next_moves = list(df2['next_move'])
+            if len(df2) >0:
+                move_white_memory.append(1)
+                next_moves = list(set(list(df2['next_move'])))
                 print('Next moves Player: ', next_moves)
-            
+            else:
+                move_white_memory.append(0)                
             best_move = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
             print("Player: ", best_move)
+        else:
+            player = 'black'
+            #df2 = df1[df1['black'].isin(['Carlsen, Magnus','Carlsen, M.','Carlsen,M'])]
+            df2 = df1[df1['white'].isin(['Kasparov, Garry','Kasparov, G.','Kasparov Garry (RUS)'])]
+            #df2 = df1[df1['white'].isin(['Wesley So','So, W.','So, Wesley'])]
+            df2 = df1
+            df2 = df2[df2['board'] == str(obs)]
+            next_moves = []
+            if len(df2) >0:
+                move_black_memory.append(1)
+                next_moves = list(set(list(df2['next_move'])))
+                print('Next moves Player: ', next_moves)
+            else:
+                move_black_memory.append(0)
+            
+            best_move2 = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+            print("Player: ", best_move2)
             
         
         #MCTS
@@ -266,7 +293,8 @@ while not state.is_game_over():
         else:
             #legal_moves = [state.san(x) for x in env.legal_moves]
             #move = legal_moves[random.randrange(len(legal_moves))]
-            move = input("Insira um valor: ")
+            #move = input("Insira um valor: ")
+            move = best_move2
         history_move.append(move)
         action = state.push_san(move)
         cnt +=1
@@ -275,3 +303,14 @@ while not state.is_game_over():
             state,reward,done,_ = env.step(action)
         except:
             break
+
+plt.subplot(221)
+plt.plot([i for i in range(len(move_white_memory))], move_white_memory)
+plt.ylabel("moves")
+plt.xlabel("move")
+plt.title("move_white_memory")
+
+plt.subplot(222)
+plt.plot([i for i in range(len(move_black_memory))], move_black_memory)
+plt.title("move_black_memory")
+plt.show()

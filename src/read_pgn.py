@@ -83,7 +83,7 @@ for f in files:
     df1 = df1.append(df)
 
 
-df1 = df1.drop_duplicates()
+#df1 = df1.drop_duplicates()
 df1.to_pickle("../data/pgn/chess_deep_memory.pkl")
 #X = np.array(X)
 #y = np.array(y)

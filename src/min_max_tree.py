@@ -245,7 +245,7 @@ def AlphaSearch(depth, player, env, state, alpha, beta, evaluations, max_depth, 
             mate = evaluation["score"].white().mate()
             evaluation = evaluation["score"].white().score()
             if mate != None:
-                evaluation = (20-mate) * 1000
+                evaluation = -(20-mate) * 1000
             evaluation = evaluation
         #evaluations.append(evaluation)
         #evaluations.append(lines)
