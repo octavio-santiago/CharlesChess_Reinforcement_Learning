@@ -1,0 +1,453 @@
+[Event "2020-tata-steel-masters"]
+[White "Carlsen, Magnus"]
+[Black "Xiong, Jeffery"]
+[WhiteFideId "1503014"]
+[BlackFideId "2047640"]
+[Result "1/2-1/2"]
+[Round "03"]
+[Date "Mon Jan 13 2020"]
+[WhiteClock "1:03:52"]
+[BlackClock "0:36:04"]
+
+
+1. d4  Nf6 2. c4  e6 3. Nf3  d5 4. Nc3  c5 5. cxd5  Nxd5 6. e4  Nxc3 7. bxc3  cxd4 8. cxd4  Bb4+ 9. Bd2  Bxd2+ 10. Qxd2  O-O 11. Bd3  Nc6 12. Bc2  Qe7 13. O-O  Rd8 14. Qe3  b6 15. Rfd1  Bb7 16. Rac1  Rac8 17. h4  Na5 18. Bd3  h6 19. g4  Nc6 20. Bb1  Qd7 21. Kh2  Qd6+ 22. Kg1  Na5 23. Bd3  Rxc1 24. Rxc1  Nc6 25. Bb5  Nxd4 26. Qxd4  Qxd4 27. Nxd4  Rxd4 28. f3  a6 29. Bf1  Rd7 30. a4  Kf8 31. Kf2  Ke7 32. Rb1  Rd6 33. e5  Rc6 34. Bd3  g5 35. h5  Bc8 36. Ke3  Rc5 37. f4  Ra5 38. Rxb6  gxf4+ 39. Kxf4  Rxa4+ 40. Kf3  Ra3 41. Ke4  f6 42. Rb8  Bd7 43. Rb7  fxe5 44. g5  hxg5 45. h6  Kd6 46. Rb6+  Bc6+ 47. Rxc6+  Kxc6 48. h7  Ra4+ 49. Kxe5  Rh4 50. Kf6  g4 51. Kg5  Rh2 52. Kxg4  Kd5 53. Bg6  Rh6 54. Kg5  Rxh7 55. Bxh7  e5 56. Kg4  Kd4 1/2-1/2
+
+
+[Event "2020-tata-steel-masters"]
+[White "Carlsen, Magnus"]
+[Black "Artemiev, Vladislav"]
+[WhiteFideId "1503014"]
+[BlackFideId "24101605"]
+[Result "1/2-1/2"]
+[Round "12"]
+[Date "Sat Jan 25 2020"]
+[WhiteClock "0:20:30"]
+[BlackClock "0:04:41"]
+
+
+1. d4  Nf6 2. c4  g6 3. Nc3  d5 4. cxd5  Nxd5 5. e4  Nxc3 6. bxc3  Bg7 7. Be3  c5 8. Rc1  Qa5 9. Qd2  O-O 10. Nf3  Rd8 11. Be2  cxd4 12. cxd4  Qxd2+ 13. Bxd2  Na6 14. Be3  Bg4 15. Ne5  Bxe2 16. Kxe2  f5 17. Kf3  Rac8 18. h4  Nb4 19. exf5  gxf5 20. Rxc8  Rxc8 21. Rb1  a5 22. a3  Nd5 23. Rb5  e6 24. Rxa5  Bxe5 25. dxe5  Rc3 26. Ke2  Nxe3 27. fxe3  Rb3 28. Kf3  Kg7 29. g3  Kg6 30. a4  Rb4 31. Ra7  h6 32. Ra8  Re4 33. Ra5  Rb4 34. Ra7  Kh5 35. Ra8  Re4 36. Ra5  Rc4 37. Ra7 1/2-1/2
+
+
+[Event "2020-champions-chess-tour-airthings-masters-prelims"]
+[White "Carlsen, Magnus"]
+[Black "Giri, Anish"]
+[WhiteFideId "1503014"]
+[BlackFideId "24116068"]
+[WhiteElo "2863"]
+[BlackElo "2764"]
+[Result "1/2-1/2"]
+[Round "08"]
+[Date "Sun Dec 27 2020"]
+[WhiteClock "0:04:33"]
+[BlackClock "0:00:17"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:28]}  g6 {[%clk 0:15:22]} 3. Nc3 {[%clk 0:15:17]}  d5 {[%clk 0:15:31]} 4. Nf3 {[%clk 0:13:28]}  Bg7 {[%clk 0:15:39]} 5. e3 {[%clk 0:12:38]}  O-O {[%clk 0:15:45]} 6. cxd5 {[%clk 0:12:46]}  Nxd5 {[%clk 0:15:52]} 7. Bc4 {[%clk 0:09:44]}  Nb6 {[%clk 0:15:18]} 8. Bb3 {[%clk 0:12:35]}  c5 {[%clk 0:15:27]} 9. O-O {[%clk 0:12:43]}  Bg4 {[%clk 0:14:12]} 10. dxc5 {[%clk 0:10:40]}  N6d7 {[%clk 0:14:11]} 11. h3 {[%clk 0:10:17]}  Bxf3 {[%clk 0:14:10]} 12. Qxf3 {[%clk 0:09:21]}  Nxc5 {[%clk 0:13:53]} 13. Rd1 {[%clk 0:09:30]}  Qc8 {[%clk 0:11:04]} 14. Nd5 {[%clk 0:10:15]}  Nc6 {[%clk 0:11:10]} 15. e4 {[%clk 0:10:12]}  Nxb3 {[%clk 0:10:04]} 16. Qxb3 {[%clk 0:10:53]}  e6 {[%clk 0:10:01]} 17. Nc3 {[%clk 0:10:18]}  a6 {[%clk 0:08:16]} 18. Be3 {[%clk 0:09:31]}  b5 {[%clk 0:08:17]} 19. Rac1 {[%clk 0:09:11]}  Qb7 {[%clk 0:07:39]} 20. a4 {[%clk 0:01:32]}  b4 {[%clk 0:07:35]} 21. Ne2 {[%clk 0:01:38]}  Rfd8 {[%clk 0:05:24]} 22. Rxd8+ {[%clk 0:04:11]}  Rxd8 {[%clk 0:05:32]} 23. Qc2 {[%clk 0:04:15]}  Nd4 {[%clk 0:04:35]} 24. Nxd4 {[%clk 0:03:36]}  Bxd4 {[%clk 0:03:47]} 25. Rd1 {[%clk 0:03:27]}  Rc8 {[%clk 0:02:48]} 26. Qd2 {[%clk 0:03:24]}  Bf6 {[%clk 0:03:27]} 27. f3 {[%clk 0:03:09]}  b3 {[%clk 0:03:35]} 28. Bd4 {[%clk 0:03:13]}  Bxd4+ {[%clk 0:03:05]} 29. Qxd4 {[%clk 0:03:22]}  Qc6 {[%clk 0:03:13]} 30. a5 {[%clk 0:03:02]}  Qc5 {[%clk 0:02:06]} 31. Qxc5 {[%clk 0:03:01]}  Rxc5 {[%clk 0:01:26]} 32. Rd3 {[%clk 0:03:10]}  Rxa5 {[%clk 0:01:35]} 33. Rxb3 {[%clk 0:03:19]}  Rc5 {[%clk 0:01:41]} 34. Rb8+ {[%clk 0:03:25]}  Kg7 {[%clk 0:01:50]} 35. b4 {[%clk 0:03:34]}  Rc2 {[%clk 0:01:56]} 36. b5 {[%clk 0:03:42]}  Rb2 {[%clk 0:01:25]} 37. b6 {[%clk 0:03:49]}  a5 {[%clk 0:00:56]} 38. Ra8 {[%clk 0:03:58]}  Rxb6 {[%clk 0:01:05]} 39. Rxa5 {[%clk 0:04:07]}  Rb1+ {[%clk 0:01:11]} 40. Kh2 {[%clk 0:04:15]}  Rb2 {[%clk 0:00:00]} 41. Kg3 {[%clk 0:04:24]}  Re2 {[%clk 0:00:08]} 42. h4 {[%clk 0:04:33]}  h5 {[%clk 0:00:17]} 1/2-1/2
+
+
+
+[Event "2020-champions-chess-tour-airthings-masters-prelims"]
+[White "Carlsen, Magnus"]
+[Black "Aronian, Levon"]
+[WhiteFideId "1503014"]
+[BlackFideId "13300474"]
+[WhiteElo "2863"]
+[BlackElo "2767"]
+[Result "1/2-1/2"]
+[Round "01"]
+[Date "Sat Dec 26 2020"]
+[WhiteClock "0:00:58"]
+[BlackClock "0:01:37"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:28]}  e6 {[%clk 0:15:28]} 3. Nf3 {[%clk 0:15:36]}  d5 {[%clk 0:15:36]} 4. Nc3 {[%clk 0:15:45]}  Bb4 {[%clk 0:15:45]} 5. cxd5 {[%clk 0:15:52]}  exd5 {[%clk 0:15:53]} 6. Bf4 {[%clk 0:16:01]}  c6 {[%clk 0:16:02]} 7. e3 {[%clk 0:15:49]}  Bf5 {[%clk 0:16:09]} 8. Qb3 {[%clk 0:14:41]}  Qb6 {[%clk 0:16:15]} 9. Nh4 {[%clk 0:14:17]}  Bg6 {[%clk 0:15:59]} 10. Nxg6 {[%clk 0:13:43]}  hxg6 {[%clk 0:15:24]} 11. h3 {[%clk 0:13:21]}  Nbd7 {[%clk 0:15:24]} 12. Bd3 {[%clk 0:13:10]}  c5 {[%clk 0:15:19]} 13. a3 {[%clk 0:12:55]}  Ba5 {[%clk 0:11:59]} 14. Qxb6 {[%clk 0:12:12]}  Bxb6 {[%clk 0:12:57]} 15. dxc5 {[%clk 0:09:19]}  Nxc5 {[%clk 0:11:05]} 16. O-O-O {[%clk 0:09:09]}  O-O-O {[%clk 0:09:10]} 17. Kb1 {[%clk 0:06:24]}  Ne6 {[%clk 0:05:57]} 18. Be5 {[%clk 0:06:05]}  Bc7 {[%clk 0:07:58]} 19. Bxc7 {[%clk 0:06:11]}  Kxc7 {[%clk 0:08:04]} 20. Bc2 {[%clk 0:06:20]}  g5 {[%clk 0:01:31]} 21. Bb3 {[%clk 0:05:33]}  Kc6 {[%clk 0:04:56]} 22. Rc1 {[%clk 0:05:06]}  Kd6 {[%clk 0:04:06]} 23. Nb5+ {[%clk 0:04:44]}  Ke5 {[%clk 0:04:27]} 24. Nxa7 {[%clk 0:04:36]}  Ne4 {[%clk 0:04:47]} 25. Nb5 {[%clk 0:04:13]}  g4 {[%clk 0:02:48]} 26. Rc2 {[%clk 0:03:34]}  Rh5 {[%clk 0:02:14]} 27. f3 {[%clk 0:02:21]}  gxf3 {[%clk 0:01:30]} 28. gxf3 {[%clk 0:02:24]}  Ng3 {[%clk 0:02:11]} 29. Rd1 {[%clk 0:02:39]}  Nf5 {[%clk 0:02:18]} 30. Rc3 {[%clk 0:01:56]}  Ne7 {[%clk 0:02:11]} 31. Nc7 {[%clk 0:01:07]}  g5 {[%clk 0:01:03]} 32. Nxe6 {[%clk 0:00:59]}  fxe6 {[%clk 0:02:04]} 33. Rc7 {[%clk 0:00:59]}  Nf5 {[%clk 0:01:42]} 34. e4 {[%clk 0:01:18]}  Nd4 {[%clk 0:01:48]} 35. Rxb7 {[%clk 0:01:27]}  Rxh3 {[%clk 0:02:07]} 36. exd5 {[%clk 0:01:36]}  exd5 {[%clk 0:02:06]} 37. Re7+ {[%clk 0:00:48]}  Kd6 {[%clk 0:00:00]} 38. Re3 {[%clk 0:00:57]}  Nxb3 {[%clk 0:00:06]} 39. Rxb3 {[%clk 0:01:00]}  Rf8 {[%clk 0:00:14]} 40. Rdd3 {[%clk 0:01:01]}  Rf4 {[%clk 0:00:00]} 41. Kc2 {[%clk 0:00:56]}  Ke5 {[%clk 0:00:04]} 42. Rb5 {[%clk 0:00:31]}  Rd4 {[%clk 0:00:27]} 43. Rxd4 {[%clk 0:00:35]}  Kxd4 {[%clk 0:00:36]} 44. Rb3 {[%clk 0:00:44]}  Rh2+ {[%clk 0:00:00]} 45. Kb1 {[%clk 0:00:51]}  Rh3 {[%clk 0:00:13]} 46. Ka2 {[%clk 0:00:54]}  Kc4 {[%clk 0:00:17]} 47. Rc3+ {[%clk 0:00:53]}  Kb5 {[%clk 0:00:19]} 48. Kb3 {[%clk 0:00:20]}  d4 {[%clk 0:00:21]} 49. Rd3 {[%clk 0:00:28]}  Kc5 {[%clk 0:00:26]} 50. Kc2 {[%clk 0:00:37]}  Rg3 {[%clk 0:00:21]} 51. a4 {[%clk 0:00:38]}  Rg2+ {[%clk 0:00:36]} 52. Rd2 {[%clk 0:00:30]}  Rg3 {[%clk 0:00:45]} 53. Rf2 {[%clk 0:00:24]}  Kb4 {[%clk 0:00:47]} 54. b3 {[%clk 0:00:29]}  g4 {[%clk 0:00:47]} 55. fxg4 {[%clk 0:00:36]}  d3+ {[%clk 0:00:52]} 56. Kd2 {[%clk 0:00:35]}  Rxg4 {[%clk 0:01:01]} 57. Kxd3 {[%clk 0:00:35]}  Rg3+ {[%clk 0:01:06]} 58. Kc2 {[%clk 0:00:38]}  Rc3+ {[%clk 0:01:11]} 59. Kb1 {[%clk 0:00:42]}  Rxb3+ {[%clk 0:01:19]} 60. Rb2 {[%clk 0:00:49]}  Rxb2+ {[%clk 0:01:28]} 61. Kxb2 {[%clk 0:00:58]}  Kxa4 {[%clk 0:01:37]} 1/2-1/2
+
+
+
+[Event "2020-champions-chess-tour-airthings-masters-prelims"]
+[White "Anton Guijarro, David"]
+[Black "Carlsen, Magnus"]
+[WhiteFideId "2285525"]
+[BlackFideId "1503014"]
+[WhiteElo "2681"]
+[BlackElo "2863"]
+[Result "1/2-1/2"]
+[Round "06"]
+[Date "Sun Dec 27 2020"]
+[WhiteClock "0:00:53"]
+[BlackClock "0:00:09"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:28]}  e6 {[%clk 0:15:26]} 3. Nc3 {[%clk 0:15:35]}  Bb4 {[%clk 0:15:34]} 4. e3 {[%clk 0:15:43]}  O-O {[%clk 0:15:25]} 5. Bd2 {[%clk 0:15:50]}  d5 {[%clk 0:15:24]} 6. Nf3 {[%clk 0:15:54]}  b6 {[%clk 0:14:55]} 7. cxd5 {[%clk 0:16:00]}  exd5 {[%clk 0:14:04]} 8. Bd3 {[%clk 0:16:08]}  Ba6 {[%clk 0:14:13]} 9. Bxa6 {[%clk 0:16:14]}  Nxa6 {[%clk 0:14:15]} 10. O-O {[%clk 0:16:22]}  Re8 {[%clk 0:14:13]} 11. Rc1 {[%clk 0:15:57]}  Bf8 {[%clk 0:14:10]} 12. Ne2 {[%clk 0:15:13]}  Qc8 {[%clk 0:15:02]} 13. Qc2 {[%clk 0:15:06]}  c5 {[%clk 0:10:15]} 14. dxc5 {[%clk 0:15:05]}  bxc5 {[%clk 0:09:34]} 15. Bc3 {[%clk 0:14:25]}  Ne4 {[%clk 0:09:40]} 16. Rfd1 {[%clk 0:14:28]}  Qb7 {[%clk 0:10:26]} 17. Nf4 {[%clk 0:12:13]}  Rad8 {[%clk 0:08:26]} 18. Qa4 {[%clk 0:12:15]}  Nxc3 {[%clk 0:07:02]} 19. bxc3 {[%clk 0:12:20]}  Nc7 {[%clk 0:07:09]} 20. Rb1 {[%clk 0:11:56]}  Qa8 {[%clk 0:07:17]} 21. c4 {[%clk 0:10:05]}  d4 {[%clk 0:09:28]} 22. exd4 {[%clk 0:08:53]}  cxd4 {[%clk 0:08:29]} 23. h3 {[%clk 0:07:53]}  Ne6 {[%clk 0:05:00]} 24. Nxe6 {[%clk 0:07:13]}  Rxe6 {[%clk 0:05:24]} 25. Qc2 {[%clk 0:06:01]}  Rg6 {[%clk 0:04:29]} 26. Qf5 {[%clk 0:05:49]}  h6 {[%clk 0:04:58]} 27. Rb5 {[%clk 0:05:33]}  Rf6 {[%clk 0:04:35]} 28. Qd3 {[%clk 0:04:56]}  Ra6 {[%clk 0:00:58]} 29. Rd2 {[%clk 0:03:30]}  Ra3 {[%clk 0:00:43]} 30. Qf5 {[%clk 0:03:11]}  Qc8 {[%clk 0:00:24]} 31. Qxc8 {[%clk 0:02:40]}  Rxc8 {[%clk 0:00:25]} 32. Nxd4 {[%clk 0:02:48]}  Rxc4 {[%clk 0:00:24]} 33. Rb8 {[%clk 0:02:35]}  Rac3 {[%clk 0:00:12]} 34. Nb5 {[%clk 0:01:48]}  Rc1+ {[%clk 0:00:00]} 35. Kh2 {[%clk 0:01:56]}  Rc8 {[%clk 0:00:03]} 36. Rxc8 {[%clk 0:02:00]}  Rxc8 {[%clk 0:00:52]} 37. Nxa7 {[%clk 0:02:04]}  Rc5 {[%clk 0:01:00]} 38. g4 {[%clk 0:01:47]}  h5 {[%clk 0:01:08]} 39. Kg2 {[%clk 0:01:29]}  hxg4 {[%clk 0:01:16]} 40. hxg4 {[%clk 0:01:38]}  g6 {[%clk 0:00:18]} 41. Rb2 {[%clk 0:01:31]}  Rc4 {[%clk 0:00:19]} 42. f3 {[%clk 0:01:28]}  Ba3 {[%clk 0:00:02]} 43. Re2 {[%clk 0:01:35]}  Rc5 {[%clk 0:00:09]} 44. Kg3 {[%clk 0:01:34]}  Kg7 {[%clk 0:00:18]} 45. Kf4 {[%clk 0:01:02]}  Kf6 {[%clk 0:00:38]} 46. Ke4 {[%clk 0:01:05]}  Kg5 {[%clk 0:00:43]} 47. Rg2 {[%clk 0:00:49]}  Rc4+ {[%clk 0:00:25]} 48. Kd5 {[%clk 0:00:42]}  Rc5+ {[%clk 0:00:33]} 49. Ke4 {[%clk 0:00:43]}  Rc4+ {[%clk 0:00:00]} 50. Kd5 {[%clk 0:00:44]}  Rc5+ {[%clk 0:00:09]} 51. Ke4 {[%clk 0:00:53]} 1/2-1/2
+
+
+
+[Event "2021-tata-steel-masters"]
+[White "Carlsen, Magnus"]
+[Black "Giri, Anish"]
+[WhiteFideId "1503014"]
+[BlackFideId "24116068"]
+[WhiteElo "2862"]
+[BlackElo "2764"]
+[Result "1/2-1/2"]
+[Round "11"]
+[Date "Fri Jan 29 2021"]
+[WhiteClock "0:52:54"]
+[BlackClock "1:03:22"]
+
+
+1. e4 {[%clk 1:39:07]}  e5 {[%clk 1:40:54]} 2. Nf3 {[%clk 1:39:31]}  Nc6 {[%clk 1:41:20]} 3. Bc4 {[%clk 1:39:56]}  Bc5 {[%clk 1:41:17]} 4. c3 {[%clk 1:39:01]}  Nf6 {[%clk 1:41:41]} 5. d3 {[%clk 1:39:25]}  O-O {[%clk 1:37:38]} 6. b4 {[%clk 1:32:14]}  Be7 {[%clk 1:35:12]} 7. Nbd2 {[%clk 1:27:00]}  d5 {[%clk 1:34:19]} 8. Bb3 {[%clk 1:25:59]}  Bg4 {[%clk 1:17:43]} 9. Qc2 {[%clk 1:13:32]}  dxe4 {[%clk 1:05:28]} 10. dxe4 {[%clk 1:13:53]}  Bd6 {[%clk 1:05:37]} 11. h3 {[%clk 1:05:31]}  Bh5 {[%clk 0:59:43]} 12. Rb1 {[%clk 1:02:59]}  a5 {[%clk 0:59:22]} 13. a3 {[%clk 1:02:46]}  axb4 {[%clk 0:58:22]} 14. axb4 {[%clk 1:03:13]}  b5 {[%clk 0:50:41]} 15. O-O {[%clk 0:57:48]}  Ne7 {[%clk 0:50:03]} 16. Re1 {[%clk 0:49:28]}  Qc8 {[%clk 0:46:22]} 17. Qd3 {[%clk 0:45:56]}  Rb8 {[%clk 0:46:04]} 18. Nh4 {[%clk 0:40:56]}  Ng6 {[%clk 0:38:32]} 19. Nxg6 {[%clk 0:36:26]}  Bxg6 {[%clk 0:38:49]} 20. Nf1 {[%clk 0:36:12]}  Rd8 {[%clk 0:37:03]} 21. Qf3 {[%clk 0:36:34]}  c5 {[%clk 0:33:40]} 22. Bg5 {[%clk 0:36:58]}  Be7 {[%clk 0:33:18]} 23. Ng3 {[%clk 0:27:44]}  c4 {[%clk 0:32:47]} 24. Bc2 {[%clk 0:28:07]}  h6 {[%clk 0:31:16]} 25. Be3 {[%clk 0:25:32]}  Qc6 {[%clk 0:24:02]} 26. Nf5 {[%clk 0:20:02]}  Bxf5 {[%clk 0:24:09]} 27. Qxf5 {[%clk 0:20:25]}  g6 {[%clk 0:23:48]} 28. Qf3 {[%clk 0:18:10]}  Kg7 {[%clk 0:24:03]} 29. Ra1 {[%clk 0:15:19]}  Ra8 {[%clk 0:24:08]} 30. Qe2 {[%clk 0:13:26]}  Rxa1 {[%clk 0:22:49]} 31. Rxa1 {[%clk 0:13:44]}  Ra8 {[%clk 0:23:15]} 32. Rxa8 {[%clk 0:12:31]}  Qxa8 {[%clk 0:23:43]} 33. Qd2 {[%clk 0:12:42]}  h5 {[%clk 0:19:46]} 34. Kh2 {[%clk 0:12:27]}  Qc6 {[%clk 0:18:29]} 35. Qe2 {[%clk 0:08:25]}  Qe6 {[%clk 0:17:22]} 36. g3 {[%clk 0:06:59]}  Bd8 {[%clk 0:12:23]} 37. Kg2 {[%clk 0:06:04]}  Bb6 {[%clk 0:12:28]} 38. Bg5 {[%clk 0:06:11]}  Nh7 {[%clk 0:12:14]} 39. Bc1 {[%clk 0:06:33]}  Nf6 {[%clk 0:12:34]} 40. Bg5 {[%clk 0:54:22]}  Nh7 {[%clk 1:03:00]} 41. Bc1 {[%clk 0:54:41]}  Nf6 {[%clk 1:03:22]} 42. Bg5 {[%clk 0:52:54]} 1/2-1/2
+
+
+
+[Event "2021-tata-steel-masters"]
+[White "Carlsen, Magnus"]
+[Black "Donchenko, Alexander"]
+[WhiteFideId "1503014"]
+[BlackFideId "24603295"]
+[WhiteElo "2862"]
+[BlackElo "2668"]
+[Result "1/2-1/2"]
+[Round "05"]
+[Date "Thu Jan 21 2021"]
+[WhiteClock "0:32:50"]
+[BlackClock "0:24:08"]
+
+
+1. e4 {[%clk 1:40:10]}  c5 {[%clk 1:40:44]} 2. Nf3 {[%clk 1:40:30]}  d6 {[%clk 1:41:06]} 3. d4 {[%clk 1:40:48]}  cxd4 {[%clk 1:41:28]} 4. Nxd4 {[%clk 1:41:12]}  Nf6 {[%clk 1:41:49]} 5. Nc3 {[%clk 1:41:34]}  a6 {[%clk 1:42:12]} 6. Be3 {[%clk 1:41:50]}  e5 {[%clk 1:42:14]} 7. Nb3 {[%clk 1:42:04]}  Be6 {[%clk 1:42:12]} 8. h3 {[%clk 1:41:26]}  Nc6 {[%clk 1:40:08]} 9. Qf3 {[%clk 1:39:42]}  Rc8 {[%clk 1:40:03]} 10. O-O-O {[%clk 1:26:49]}  Na5 {[%clk 1:40:00]} 11. Bg5 {[%clk 1:11:51]}  Be7 {[%clk 1:39:58]} 12. Bxf6 {[%clk 1:10:09]}  Bxf6 {[%clk 1:40:20]} 13. Nd5 {[%clk 1:10:11]}  Bg5+ {[%clk 1:30:00]} 14. Kb1 {[%clk 1:10:12]}  h5 {[%clk 1:30:06]} 15. Be2 {[%clk 1:00:19]}  h4 {[%clk 1:26:32]} 16. Nxa5 {[%clk 0:53:48]}  Qxa5 {[%clk 1:26:54]} 17. Qb3 {[%clk 0:54:10]}  Qc5 {[%clk 1:19:30]} 18. Bg4 {[%clk 0:44:55]}  Qc4 {[%clk 1:08:05]} 19. Bxe6 {[%clk 0:44:59]}  fxe6 {[%clk 1:08:18]} 20. Nb6 {[%clk 0:45:22]}  Qxb3 {[%clk 1:08:31]} 21. axb3 {[%clk 0:45:31]}  Rc6 {[%clk 0:55:38]} 22. Nc4 {[%clk 0:45:48]}  Ke7 {[%clk 0:53:24]} 23. Rd3 {[%clk 0:45:43]}  Rf8 {[%clk 0:52:04]} 24. f3 {[%clk 0:41:56]}  Bf4 {[%clk 0:51:13]} 25. Rhd1 {[%clk 0:34:23]}  Rd8 {[%clk 0:51:16]} 26. c3 {[%clk 0:33:57]}  Rd7 {[%clk 0:48:13]} 27. Kc2 {[%clk 0:34:17]}  Rd8 {[%clk 0:45:35]} 28. Na5 {[%clk 0:33:37]}  Rc7 {[%clk 0:45:39]} 29. b4 {[%clk 0:32:50]}  Rdd7 {[%clk 0:37:55]} 30. Kb3 {[%clk 0:32:33]}  Rd8 {[%clk 0:37:24]} 31. Nc4 {[%clk 0:29:45]}  Rc6 {[%clk 0:30:49]} 32. Na3 {[%clk 0:24:08]}  d5 {[%clk 0:24:39]} 33. b5 {[%clk 0:23:10]}  Rcd6 {[%clk 0:18:46]} 34. bxa6 {[%clk 0:22:05]}  bxa6 {[%clk 0:18:46]} 35. Ka4 {[%clk 0:18:13]}  Rb8 {[%clk 0:09:20]} 36. b4 {[%clk 0:13:25]}  Rc6 {[%clk 0:07:33]} 37. Kb3 {[%clk 0:13:03]}  Rbc8 {[%clk 0:07:18]} 38. Ra1 {[%clk 0:11:51]}  Rc4 {[%clk 0:02:51]} 39. Ra2 {[%clk 0:07:45]}  a5 {[%clk 0:00:48]} 40. bxa5 {[%clk 0:53:24]}  Rb8+ {[%clk 0:50:35]} 41. Kc2 {[%clk 0:53:52]}  Rc5 {[%clk 0:47:56]} 42. Nb1 {[%clk 0:49:08]}  Rbb5 {[%clk 0:45:42]} 43. exd5 {[%clk 0:41:36]}  exd5 {[%clk 0:45:09]} 44. a6 {[%clk 0:41:30]}  Ra5 {[%clk 0:45:04]} 45. Rxa5 {[%clk 0:41:23]}  Rxa5 {[%clk 0:45:31]} 46. c4 {[%clk 0:41:29]}  Rxa6 {[%clk 0:43:33]} 47. cxd5 {[%clk 0:41:53]}  Ra2+ {[%clk 0:19:38]} 48. Kb3 {[%clk 0:41:52]}  Rxg2 {[%clk 0:20:02]} 49. Nc3 {[%clk 0:41:41]}  Rg3 {[%clk 0:14:14]} 50. d6+ {[%clk 0:40:48]}  Kd7 {[%clk 0:13:53]} 51. Ne4 {[%clk 0:40:17]}  Rxh3 {[%clk 0:13:04]} 52. Kc4 {[%clk 0:38:16]}  Rh1 {[%clk 0:08:44]} 53. Kd5 {[%clk 0:38:36]}  Rc1 {[%clk 0:07:31]} 54. Nc5+ {[%clk 0:38:25]}  Ke8 {[%clk 0:07:23]} 55. Ke6 {[%clk 0:13:20]}  Rxc5 {[%clk 0:07:35]} 56. Ra3 {[%clk 0:13:43]}  Rc8 {[%clk 0:06:31]} 57. d7+ {[%clk 0:14:07]}  Kd8 {[%clk 0:06:57]} 58. dxc8=Q+ {[%clk 0:14:27]}  Kxc8 {[%clk 0:07:22]} 59. Ra1 {[%clk 0:14:08]}  h3 {[%clk 0:07:07]} 60. Rh1 {[%clk 0:29:22]}  h2 {[%clk 0:22:31]} 61. Kf5 {[%clk 0:29:40]}  g5 {[%clk 0:21:41]} 62. Kg4 {[%clk 0:30:04]}  Kd7 {[%clk 0:22:04]} 63. Kh3 {[%clk 0:30:26]}  Ke6 {[%clk 0:22:29]} 64. Kg2 {[%clk 0:30:47]}  Kf5 {[%clk 0:22:45]} 65. Kh3 {[%clk 0:31:11]}  e4 {[%clk 0:22:54]} 66. fxe4+ {[%clk 0:31:33]}  Kxe4 {[%clk 0:23:19]} 67. Kg4 {[%clk 0:31:58]}  Ke3 {[%clk 0:23:43]} 68. Rxh2 {[%clk 0:32:25]}  Bxh2 {[%clk 0:24:08]} 69. Kxg5 {[%clk 0:32:50]} 1/2-1/2
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid"]
+[White "Carlsen, Magnus"]
+[Black "Aronian, Levon"]
+[WhiteFideId "1503014"]
+[BlackFideId "13300474"]
+[WhiteElo "2862"]
+[BlackElo "2781"]
+[Result "1-0"]
+[Round "02"]
+[Date "Sat Feb 06 2021"]
+[WhiteClock "0:06:08"]
+[BlackClock "0:00:24"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:28]}  e6 {[%clk 0:15:28]} 3. Nf3 {[%clk 0:15:36]}  d5 {[%clk 0:15:36]} 4. Nc3 {[%clk 0:15:45]}  Bb4 {[%clk 0:15:44]} 5. cxd5 {[%clk 0:15:53]}  exd5 {[%clk 0:15:52]} 6. Bg5 {[%clk 0:16:00]}  h6 {[%clk 0:15:45]} 7. Bh4 {[%clk 0:16:08]}  O-O {[%clk 0:15:47]} 8. e3 {[%clk 0:14:51]}  Bf5 {[%clk 0:15:53]} 9. Bd3 {[%clk 0:13:21]}  Bxd3 {[%clk 0:15:44]} 10. Qxd3 {[%clk 0:11:33]}  Nbd7 {[%clk 0:15:07]} 11. Qb5 {[%clk 0:11:50]}  Bxc3+ {[%clk 0:13:11]} 12. bxc3 {[%clk 0:11:59]}  Nb6 {[%clk 0:11:02]} 13. Nd2 {[%clk 0:11:28]}  Qd7 {[%clk 0:13:04]} 14. Qxd7 {[%clk 0:11:33]}  Nfxd7 {[%clk 0:12:39]} 15. a4 {[%clk 0:11:37]}  a5 {[%clk 0:12:18]} 16. Ke2 {[%clk 0:11:35]}  Rfe8 {[%clk 0:11:02]} 17. Rhb1 {[%clk 0:11:14]}  Re6 {[%clk 0:09:48]} 18. Bg3 {[%clk 0:11:15]}  c5 {[%clk 0:07:32]} 19. Rb5 {[%clk 0:11:40]}  c4 {[%clk 0:07:26]} 20. Bc7 {[%clk 0:09:36]}  Rc6 {[%clk 0:07:25]} 21. Bxb6 {[%clk 0:09:44]}  Nxb6 {[%clk 0:06:15]} 22. g4 {[%clk 0:09:37]}  Kf8 {[%clk 0:05:41]} 23. h4 {[%clk 0:09:35]}  Ke8 {[%clk 0:06:22]} 24. e4 {[%clk 0:09:59]}  Rd8 {[%clk 0:05:21]} 25. e5 {[%clk 0:09:30]}  f6 {[%clk 0:04:11]} 26. f4 {[%clk 0:09:13]}  g5 {[%clk 0:04:11]} 27. hxg5 {[%clk 0:09:13]}  hxg5 {[%clk 0:04:11]} 28. f5 {[%clk 0:09:13]}  fxe5 {[%clk 0:04:11]} 29. dxe5 {[%clk 0:09:13]}  d4 {[%clk 0:04:11]} 30. Rh1 {[%clk 0:09:13]}  dxc3 {[%clk 0:03:19]} 31. Ne4 {[%clk 0:07:57]}  c2 {[%clk 0:02:54]} 32. e6 {[%clk 0:07:03]}  Rd4 {[%clk 0:00:52]} 33. Re5 {[%clk 0:07:19]}  Nd5 {[%clk 0:01:01]} 34. Rxd5 {[%clk 0:07:28]}  Rxe4+ {[%clk 0:01:10]} 35. Kd2 {[%clk 0:07:37]}  Rxg4 {[%clk 0:00:29]} 36. Rh8+ {[%clk 0:07:38]}  Ke7 {[%clk 0:00:38]} 37. Rh7+ {[%clk 0:07:45]}  Ke8 {[%clk 0:00:44]} 38. f6 {[%clk 0:06:54]}  c1=Q+ {[%clk 0:00:15]} 39. Kxc1 {[%clk 0:06:32]}  Rg1+ {[%clk 0:00:20]} 40. Kc2 {[%clk 0:06:38]}  Rg2+ {[%clk 0:00:29]} 41. Kd1 {[%clk 0:06:06]}  Rg1+ {[%clk 0:00:37]} 42. Kc2 {[%clk 0:05:28]}  Rg2+ {[%clk 0:00:46]} 43. Kc3 {[%clk 0:05:37]}  Rg3+ {[%clk 0:00:49]} 44. Kd4 {[%clk 0:05:44]}  Rd3+ {[%clk 0:00:37]} 45. Ke5 {[%clk 0:05:53]}  Re3+ {[%clk 0:00:43]} 46. Kf5 {[%clk 0:06:01]}  Rcxe6 {[%clk 0:00:24]} 47. Rh8+ {[%clk 0:06:08]} 1-0
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "Dubov, Daniil"]
+[WhiteFideId "1503014"]
+[BlackFideId "24126055"]
+[WhiteElo "2862"]
+[BlackElo "2710"]
+[Result "1-0"]
+[Round "01-01"]
+[Date "Tue Feb 09 2021"]
+[WhiteClock "0:01:32"]
+[BlackClock "0:00:16"]
+
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:25]}  Nc6 {[%clk 0:15:28]} 3. Bc4 {[%clk 0:15:34]}  Nf6 {[%clk 0:15:36]} 4. d3 {[%clk 0:15:42]}  Be7 {[%clk 0:15:45]} 5. O-O {[%clk 0:15:50]}  d6 {[%clk 0:15:54]} 6. c3 {[%clk 0:15:47]}  O-O {[%clk 0:16:00]} 7. Re1 {[%clk 0:15:54]}  h6 {[%clk 0:15:51]} 8. Nbd2 {[%clk 0:15:32]}  Be6 {[%clk 0:15:55]} 9. Bxe6 {[%clk 0:15:14]}  fxe6 {[%clk 0:16:03]} 10. Nf1 {[%clk 0:15:09]}  a5 {[%clk 0:15:59]} 11. Ng3 {[%clk 0:14:55]}  a4 {[%clk 0:14:42]} 12. Bd2 {[%clk 0:14:01]}  d5 {[%clk 0:13:34]} 13. b4 {[%clk 0:11:46]}  axb3 {[%clk 0:12:02]} 14. axb3 {[%clk 0:11:53]}  Rxa1 {[%clk 0:11:18]} 15. Qxa1 {[%clk 0:12:00]}  d4 {[%clk 0:10:10]} 16. Qb1 {[%clk 0:08:39]}  dxc3 {[%clk 0:07:13]} 17. Bxc3 {[%clk 0:08:47]}  Bc5 {[%clk 0:07:22]} 18. b4 {[%clk 0:08:46]}  Bb6 {[%clk 0:06:46]} 19. b5 {[%clk 0:08:32]}  Nd4 {[%clk 0:06:02]} 20. Bxd4 {[%clk 0:08:11]}  Bxd4 {[%clk 0:06:00]} 21. Qb3 {[%clk 0:08:18]}  Qd7 {[%clk 0:04:11]} 22. Nf5 {[%clk 0:06:06]}  Ng4 {[%clk 0:02:59]} 23. N5xd4 {[%clk 0:06:12]}  exd4 {[%clk 0:03:07]} 24. e5 {[%clk 0:06:17]}  h5 {[%clk 0:02:32]} 25. Qc4 {[%clk 0:05:36]}  Rxf3 {[%clk 0:01:53]} 26. gxf3 {[%clk 0:05:41]}  Nh6 {[%clk 0:02:02]} 27. Rc1 {[%clk 0:05:27]}  Nf5 {[%clk 0:02:11]} 28. Qxc7 {[%clk 0:04:04]}  Qd5 {[%clk 0:02:07]} 29. Qc2 {[%clk 0:01:11]}  Nh4 {[%clk 0:01:16]} 30. Qe2 {[%clk 0:01:16]}  Nxf3+ {[%clk 0:01:13]} 31. Kh1 {[%clk 0:01:24]}  Nxe5+ {[%clk 0:00:15]} 32. f3 {[%clk 0:01:32]}  Qxb5 {[%clk 0:00:15]} 33. Re1 {[%clk 0:01:28]}  Nxd3 {[%clk 0:00:16]} 34. Rd1 {[%clk 0:01:32]} 1-0
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "Vachier-Lagrave, Maxime"]
+[WhiteFideId "1503014"]
+[BlackFideId "623539"]
+[WhiteElo "2862"]
+[BlackElo "2784"]
+[Result "1-0"]
+[Round "06-01"]
+[Date "Fri Feb 12 2021"]
+[WhiteClock "0:01:44"]
+[BlackClock "0:00:01"]
+
+
+1. Nf3 {[%clk 0:04:01]}  Nf6 {[%clk 0:04:41]} 2. c4 {[%clk 0:04:01]}  g6 {[%clk 0:04:41]} 3. Nc3 {[%clk 0:04:01]}  d5 {[%clk 0:04:41]} 4. cxd5 {[%clk 0:04:01]}  Nxd5 {[%clk 0:04:41]} 5. h4 {[%clk 0:04:01]}  Nxc3 {[%clk 0:04:41]} 6. dxc3 {[%clk 0:04:01]}  Qxd1+ {[%clk 0:04:41]} 7. Kxd1 {[%clk 0:04:01]}  f6 {[%clk 0:04:41]} 8. h5 {[%clk 0:04:01]}  g5 {[%clk 0:04:41]} 9. e4 {[%clk 0:04:01]}  Nd7 {[%clk 0:04:41]} 10. Nd4 {[%clk 0:04:01]}  Ne5 {[%clk 0:04:41]} 11. Be2 {[%clk 0:04:01]}  Bd7 {[%clk 0:04:41]} 12. Kc2 {[%clk 0:04:01]}  O-O-O {[%clk 0:04:27]} 13. Be3 {[%clk 0:03:33]}  c5 {[%clk 0:04:25]} 14. Nf3 {[%clk 0:03:28]}  Ng4 {[%clk 0:03:44]} 15. Bxc5 {[%clk 0:03:26]}  b6 {[%clk 0:03:45]} 16. Be3 {[%clk 0:03:08]}  Nxe3+ {[%clk 0:03:18]} 17. fxe3 {[%clk 0:00:34]}  g4 {[%clk 0:03:20]} 18. Nd4 {[%clk 0:00:25]}  e5 {[%clk 0:02:56]} 19. Nf5 {[%clk 0:02:53]}  Bxf5 {[%clk 0:02:58]} 20. exf5 {[%clk 0:02:55]}  Bh6 {[%clk 0:02:36]} 21. Rae1 {[%clk 0:02:54]}  g3 {[%clk 0:02:09]} 22. Bc4 {[%clk 0:02:46]}  Rd6 {[%clk 0:02:03]} 23. Rh3 {[%clk 0:02:42]}  Rhd8 {[%clk 0:01:58]} 24. Re2 {[%clk 0:02:41]}  Bg5 {[%clk 0:01:59]} 25. Rxg3 {[%clk 0:02:39]}  h6 {[%clk 0:02:01]} 26. Rg4 {[%clk 0:02:25]}  Kc7 {[%clk 0:01:53]} 27. Ba6 {[%clk 0:02:19]}  Rd5 {[%clk 0:01:53]} 28. Rc4+ {[%clk 0:02:12]}  Rc5 {[%clk 0:01:55]} 29. e4 {[%clk 0:02:09]}  Rxc4 {[%clk 0:01:54]} 30. Bxc4 {[%clk 0:02:11]}  Bf4 {[%clk 0:01:52]} 31. Be6 {[%clk 0:01:49]}  Bg3 {[%clk 0:01:51]} 32. b4 {[%clk 0:01:44]}  b5 {[%clk 0:01:49]} 33. Bd5 {[%clk 0:01:42]}  Kb6 {[%clk 0:01:43]} 34. Kb3 {[%clk 0:01:43]}  Rd7 {[%clk 0:01:38]} 35. a4 {[%clk 0:01:43]}  a6 {[%clk 0:01:37]} 36. Ra2 {[%clk 0:01:44]}  Ra7 {[%clk 0:01:31]} 37. a5+ {[%clk 0:01:42]}  Kc7 {[%clk 0:00:00]} 38. c4 {[%clk 0:01:41]}  bxc4+ {[%clk 0:00:01]} 39. Bxc4 {[%clk 0:01:44]} 1-0
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "Vachier-Lagrave, Maxime"]
+[WhiteFideId "1503014"]
+[BlackFideId "623539"]
+[WhiteElo "2862"]
+[BlackElo "2784"]
+[Result "1/2-1/2"]
+[Round "05-02"]
+[Date "Fri Feb 12 2021"]
+[WhiteClock "0:00:42"]
+[BlackClock "0:08:52"]
+
+
+1. e4 {[%clk 0:15:20]}  c5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:27]}  d6 {[%clk 0:15:29]} 3. d4 {[%clk 0:15:36]}  cxd4 {[%clk 0:15:38]} 4. Nxd4 {[%clk 0:00:00]}  Nf6 {[%clk 0:15:47]} 5. Nc3 {[%clk 0:00:08]}  a6 {[%clk 0:15:57]} 6. Qd3 {[%clk 0:00:17]}  Nbd7 {[%clk 0:16:01]} 7. a4 {[%clk 0:00:25]}  Nc5 {[%clk 0:15:24]} 8. Qe3 {[%clk 0:15:16]}  e5 {[%clk 0:15:32]} 9. Nb3 {[%clk 0:15:03]}  Nxb3 {[%clk 0:15:34]} 10. cxb3 {[%clk 0:15:12]}  Be6 {[%clk 0:15:21]} 11. Bc4 {[%clk 0:15:20]}  Be7 {[%clk 0:15:30]} 12. O-O {[%clk 0:15:16]}  Rc8 {[%clk 0:15:26]} 13. Qe2 {[%clk 0:06:39]}  O-O {[%clk 0:14:25]} 14. Rd1 {[%clk 0:04:32]}  Qc7 {[%clk 0:13:20]} 15. Bg5 {[%clk 0:07:02]}  Bxc4 {[%clk 0:13:29]} 16. bxc4 {[%clk 0:06:18]}  Qxc4 {[%clk 0:13:39]} 17. Qf3 {[%clk 0:06:26]}  Qe6 {[%clk 0:13:26]} 18. Bxf6 {[%clk 0:06:29]}  Bxf6 {[%clk 0:13:05]} 19. Nd5 {[%clk 0:06:38]}  Rc6 {[%clk 0:12:55]} 20. Ra3 {[%clk 0:07:34]}  Rb8 {[%clk 0:12:19]} 21. g3 {[%clk 0:07:23]}  Bd8 {[%clk 0:12:20]} 22. a5 {[%clk 0:07:16]}  g6 {[%clk 0:12:23]} 23. Kg2 {[%clk 0:07:14]}  Kg7 {[%clk 0:12:25]} 24. h4 {[%clk 0:07:14]}  h5 {[%clk 0:12:34]} 25. b4 {[%clk 0:07:22]}  Rc4 {[%clk 0:12:15]} 26. Rc3 {[%clk 0:05:53]}  Rxc3 {[%clk 0:11:38]} 27. Qxc3 {[%clk 0:05:58]}  Rc8 {[%clk 0:10:58]} 28. Qd3 {[%clk 0:05:55]}  Rc6 {[%clk 0:11:01]} 29. Rd2 {[%clk 0:01:54]}  Qc8 {[%clk 0:10:54]} 30. Ne3 {[%clk 0:01:57]}  b6 {[%clk 0:10:36]} 31. axb6 {[%clk 0:03:48]}  Bxb6 {[%clk 0:10:44]} 32. Nd5 {[%clk 0:03:56]}  Bd8 {[%clk 0:10:12]} 33. Qe2 {[%clk 0:01:40]}  Rc4 {[%clk 0:08:58]} 34. Ra2 {[%clk 0:02:39]}  Qc6 {[%clk 0:09:07]} 35. Rxa6 {[%clk 0:00:00]}  Qxa6 {[%clk 0:08:50]} 36. Ne3 {[%clk 0:00:09]}  Rc6 {[%clk 0:07:46]} 37. b5 {[%clk 0:01:40]}  Qa4 {[%clk 0:07:46]} 38. bxc6 {[%clk 0:01:40]}  Qxe4+ {[%clk 0:06:45]} 39. Qf3 {[%clk 0:00:46]}  Qa4 {[%clk 0:06:54]} 40. Qd5 {[%clk 0:00:28]}  Bc7 {[%clk 0:07:00]} 41. Nc4 {[%clk 0:00:08]}  Qb3 {[%clk 0:06:55]} 42. Ne3 {[%clk 0:00:07]}  Qa4 {[%clk 0:07:04]} 43. Qc4 {[%clk 0:00:37]}  Qxc4 {[%clk 0:07:08]} 44. Nxc4 {[%clk 0:01:00]}  Kf6 {[%clk 0:07:14]} 45. Na3 {[%clk 0:01:08]}  Ke7 {[%clk 0:07:22]} 46. Nb5 {[%clk 0:01:16]}  Bb6 {[%clk 0:07:15]} 47. c7 {[%clk 0:01:25]}  Kd7 {[%clk 0:06:55]} 48. c8=Q+ {[%clk 0:01:32]}  Kxc8 {[%clk 0:07:04]} 49. Nxd6+ {[%clk 0:01:38]}  Kd7 {[%clk 0:07:14]} 50. Nxf7 {[%clk 0:01:48]}  Ke6 {[%clk 0:07:22]} 51. Ng5+ {[%clk 0:01:57]}  Kf6 {[%clk 0:07:29]} 52. Kf3 {[%clk 0:02:03]}  Kf5 {[%clk 0:07:58]} 53. Ne4 {[%clk 0:02:12]}  Ke6 {[%clk 0:08:07]} 54. Ke2 {[%clk 0:02:15]}  Bd8 {[%clk 0:08:10]} 55. Kd3 {[%clk 0:02:17]}  Kd5 {[%clk 0:08:14]} 56. f3 {[%clk 0:01:42]}  Ba5 {[%clk 0:08:15]} 57. Nf6+ {[%clk 0:01:49]}  Ke6 {[%clk 0:08:23]} 58. Ne4 {[%clk 0:00:25]}  Kd5 {[%clk 0:08:33]} 59. Nf6+ {[%clk 0:00:34]}  Ke6 {[%clk 0:08:42]} 60. Ne4 {[%clk 0:00:42]}  Kd5 {[%clk 0:08:52]} 1/2-1/2
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "Vachier-Lagrave, Maxime"]
+[WhiteFideId "1503014"]
+[BlackFideId "623539"]
+[WhiteElo "2862"]
+[BlackElo "2784"]
+[Result "0-1"]
+[Round "05-04"]
+[Date "Fri Feb 12 2021"]
+[WhiteClock "0:02:34"]
+[BlackClock "0:07:36"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:47]}  g6 {[%clk 0:15:48]} 3. Nc3 {[%clk 0:15:47]}  d5 {[%clk 0:15:48]} 4. cxd5 {[%clk 0:15:47]}  Nxd5 {[%clk 0:15:48]} 5. Bd2 {[%clk 0:15:57]}  Bg7 {[%clk 0:15:55]} 6. e4 {[%clk 0:16:05]}  Nb6 {[%clk 0:16:05]} 7. Be3 {[%clk 0:16:14]}  O-O {[%clk 0:16:11]} 8. a4 {[%clk 0:16:20]}  a5 {[%clk 0:15:50]} 9. h3 {[%clk 0:16:28]}  Nc6 {[%clk 0:15:54]} 10. Nf3 {[%clk 0:16:23]}  Nb4 {[%clk 0:15:52]} 11. Be2 {[%clk 0:12:35]}  c6 {[%clk 0:13:11]} 12. O-O {[%clk 0:11:32]}  Be6 {[%clk 0:13:19]} 13. Ng5 {[%clk 0:07:44]}  Bc4 {[%clk 0:12:45]} 14. Rc1 {[%clk 0:04:56]}  Rc8 {[%clk 0:08:39]} 15. b3 {[%clk 0:02:56]}  Bxe2 {[%clk 0:08:46]} 16. Nxe2 {[%clk 0:02:54]}  Nd7 {[%clk 0:08:53]} 17. f4 {[%clk 0:02:56]}  h6 {[%clk 0:08:35]} 18. Nf3 {[%clk 0:05:08]}  e6 {[%clk 0:08:35]} 19. Ne5 {[%clk 0:03:49]}  c5 {[%clk 0:07:20]} 20. Nxd7 {[%clk 0:03:41]}  Qxd7 {[%clk 0:07:29]} 21. dxc5 {[%clk 0:03:42]}  Qc6 {[%clk 0:07:37]} 22. e5 {[%clk 0:02:39]}  Rfd8 {[%clk 0:07:27]} 23. Nd4 {[%clk 0:02:48]}  Qe4 {[%clk 0:07:36]} 24. Qd3 {[%clk 0:02:34]} 0-1
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "Vachier-Lagrave, Maxime"]
+[WhiteFideId "1503014"]
+[BlackFideId "623539"]
+[WhiteElo "2862"]
+[BlackElo "2784"]
+[Result "1-0"]
+[Round "06-03"]
+[Date "Fri Feb 12 2021"]
+[WhiteClock "0:00:44"]
+[BlackClock "0:01:24"]
+
+
+1. d4 {[%clk 0:00:55]}  Nf6 {[%clk 0:01:30]} 2. c4 {[%clk 0:00:55]}  g6 {[%clk 0:01:30]} 3. Nc3 {[%clk 0:00:55]}  d5 {[%clk 0:01:30]} 4. cxd5 {[%clk 0:00:55]}  Nxd5 {[%clk 0:01:30]} 5. Bd2 {[%clk 0:00:55]}  Bg7 {[%clk 0:01:30]} 6. e4 {[%clk 0:00:55]}  Nb6 {[%clk 0:01:30]} 7. Be3 {[%clk 0:00:55]}  O-O {[%clk 0:01:30]} 8. a4 {[%clk 0:00:55]}  a5 {[%clk 0:01:30]} 9. h3 {[%clk 0:00:55]}  Nc6 {[%clk 0:01:30]} 10. Nf3 {[%clk 0:00:55]}  f5 {[%clk 0:01:30]} 11. exf5 {[%clk 0:00:55]}  Bxf5 {[%clk 0:01:30]} 12. Be2 {[%clk 0:00:55]}  Nb4 {[%clk 0:01:30]} 13. Rc1 {[%clk 0:00:55]}  c6 {[%clk 0:01:30]} 14. O-O {[%clk 0:00:55]}  N6d5 {[%clk 0:01:30]} 15. Bd2 {[%clk 0:00:55]}  Qd6 {[%clk 0:01:30]} 16. Re1 {[%clk 0:00:55]}  Kh8 {[%clk 0:01:30]} 17. Nxd5 {[%clk 0:00:55]}  Nxd5 {[%clk 0:01:30]} 18. Bc4 {[%clk 0:00:55]}  Nb4 {[%clk 0:01:30]} 19. Qb3 {[%clk 0:00:55]}  Rad8 {[%clk 0:01:30]} 20. Bg5 {[%clk 0:00:55]}  Bf6 {[%clk 0:01:30]} 21. Bh6 {[%clk 0:00:55]}  Bg7 {[%clk 0:01:30]} 22. Qe3 {[%clk 0:00:55]}  Rde8 {[%clk 0:01:30]} 23. Bf4 {[%clk 0:00:55]}  Nd5 {[%clk 0:01:30]} 24. Bxd5 {[%clk 0:00:55]}  Qxd5 {[%clk 0:01:30]} 25. Rc5 {[%clk 0:00:55]}  Qd8 {[%clk 0:01:30]} 26. Be5 {[%clk 0:00:55]}  Bc8 {[%clk 0:01:30]} 27. Qh6 {[%clk 0:00:55]}  Rf6 {[%clk 0:01:30]} 28. Bxf6 {[%clk 0:00:55]}  exf6 {[%clk 0:01:30]} 29. Rxe8+ {[%clk 0:00:55]}  Qxe8 {[%clk 0:01:30]} 30. Qe3 {[%clk 0:00:55]}  Qd8 {[%clk 0:01:30]} 31. Qe1 {[%clk 0:00:55]}  Bf8 {[%clk 0:01:30]} 32. Rxa5 {[%clk 0:00:55]}  Bd7 {[%clk 0:01:30]} 33. Ra7 {[%clk 0:00:55]}  Qb8 {[%clk 0:01:30]} 34. Qa5 {[%clk 0:00:55]}  Kg7 {[%clk 0:01:30]} 35. Ra8 {[%clk 0:00:55]}  Qf4 {[%clk 0:01:30]} 36. Qd8 {[%clk 0:00:55]}  Qc1+ {[%clk 0:01:30]} 37. Kh2 {[%clk 0:00:55]}  Qf4+ {[%clk 0:01:30]} 38. Kh1 {[%clk 0:00:55]}  Qd6 {[%clk 0:01:30]} 39. Qb8 {[%clk 0:00:45]}  Qb4 {[%clk 0:01:24]} 40. Ra7 {[%clk 0:00:44]} 1-0
+
+
+
+[Event "2021-champions-chess-tour-opera-euro-rapid-knockout"]
+[White "Carlsen, Magnus"]
+[Black "So, Wesley"]
+[WhiteFideId "1503014"]
+[BlackFideId "5202213"]
+[WhiteElo "2862"]
+[BlackElo "2770"]
+[Result "1/2-1/2"]
+[Round "07-03"]
+[Date "Sat Feb 13 2021"]
+[WhiteClock "0:19:22"]
+[BlackClock "0:19:14"]
+
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:27]}  Nc6 {[%clk 0:15:29]} 3. Bb5 {[%clk 0:15:36]}  Nf6 {[%clk 0:15:38]} 4. O-O {[%clk 0:15:45]}  Nxe4 {[%clk 0:00:00]} 5. Re1 {[%clk 0:15:54]}  Nd6 {[%clk 0:00:08]} 6. Nxe5 {[%clk 0:16:03]}  Be7 {[%clk 0:00:17]} 7. Bf1 {[%clk 0:16:12]}  Nxe5 {[%clk 0:00:26]} 8. Rxe5 {[%clk 0:16:19]}  O-O {[%clk 0:16:34]} 9. d4 {[%clk 0:16:40]}  Bf6 {[%clk 0:16:34]} 10. Re1 {[%clk 0:16:40]}  Re8 {[%clk 0:16:42]} 11. c3 {[%clk 0:16:47]}  Rxe1 {[%clk 0:16:50]} 12. Qxe1 {[%clk 0:16:49]}  Ne8 {[%clk 0:16:59]} 13. Bf4 {[%clk 0:16:58]}  d5 {[%clk 0:17:06]} 14. Bd3 {[%clk 0:17:07]}  g6 {[%clk 0:17:15]} 15. Nd2 {[%clk 0:17:16]}  Ng7 {[%clk 0:17:24]} 16. Qe2 {[%clk 0:17:23]}  c6 {[%clk 0:17:33]} 17. Re1 {[%clk 0:17:29]}  Bf5 {[%clk 0:17:42]} 18. Bxf5 {[%clk 0:17:38]}  Nxf5 {[%clk 0:17:31]} 19. Nf3 {[%clk 0:17:47]}  Ng7 {[%clk 0:17:40]} 20. Be5 {[%clk 0:17:55]}  Bxe5 {[%clk 0:17:49]} 21. Nxe5 {[%clk 0:18:01]}  Qd6 {[%clk 0:17:57]} 22. Nd3 {[%clk 0:18:07]}  Re8 {[%clk 0:18:04]} 23. Qd2 {[%clk 0:18:16]}  f6 {[%clk 0:18:49]} 24. Rxe8+ {[%clk 0:18:46]}  Nxe8 {[%clk 0:18:49]} 25. Qe3 {[%clk 0:18:46]}  Kf7 {[%clk 0:18:49]} 26. Qh6 {[%clk 0:18:55]}  Kg8 {[%clk 0:18:57]} 27. Qe3 {[%clk 0:19:04]}  Kf7 {[%clk 0:19:05]} 28. Qh6 {[%clk 0:19:13]}  Kg8 {[%clk 0:19:14]} 29. Qe3 {[%clk 0:19:22]} 1/2-1/2
+
+
+
+[Event "2021-magnus-carlsen-invitational-prelims"]
+[White "Carlsen, Magnus"]
+[Black "Pichot, Alan"]
+[WhiteFideId "1503014"]
+[BlackFideId "110973"]
+[WhiteElo "2847"]
+[BlackElo "2630"]
+[Result "1-0"]
+[Round "11"]
+[Date "Mon Mar 15 2021"]
+[WhiteClock "0:08:31"]
+[BlackClock "0:00:42"]
+
+
+1. e4 {[%clk 0:15:20]}  c5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:26]}  e6 {[%clk 0:15:26]} 3. d4 {[%clk 0:14:30]}  cxd4 {[%clk 0:15:32]} 4. Nxd4 {[%clk 0:13:29]}  Nc6 {[%clk 0:15:39]} 5. Nc3 {[%clk 0:13:34]}  Qc7 {[%clk 0:15:44]} 6. g3 {[%clk 0:13:40]}  a6 {[%clk 0:15:48]} 7. Bg2 {[%clk 0:14:18]}  Nf6 {[%clk 0:15:34]} 8. O-O {[%clk 0:14:27]}  Nxd4 {[%clk 0:15:36]} 9. Qxd4 {[%clk 0:14:32]}  Bc5 {[%clk 0:15:43]} 10. Bf4 {[%clk 0:14:30]}  d6 {[%clk 0:15:46]} 11. Qd2 {[%clk 0:14:38]}  h6 {[%clk 0:15:50]} 12. Rad1 {[%clk 0:14:30]}  e5 {[%clk 0:15:56]} 13. Be3 {[%clk 0:14:39]}  Bxe3 {[%clk 0:15:49]} 14. fxe3 {[%clk 0:14:48]}  Be6 {[%clk 0:15:56]} 15. Qxd6 {[%clk 0:14:57]}  Rc8 {[%clk 0:16:03]} 16. Rf2 {[%clk 0:12:37]}  Qxd6 {[%clk 0:10:02]} 17. Rxd6 {[%clk 0:07:36]}  Rxc3 {[%clk 0:07:56]} 18. bxc3 {[%clk 0:11:45]}  Nd7 {[%clk 0:08:04]} 19. a4 {[%clk 0:11:53]}  Ke7 {[%clk 0:08:07]} 20. Rd1 {[%clk 0:12:02]}  Rc8 {[%clk 0:07:51]} 21. Rb1 {[%clk 0:12:08]}  b6 {[%clk 0:06:31]} 22. Bf1 {[%clk 0:11:03]}  a5 {[%clk 0:06:38]} 23. Ba6 {[%clk 0:07:56]}  Rxc3 {[%clk 0:06:33]} 24. Bb7 {[%clk 0:08:04]}  Kd6 {[%clk 0:04:50]} 25. Rd1+ {[%clk 0:08:56]}  Ke7 {[%clk 0:03:26]} 26. Rfd2 {[%clk 0:08:37]}  Nc5 {[%clk 0:03:13]} 27. Bc6 {[%clk 0:08:39]}  Rxe3 {[%clk 0:02:29]} 28. Rb1 {[%clk 0:06:39]}  Nxe4 {[%clk 0:01:36]} 29. Rd3 {[%clk 0:06:52]}  Rxd3 {[%clk 0:00:52]} 30. cxd3 {[%clk 0:07:00]}  Nc5 {[%clk 0:00:42]} 31. Rxb6 {[%clk 0:07:07]}  Nxd3 {[%clk 0:00:39]} 32. Ra6 {[%clk 0:07:59]}  f5 {[%clk 0:00:21]} 33. Rxa5 {[%clk 0:08:08]}  e4 {[%clk 0:00:29]} 34. Bb5 {[%clk 0:08:17]}  Nb4 {[%clk 0:00:25]} 35. Ra7+ {[%clk 0:08:19]}  Kf6 {[%clk 0:00:34]} 36. a5 {[%clk 0:08:27]}  g5 {[%clk 0:00:33]} 37. a6 {[%clk 0:08:40]}  f4 {[%clk 0:00:42]} 38. Rh7 {[%clk 0:08:31]}  Bd5 {[%clk 0:00:42]} 39. Rxh6+ {[%clk 0:08:31]}  Ke5 {[%clk 0:00:42]} 40. gxf4+ {[%clk 0:08:31]}  gxf4 {[%clk 0:00:42]} 41. a7 {[%clk 0:08:31]}  Bb7 {[%clk 0:00:42]} 42. Rb6 {[%clk 0:08:31]} 1-0
+
+
+
+[Event "2021-magnus-carlsen-invitational-prelims"]
+[White "Carlsen, Magnus"]
+[Black "Aronian, Levon"]
+[WhiteFideId "1503014"]
+[BlackFideId "13300474"]
+[WhiteElo "2847"]
+[BlackElo "2781"]
+[Result "1/2-1/2"]
+[Round "13"]
+[Date "Mon Mar 15 2021"]
+[WhiteClock "0:05:22"]
+[BlackClock "0:01:31"]
+
+
+1. d4 {[%clk 0:15:20]}  Nf6 {[%clk 0:15:20]} 2. c4 {[%clk 0:15:22]}  e6 {[%clk 0:15:28]} 3. Nf3 {[%clk 0:15:30]}  d5 {[%clk 0:15:36]} 4. Nc3 {[%clk 0:15:39]}  Bb4 {[%clk 0:15:43]} 5. cxd5 {[%clk 0:15:09]}  exd5 {[%clk 0:15:51]} 6. Bf4 {[%clk 0:15:17]}  O-O {[%clk 0:16:00]} 7. e3 {[%clk 0:15:12]}  c5 {[%clk 0:16:08]} 8. dxc5 {[%clk 0:14:08]}  Qa5 {[%clk 0:16:14]} 9. Nd2 {[%clk 0:10:30]}  Nc6 {[%clk 0:13:35]} 10. Nb3 {[%clk 0:10:27]}  Bxc3+ {[%clk 0:12:40]} 11. bxc3 {[%clk 0:06:29]}  Qxc3+ {[%clk 0:12:49]} 12. Qd2 {[%clk 0:06:37]}  Qxd2+ {[%clk 0:12:26]} 13. Kxd2 {[%clk 0:10:36]}  Ne4+ {[%clk 0:10:36]} 14. Ke1 {[%clk 0:09:23]}  g5 {[%clk 0:09:41]} 15. Bc7 {[%clk 0:09:21]}  Be6 {[%clk 0:08:58]} 16. f3 {[%clk 0:07:37]}  Rac8 {[%clk 0:08:59]} 17. Bg3 {[%clk 0:07:44]}  Nxg3 {[%clk 0:09:07]} 18. hxg3 {[%clk 0:07:55]}  Kg7 {[%clk 0:09:15]} 19. Bd3 {[%clk 0:07:38]}  h6 {[%clk 0:09:23]} 20. Kd2 {[%clk 0:07:28]}  Ne5 {[%clk 0:08:00]} 21. Rhc1 {[%clk 0:07:41]}  Rfe8 {[%clk 0:05:41]} 22. Nd4 {[%clk 0:06:18]}  Nc4+ {[%clk 0:04:40]} 23. Bxc4 {[%clk 0:06:27]}  dxc4 {[%clk 0:02:45]} 24. Nxe6+ {[%clk 0:06:32]}  Rxe6 {[%clk 0:04:57]} 25. Rxc4 {[%clk 0:06:40]}  b6 {[%clk 0:04:25]} 26. Rac1 {[%clk 0:06:49]}  Rec6 {[%clk 0:04:28]} 27. Ra4 {[%clk 0:05:47]}  Rxc5 {[%clk 0:02:37]} 28. Rxc5 {[%clk 0:06:56]}  Rxc5 {[%clk 0:02:37]} 29. Rxa7 {[%clk 0:06:56]}  Rb5 {[%clk 0:02:37]} 30. Rc7 {[%clk 0:06:56]}  Ra5 {[%clk 0:02:37]} 31. Rc2 {[%clk 0:06:56]}  Ra3 {[%clk 0:02:37]} 32. g4 {[%clk 0:06:56]}  b5 {[%clk 0:02:37]} 33. Rb2 {[%clk 0:06:56]}  b4 {[%clk 0:02:37]} 34. e4 {[%clk 0:06:33]}  Kf6 {[%clk 0:00:50]} 35. Kc2 {[%clk 0:06:42]}  Rc3+ {[%clk 0:00:38]} 36. Kb1 {[%clk 0:06:50]}  Rc4 {[%clk 0:00:47]} 37. Rd2 {[%clk 0:06:50]}  Ke5 {[%clk 0:00:45]} 38. Rd5+ {[%clk 0:06:52]}  Kf4 {[%clk 0:00:53]} 39. Rf5+ {[%clk 0:06:57]}  Kg3 {[%clk 0:01:01]} 40. Rxf7 {[%clk 0:07:05]}  Rc3 {[%clk 0:00:43]} 41. Rf6 {[%clk 0:06:39]}  Kxg2 {[%clk 0:00:25]} 42. e5 {[%clk 0:06:46]}  Re3 {[%clk 0:00:26]} 43. e6 {[%clk 0:06:55]}  Re2 {[%clk 0:00:16]} 44. Kc1 {[%clk 0:05:08]}  Rxa2 {[%clk 0:00:19]} 45. Kd1 {[%clk 0:05:17]}  b3 {[%clk 0:00:17]} 46. e7 {[%clk 0:05:17]}  b2 {[%clk 0:00:14]} 47. Kc2 {[%clk 0:05:02]}  b1=Q+ {[%clk 0:00:13]} 48. Kxb1 {[%clk 0:05:11]}  Re2 {[%clk 0:00:23]} 49. Rf7 {[%clk 0:05:20]}  Kf2 {[%clk 0:00:22]} 50. Kc1 {[%clk 0:05:41]}  Ke1 {[%clk 0:00:29]} 51. Rh7 {[%clk 0:05:46]}  Re6 {[%clk 0:00:18]} 52. Kc2 {[%clk 0:05:41]}  Ke2 {[%clk 0:00:26]} 53. Rf7 {[%clk 0:05:41]}  Re3 {[%clk 0:00:33]} 54. Kc1 {[%clk 0:05:12]}  Ke1 {[%clk 0:00:41]} 55. Kb1 {[%clk 0:05:11]}  Ke2 {[%clk 0:00:38]} 56. Kc2 {[%clk 0:05:20]}  Ke1 {[%clk 0:00:47]} 57. Rh7 {[%clk 0:05:02]}  Ke2 {[%clk 0:00:53]} 58. Rxh6 {[%clk 0:05:02]}  Rxe7 {[%clk 0:01:00]} 59. Rf6 {[%clk 0:05:12]}  Re3 {[%clk 0:00:55]} 60. Rf5 {[%clk 0:05:21]}  Rxf3 {[%clk 0:01:00]} 61. Rxg5 {[%clk 0:05:30]}  Rg3 {[%clk 0:00:59]} 62. Re5+ {[%clk 0:05:39]}  Kf3 {[%clk 0:01:04]} 63. g5 {[%clk 0:05:09]}  Kf4 {[%clk 0:01:13]} 64. Rc5 {[%clk 0:05:17]}  Rxg5 {[%clk 0:01:22]} 65. Rxg5 {[%clk 0:05:22]}  Kxg5 {[%clk 0:01:31]} 1/2-1/2
+
+
+
+[Event "2021-magnus-carlsen-invitational-knockout"]
+[White "Carlsen, Magnus"]
+[Black "So, Wesley"]
+[WhiteFideId "1503014"]
+[BlackFideId "5202213"]
+[WhiteElo "2847"]
+[BlackElo "2770"]
+[Result "1-0"]
+[Round "06-01"]
+[Date "Sat Mar 20 2021"]
+[WhiteClock "0:07:19"]
+[BlackClock "0:01:02"]
+
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:28]}  Nf6 {[%clk 0:15:28]} 3. Nc3 {[%clk 0:15:03]}  Nc6 {[%clk 0:15:34]} 4. a4 {[%clk 0:15:12]}  Bb4 {[%clk 0:15:35]} 5. Bd3 {[%clk 0:15:18]}  d6 {[%clk 0:15:34]} 6. O-O {[%clk 0:14:04]}  O-O {[%clk 0:15:40]} 7. Nd5 {[%clk 0:14:10]}  Bc5 {[%clk 0:15:23]} 8. c3 {[%clk 0:14:10]}  a5 {[%clk 0:15:31]} 9. Bc2 {[%clk 0:13:57]}  Nxd5 {[%clk 0:15:36]} 10. exd5 {[%clk 0:14:05]}  Ne7 {[%clk 0:13:04]} 11. Ng5 {[%clk 0:13:02]}  h6 {[%clk 0:12:52]} 12. d4 {[%clk 0:12:28]}  Bb6 {[%clk 0:15:12]} 13. Nh7 {[%clk 0:12:18]}  Re8 {[%clk 0:15:19]} 14. Nf6+ {[%clk 0:12:26]}  gxf6 {[%clk 0:15:25]} 15. Qh5 {[%clk 0:12:31]}  e4 {[%clk 0:10:14]} 16. Re1 {[%clk 0:11:52]}  f5 {[%clk 0:10:02]} 17. Bxh6 {[%clk 0:10:59]}  Nxd5 {[%clk 0:03:55]} 18. Bg5 {[%clk 0:10:40]}  f6 {[%clk 0:04:01]} 19. Bb3 {[%clk 0:10:17]}  c6 {[%clk 0:03:58]} 20. Re3 {[%clk 0:07:18]}  Kf8 {[%clk 0:01:02]} 21. Qg6 {[%clk 0:07:19]}  f4 {[%clk 0:01:02]} 22. Bh6+ {[%clk 0:07:19]}  Ke7 {[%clk 0:01:02]} 23. Qh7+ {[%clk 0:07:19]} 1-0
+
+
+
+[Event "2021-magnus-carlsen-invitational-knockout"]
+[White "Carlsen, Magnus"]
+[Black "So, Wesley"]
+[WhiteFideId "1503014"]
+[BlackFideId "5202213"]
+[WhiteElo "2847"]
+[BlackElo "2770"]
+[Result "1-0"]
+[Round "06-01"]
+[Date "Sat Mar 20 2021"]
+[WhiteClock "0:07:19"]
+[BlackClock "0:01:02"]
+
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:28]}  Nf6 {[%clk 0:15:28]} 3. Nc3 {[%clk 0:15:03]}  Nc6 {[%clk 0:15:34]} 4. a4 {[%clk 0:15:12]}  Bb4 {[%clk 0:15:35]} 5. Bd3 {[%clk 0:15:18]}  d6 {[%clk 0:15:34]} 6. O-O {[%clk 0:14:04]}  O-O {[%clk 0:15:40]} 7. Nd5 {[%clk 0:14:10]}  Bc5 {[%clk 0:15:23]} 8. c3 {[%clk 0:14:10]}  a5 {[%clk 0:15:31]} 9. Bc2 {[%clk 0:13:57]}  Nxd5 {[%clk 0:15:36]} 10. exd5 {[%clk 0:14:05]}  Ne7 {[%clk 0:13:04]} 11. Ng5 {[%clk 0:13:02]}  h6 {[%clk 0:12:52]} 12. d4 {[%clk 0:12:28]}  Bb6 {[%clk 0:15:12]} 13. Nh7 {[%clk 0:12:18]}  Re8 {[%clk 0:15:19]} 14. Nf6+ {[%clk 0:12:26]}  gxf6 {[%clk 0:15:25]} 15. Qh5 {[%clk 0:12:31]}  e4 {[%clk 0:10:14]} 16. Re1 {[%clk 0:11:52]}  f5 {[%clk 0:10:02]} 17. Bxh6 {[%clk 0:10:59]}  Nxd5 {[%clk 0:03:55]} 18. Bg5 {[%clk 0:10:40]}  f6 {[%clk 0:04:01]} 19. Bb3 {[%clk 0:10:17]}  c6 {[%clk 0:03:58]} 20. Re3 {[%clk 0:07:18]}  Kf8 {[%clk 0:01:02]} 21. Qg6 {[%clk 0:07:19]}  f4 {[%clk 0:01:02]} 22. Bh6+ {[%clk 0:07:19]}  Ke7 {[%clk 0:01:02]} 23. Qh7+ {[%clk 0:07:19]} 1-0
+
+
+
+[Event "New in Chess Classic Prelims 2021"]
+[White "Carlsen, Magnus"]
+[Black "Jones, Gawain C B"]
+[WhiteFideId "1503014"]
+[BlackFideId "409561"]
+[WhiteElo "2847"]
+[BlackElo "2670"]
+[Result "1-0"]
+[Round "09"]
+[TimeControl "900+10"]
+[Date "Sun Apr 25 2021"]
+[WhiteClock "0:08:13"]
+[BlackClock "0:00:24"]
+
+1. e4 {[%clk 0:15:20]}  c5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:26]}  d6 {[%clk 0:15:29]} 3. d4 {[%clk 0:15:26]}  cxd4 {[%clk 0:15:35]} 4. Nxd4 {[%clk 0:15:36]}  Nf6 {[%clk 0:15:43]} 5. Nc3 {[%clk 0:15:43]}  g6 {[%clk 0:00:00]} 6. Be3 {[%clk 0:15:51]}  Bg7 {[%clk 0:00:08]} 7. Qd2 {[%clk 0:15:57]}  Ng4 {[%clk 0:00:00]} 8. Bg5 {[%clk 0:16:03]}  h6 {[%clk 0:00:00]} 9. Bh4 {[%clk 0:16:08]}  Nc6 {[%clk 0:00:00]} 10. Nb3 {[%clk 0:16:14]}  Nf6 {[%clk 0:13:14]} 11. f3 {[%clk 0:14:44]}  a6 {[%clk 0:12:25]} 12. Be2 {[%clk 0:14:36]}  O-O {[%clk 0:12:30]} 13. Bf2 {[%clk 0:14:31]}  Na5 {[%clk 0:11:22]} 14. O-O {[%clk 0:13:49]}  Be6 {[%clk 0:11:01]} 15. Nd5 {[%clk 0:13:52]}  Nxb3 {[%clk 0:11:08]} 16. axb3 {[%clk 0:13:59]}  Nxd5 {[%clk 0:11:01]} 17. exd5 {[%clk 0:14:07]}  Bf5 {[%clk 0:11:09]} 18. c3 {[%clk 0:14:01]}  e5 {[%clk 0:10:48]} 19. dxe6 {[%clk 0:14:00]}  Bxe6 {[%clk 0:10:56]} 20. b4 {[%clk 0:14:09]}  Re8 {[%clk 0:09:52]} 21. Rfe1 {[%clk 0:14:14]}  Qd7 {[%clk 0:09:24]} 22. Bd4 {[%clk 0:14:06]}  Rac8 {[%clk 0:07:01]} 23. Bxg7 {[%clk 0:12:27]}  Kxg7 {[%clk 0:04:40]} 24. Rad1 {[%clk 0:12:11]}  Bb3 {[%clk 0:07:57]} 25. Qd4+ {[%clk 0:11:36]}  Kg8 {[%clk 0:07:54]} 26. Ra1 {[%clk 0:10:48]}  Re5 {[%clk 0:07:26]} 27. f4 {[%clk 0:08:52]}  Rd5 {[%clk 0:07:32]} 28. Qf2 {[%clk 0:08:50]}  h5 {[%clk 0:04:03]} 29. Bf3 {[%clk 0:08:54]}  Rb5 {[%clk 0:04:05]} 30. Be4 {[%clk 0:08:24]}  Be6 {[%clk 0:04:16]} 31. Rad1 {[%clk 0:08:09]}  Qc7 {[%clk 0:04:08]} 32. Bxg6 {[%clk 0:07:53]}  Bg4 {[%clk 0:03:26]} 33. Bd3 {[%clk 0:08:00]}  Bxd1 {[%clk 0:02:38]} 34. Bxb5 {[%clk 0:08:07]}  axb5 {[%clk 0:02:45]} 35. Rxd1 {[%clk 0:08:14]}  Re8 {[%clk 0:02:52]} 36. Rd5 {[%clk 0:07:37]}  Qc4 {[%clk 0:00:03]} 37. Rxh5 {[%clk 0:07:32]}  Qd3 {[%clk 0:00:00]} 38. Qg3+ {[%clk 0:07:39]}  Qxg3 {[%clk 0:00:08]} 39. hxg3 {[%clk 0:07:50]}  Re2 {[%clk 0:00:13]} 40. Rxb5 {[%clk 0:07:57]}  Rxb2 {[%clk 0:00:22]} 41. Rxb7 {[%clk 0:08:05]}  d5 {[%clk 0:00:24]} 42. Rd7 {[%clk 0:08:13]} 1-0
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Prelims 2021"]
+[White "Carlsen, Magnus"]
+[Black "Nepomniachtchi, Ian"]
+[WhiteFideId "1503014"]
+[BlackFideId "4168119"]
+[WhiteElo "2847"]
+[BlackElo "2792"]
+[Result "1/2-1/2"]
+[Round "02"]
+[TimeControl "900+10"]
+[Date "Sun May 23 2021"]
+[WhiteClock "0:00:41"]
+[BlackClock "0:05:02"]
+
+1. e4 {[%clk 0:15:20]}  c5 {[%clk 0:15:20]} 2. Nc3 {[%clk 0:15:28]}  e6 {[%clk 0:15:22]} 3. Nf3 {[%clk 0:15:31]}  Nc6 {[%clk 0:15:28]} 4. d4 {[%clk 0:15:35]}  cxd4 {[%clk 0:15:37]} 5. Nxd4 {[%clk 0:15:44]}  Qc7 {[%clk 0:00:00]} 6. Be3 {[%clk 0:14:59]}  a6 {[%clk 0:14:58]} 7. Be2 {[%clk 0:14:34]}  b5 {[%clk 0:14:51]} 8. Nxc6 {[%clk 0:13:27]}  Qxc6 {[%clk 0:14:59]} 9. e5 {[%clk 0:13:18]}  Bb7 {[%clk 0:15:05]} 10. Bf3 {[%clk 0:13:26]}  Qc7 {[%clk 0:15:13]} 11. Bxb7 {[%clk 0:13:04]}  Qxb7 {[%clk 0:15:59]} 12. Qd3 {[%clk 0:13:13]}  Ne7 {[%clk 0:16:00]} 13. Bc5 {[%clk 0:09:39]}  Qxg2 {[%clk 0:11:58]} 14. O-O-O {[%clk 0:09:12]}  Qc6 {[%clk 0:12:05]} 15. Ne4 {[%clk 0:09:10]}  Nf5 {[%clk 0:12:08]} 16. Bxf8 {[%clk 0:09:02]}  Rxf8 {[%clk 0:10:06]} 17. Rhe1 {[%clk 0:08:25]}  Rc8 {[%clk 0:12:34]} 18. Kb1 {[%clk 0:08:24]}  f6 {[%clk 0:11:44]} 19. f4 {[%clk 0:06:02]}  fxe5 {[%clk 0:09:12]} 20. fxe5 {[%clk 0:06:08]}  h6 {[%clk 0:09:19]} 21. Rg1 {[%clk 0:05:40]}  Qd5 {[%clk 0:07:11]} 22. Nd6+ {[%clk 0:05:43]}  Ke7 {[%clk 0:06:38]} 23. Nxc8+ {[%clk 0:05:05]}  Rxc8 {[%clk 0:06:45]} 24. Qxd5 {[%clk 0:05:09]}  exd5 {[%clk 0:05:59]} 25. Rxd5 {[%clk 0:04:38]}  Ke6 {[%clk 0:05:56]} 26. Rd3 {[%clk 0:04:39]}  g5 {[%clk 0:06:04]} 27. a4 {[%clk 0:04:32]}  bxa4 {[%clk 0:05:38]} 28. Rg4 {[%clk 0:04:39]}  Rc6 {[%clk 0:06:38]} 29. Rxa4 {[%clk 0:04:47]}  h5 {[%clk 0:06:46]} 30. Rda3 {[%clk 0:04:48]}  g4 {[%clk 0:06:46]} 31. Kc1 {[%clk 0:04:05]}  Kxe5 {[%clk 0:06:51]} 32. Rxa6 {[%clk 0:04:08]}  h4 {[%clk 0:06:48]} 33. Rxc6 {[%clk 0:03:02]}  dxc6 {[%clk 0:05:39]} 34. Kd1 {[%clk 0:02:43]}  h3 {[%clk 0:05:15]} 35. Ke2 {[%clk 0:00:59]}  g3 {[%clk 0:04:48]} 36. Kf3 {[%clk 0:01:01]}  gxh2 {[%clk 0:04:44]} 37. Ra1 {[%clk 0:01:07]}  Nd4+ {[%clk 0:04:41]} 38. Kg3 {[%clk 0:01:16]}  Nxc2 {[%clk 0:04:48]} 39. Rc1 {[%clk 0:01:24]}  Nb4 {[%clk 0:04:40]} 40. Kxh2 {[%clk 0:01:31]}  Kd4 {[%clk 0:04:29]} 41. b3 {[%clk 0:01:29]}  c5 {[%clk 0:04:36]} 42. Kxh3 {[%clk 0:01:32]}  Nc6 {[%clk 0:04:44]} 43. Rc4+ {[%clk 0:01:34]}  Kd5 {[%clk 0:04:51]} 44. Kg2 {[%clk 0:01:43]}  Ne5 {[%clk 0:04:38]} 45. Rc1 {[%clk 0:01:41]}  c4 {[%clk 0:04:45]} 46. bxc4+ {[%clk 0:01:43]}  Nxc4 {[%clk 0:04:53]} 47. Rxc4 {[%clk 0:00:41]}  Kxc4 {[%clk 0:05:02]} 1/2-1/2
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Prelims 2021"]
+[White "Carlsen, Magnus"]
+[Black "Nakamura, Hikaru"]
+[WhiteFideId "1503014"]
+[BlackFideId "2016192"]
+[WhiteElo "2881"]
+[BlackElo "2829"]
+[Result "1/2-1/2"]
+[Round "11"]
+[TimeControl "900+10"]
+[Date "Tue May 25 2021"]
+[WhiteClock "0:00:43"]
+[BlackClock "0:00:37"]
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:26]}  Nc6 {[%clk 0:15:29]} 3. Bc4 {[%clk 0:15:34]}  Bc5 {[%clk 0:15:36]} 4. c3 {[%clk 0:15:43]}  Nf6 {[%clk 0:15:45]} 5. d3 {[%clk 0:15:52]}  O-O {[%clk 0:15:53]} 6. Nbd2 {[%clk 0:00:00]}  d5 {[%clk 0:15:51]} 7. exd5 {[%clk 0:00:08]}  Nxd5 {[%clk 0:15:47]} 8. Ne4 {[%clk 0:00:17]}  Be7 {[%clk 0:16:06]} 9. O-O {[%clk 0:16:26]}  Nb6 {[%clk 0:15:09]} 10. Bb3 {[%clk 0:15:34]}  Bf5 {[%clk 0:14:47]} 11. a4 {[%clk 0:14:59]}  a5 {[%clk 0:14:24]} 12. Be3 {[%clk 0:15:19]}  Kh8 {[%clk 0:12:41]} 13. Re1 {[%clk 0:10:55]}  Bg6 {[%clk 0:12:46]} 14. Ng3 {[%clk 0:05:25]}  Nd7 {[%clk 0:11:57]} 15. d4 {[%clk 0:05:27]}  f5 {[%clk 0:09:36]} 16. d5 {[%clk 0:04:46]}  Ncb8 {[%clk 0:09:43]} 17. Bc1 {[%clk 0:04:11]}  f4 {[%clk 0:07:33]} 18. Ne4 {[%clk 0:03:25]}  Na6 {[%clk 0:07:31]} 19. Bc2 {[%clk 0:04:04]}  Re8 {[%clk 0:05:57]} 20. b3 {[%clk 0:02:04]}  Bf6 {[%clk 0:04:18]} 21. Ba3 {[%clk 0:02:11]}  Nb6 {[%clk 0:03:41]} 22. d6 {[%clk 0:03:09]}  c6 {[%clk 0:03:33]} 23. Qe2 {[%clk 0:02:49]}  Nd7 {[%clk 0:03:01]} 24. Rad1 {[%clk 0:02:46]}  Bh5 {[%clk 0:02:54]} 25. b4 {[%clk 0:02:24]}  axb4 {[%clk 0:02:21]} 26. cxb4 {[%clk 0:01:57]}  Qb6 {[%clk 0:01:58]} 27. b5 {[%clk 0:02:02]}  cxb5 {[%clk 0:01:54]} 28. axb5 {[%clk 0:02:05]}  Nab8 {[%clk 0:01:50]} 29. Bb4 {[%clk 0:02:11]}  Nf8 {[%clk 0:01:39]} 30. Nc3 {[%clk 0:02:04]}  Qd8 {[%clk 0:01:34]} 31. Nd5 {[%clk 0:02:07]}  Ra2 {[%clk 0:01:29]} 32. Qc4 {[%clk 0:02:04]}  Rxc2 {[%clk 0:01:12]} 33. Qxc2 {[%clk 0:01:58]}  Bxf3 {[%clk 0:01:16]} 34. gxf3 {[%clk 0:02:06]}  Qd7 {[%clk 0:01:01]} 35. Nc7 {[%clk 0:01:00]}  Rd8 {[%clk 0:01:00]} 36. Qc4 {[%clk 0:01:04]}  Qh3 {[%clk 0:01:27]} 37. Rd3 {[%clk 0:00:57]}  Nbd7 {[%clk 0:01:19]} 38. Qf7 {[%clk 0:00:42]}  Bh4 {[%clk 0:00:57]} 39. Re2 {[%clk 0:00:34]}  Nf6 {[%clk 0:00:51]} 40. Bc3 {[%clk 0:00:15]}  Qf5 {[%clk 0:00:18]} 41. Rd1 {[%clk 0:00:12]}  Qh3 {[%clk 0:00:27]} 42. Rd3 {[%clk 0:00:14]}  Qf5 {[%clk 0:00:36]} 43. Red2 {[%clk 0:00:28]}  e4 {[%clk 0:00:40]} 44. Bxf6 {[%clk 0:00:37]}  Bxf6 {[%clk 0:00:49]} 45. Rd5 {[%clk 0:00:20]}  Qc8 {[%clk 0:00:58]} 46. b6 {[%clk 0:00:19]}  e3 {[%clk 0:00:58]} 47. d7 {[%clk 0:00:28]}  Nxd7 {[%clk 0:01:06]} 48. Rd1 {[%clk 0:00:28]}  e2 {[%clk 0:01:10]} 49. Re1 {[%clk 0:00:37]}  Ne5 {[%clk 0:01:14]} 50. Rxe5 {[%clk 0:00:42]}  Bxe5 {[%clk 0:01:21]} 51. Kg2 {[%clk 0:00:43]}  Rf8 {[%clk 0:00:37]} 1/2-1/2
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Knockout 2021"]
+[White "Carlsen, Magnus"]
+[Black "Nakamura, Hikaru"]
+[WhiteFideId "1503014"]
+[BlackFideId "2016192"]
+[WhiteElo "2886"]
+[BlackElo "2900"]
+[Result "1-0"]
+[Round "03-01"]
+[TimeControl "300+3"]
+[Date "Thu May 27 2021"]
+[WhiteClock "0:01:29"]
+[BlackClock "0:01:49"]
+
+1. d4 {[%clk 0:05:06]}  Nf6 {[%clk 0:05:06]} 2. c4 {[%clk 0:05:07]}  e6 {[%clk 0:05:08]} 3. Nf3 {[%clk 0:05:09]}  d5 {[%clk 0:05:09]} 4. Nc3 {[%clk 0:05:11]}  Be7 {[%clk 0:05:11]} 5. Bf4 {[%clk 0:05:12]}  O-O {[%clk 0:00:00]} 6. e3 {[%clk 0:05:14]}  Nbd7 {[%clk 0:00:02]} 7. Be2 {[%clk 0:05:16]}  dxc4 {[%clk 0:00:00]} 8. O-O {[%clk 0:05:17]}  Nb6 {[%clk 0:00:02]} 9. a4 {[%clk 0:05:17]}  a5 {[%clk 0:00:04]} 10. e4 {[%clk 0:05:14]}  c5 {[%clk 0:00:00]} 11. Nb5 {[%clk 0:04:48]}  Ne8 {[%clk 0:04:16]} 12. dxc5 {[%clk 0:03:33]}  Nd7 {[%clk 0:04:07]} 13. Bxc4 {[%clk 0:03:13]}  Bxc5 {[%clk 0:03:45]} 14. Qc2 {[%clk 0:02:54]}  Qe7 {[%clk 0:02:35]} 15. e5 {[%clk 0:02:53]}  h6 {[%clk 0:02:26]} 16. Rad1 {[%clk 0:02:37]}  Nb6 {[%clk 0:02:21]} 17. Ba2 {[%clk 0:02:32]}  Nd5 {[%clk 0:01:57]} 18. Bb1 {[%clk 0:01:45]}  f5 {[%clk 0:02:13]} 19. exf6 {[%clk 0:01:47]}  Nexf6 {[%clk 0:02:15]} 20. Be5 {[%clk 0:01:49]}  Bd7 {[%clk 0:01:56]} 21. Bxf6 {[%clk 0:01:50]}  gxf6 {[%clk 0:01:58]} 22. Rfe1 {[%clk 0:01:34]}  Qg7 {[%clk 0:01:49]} 23. Qxc5 {[%clk 0:01:29]} 1-0
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Knockout 2021"]
+[White "Carlsen, Magnus"]
+[Black "Nakamura, Hikaru"]
+[WhiteFideId "1503014"]
+[BlackFideId "2016192"]
+[WhiteElo "2881"]
+[BlackElo "2829"]
+[Result "1-0"]
+[Round "01-04"]
+[TimeControl "900+10"]
+[Date "Wed May 26 2021"]
+[WhiteClock "0:03:29"]
+[BlackClock "0:01:21"]
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:28]}  Nc6 {[%clk 0:15:26]} 3. Bc4 {[%clk 0:15:37]}  Bc5 {[%clk 0:15:34]} 4. O-O {[%clk 0:15:46]}  Nf6 {[%clk 0:00:00]} 5. d3 {[%clk 0:15:55]}  O-O {[%clk 0:00:08]} 6. h3 {[%clk 0:16:04]}  d5 {[%clk 0:00:13]} 7. exd5 {[%clk 0:16:12]}  Nxd5 {[%clk 0:00:21]} 8. a4 {[%clk 0:16:21]}  Be6 {[%clk 0:00:14]} 9. Ng5 {[%clk 0:16:21]}  Bf5 {[%clk 0:14:00]} 10. Qf3 {[%clk 0:16:26]}  Nde7 {[%clk 0:14:12]} 11. c3 {[%clk 0:15:44]}  h6 {[%clk 0:14:05]} 12. Ne4 {[%clk 0:15:37]}  Bd6 {[%clk 0:14:03]} 13. b4 {[%clk 0:14:04]}  a6 {[%clk 0:12:54]} 14. Nbd2 {[%clk 0:14:02]}  Kh8 {[%clk 0:12:46]} 15. Ba3 {[%clk 0:13:03]}  Bg6 {[%clk 0:10:20]} 16. Nxd6 {[%clk 0:12:30]}  cxd6 {[%clk 0:10:28]} 17. b5 {[%clk 0:12:39]}  Na5 {[%clk 0:09:58]} 18. Bb4 {[%clk 0:11:39]}  axb5 {[%clk 0:09:44]} 19. axb5 {[%clk 0:11:47]}  b6 {[%clk 0:09:48]} 20. Bd5 {[%clk 0:09:26]}  Rc8 {[%clk 0:08:26]} 21. c4 {[%clk 0:08:33]}  f5 {[%clk 0:08:57]} 22. Be6 {[%clk 0:07:46]}  Rb8 {[%clk 0:09:18]} 23. Bxa5 {[%clk 0:06:31]}  bxa5 {[%clk 0:09:35]} 24. d4 {[%clk 0:06:40]}  Rf6 {[%clk 0:03:59]} 25. d5 {[%clk 0:06:47]}  Bf7 {[%clk 0:03:58]} 26. Bxf7 {[%clk 0:06:55]}  Rxf7 {[%clk 0:04:06]} 27. Nb3 {[%clk 0:06:37]}  Ra8 {[%clk 0:07:23]} 28. c5 {[%clk 0:05:00]}  a4 {[%clk 0:00:33]} 29. c6 {[%clk 0:04:54]}  Qb6 {[%clk 0:03:42]} 30. Qd3 {[%clk 0:04:33]}  Rb8 {[%clk 0:03:50]} 31. Rxa4 {[%clk 0:04:34]}  Ng6 {[%clk 0:03:37]} 32. Rb4 {[%clk 0:04:25]}  Nf4 {[%clk 0:03:49]} 33. Rxf4 {[%clk 0:04:11]}  exf4 {[%clk 0:03:57]} 34. Nd4 {[%clk 0:04:18]}  f3 {[%clk 0:01:20]} 35. Rc1 {[%clk 0:03:55]}  Ra7 {[%clk 0:02:20]} 36. Ne6 {[%clk 0:03:24]}  Ra2 {[%clk 0:01:21]} 37. Qd4 {[%clk 0:03:29]} 1-0
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Knockout 2021"]
+[White "Carlsen, Magnus"]
+[Black "Radjabov, Teimour"]
+[WhiteFideId "1503014"]
+[BlackFideId "13400924"]
+[WhiteElo "2881"]
+[BlackElo "2758"]
+[Result "1-0"]
+[Round "05-04"]
+[TimeControl "900+10"]
+[Date "Sat May 29 2021"]
+[WhiteClock "0:06:52"]
+[BlackClock "0:08:55"]
+
+1. e4 {[%clk 0:15:20]}  b6 {[%clk 0:15:20]} 2. d4 {[%clk 0:15:24]}  Bb7 {[%clk 0:15:29]} 3. Bd3 {[%clk 0:15:33]}  e6 {[%clk 0:15:38]} 4. Nf3 {[%clk 0:15:42]}  d6 {[%clk 0:15:44]} 5. O-O {[%clk 0:15:28]}  Nd7 {[%clk 0:15:53]} 6. a4 {[%clk 0:15:10]}  a6 {[%clk 0:16:01]} 7. Re1 {[%clk 0:15:17]}  Ngf6 {[%clk 0:16:06]} 8. Nbd2 {[%clk 0:14:59]}  Be7 {[%clk 0:15:30]} 9. Nf1 {[%clk 0:14:36]}  O-O {[%clk 0:14:52]} 10. Ng3 {[%clk 0:14:44]}  e5 {[%clk 0:14:18]} 11. c3 {[%clk 0:14:40]}  Re8 {[%clk 0:14:26]} 12. Bd2 {[%clk 0:14:06]}  Bf8 {[%clk 0:14:07]} 13. b4 {[%clk 0:14:14]}  g6 {[%clk 0:13:44]} 14. Qc1 {[%clk 0:13:27]}  Bg7 {[%clk 0:13:19]} 15. a5 {[%clk 0:11:30]}  b5 {[%clk 0:13:22]} 16. Bh6 {[%clk 0:09:53]}  Bh8 {[%clk 0:12:34]} 17. d5 {[%clk 0:08:42]}  c5 {[%clk 0:10:32]} 18. h3 {[%clk 0:07:20]}  c4 {[%clk 0:10:26]} 19. Bc2 {[%clk 0:07:24]}  Nf8 {[%clk 0:10:28]} 20. Qd2 {[%clk 0:07:17]}  Bc8 {[%clk 0:10:33]} 21. Nh2 {[%clk 0:07:24]}  Bg7 {[%clk 0:10:37]} 22. Rf1 {[%clk 0:07:23]}  Bxh6 {[%clk 0:10:17]} 23. Qxh6 {[%clk 0:07:30]}  Kh8 {[%clk 0:09:54]} 24. Qd2 {[%clk 0:07:25]}  N6d7 {[%clk 0:09:33]} 25. f4 {[%clk 0:07:08]}  exf4 {[%clk 0:09:36]} 26. Rxf4 {[%clk 0:07:15]}  Ne5 {[%clk 0:08:22]} 27. Nf3 {[%clk 0:07:14]}  Nfd7 {[%clk 0:08:04]} 28. Rf1 {[%clk 0:07:10]}  Nxf3+ {[%clk 0:09:59]} 29. R4xf3 {[%clk 0:07:14]}  Ne5 {[%clk 0:10:08]} 30. Rf6 {[%clk 0:06:43]}  Bf5 {[%clk 0:09:44]} 31. exf5 {[%clk 0:06:38]}  Qxf6 {[%clk 0:09:52]} 32. fxg6 {[%clk 0:06:47]}  Qh4 {[%clk 0:09:22]} 33. Nf5 {[%clk 0:06:35]}  Qh5 {[%clk 0:09:30]} 34. g7+ {[%clk 0:06:42]}  Kg8 {[%clk 0:09:37]} 35. Nxd6 {[%clk 0:06:45]}  Red8 {[%clk 0:09:30]} 36. Nf5 {[%clk 0:06:51]}  f6 {[%clk 0:09:26]} 37. d6 {[%clk 0:06:59]}  Ra7 {[%clk 0:08:51]} 38. Qd5+ {[%clk 0:06:49]}  Rf7 {[%clk 0:08:55]} 39. Bd1 {[%clk 0:06:52]} 1-0
+
+
+
+
+
+[Event "Champions Chess Tour FTX Crypto Cup Knockout 2021"]
+[White "Carlsen, Magnus"]
+[Black "Radjabov, Teimour"]
+[WhiteFideId "1503014"]
+[BlackFideId "13400924"]
+[WhiteElo "2881"]
+[BlackElo "2758"]
+[Result "1/2-1/2"]
+[Round "05-02"]
+[TimeControl "900+10"]
+[Date "Sat May 29 2021"]
+[WhiteClock "0:14:48"]
+[BlackClock "0:11:28"]
+
+1. e4 {[%clk 0:15:20]}  e5 {[%clk 0:15:20]} 2. Nf3 {[%clk 0:15:28]}  Nc6 {[%clk 0:15:29]} 3. Bb5 {[%clk 0:15:37]}  Nf6 {[%clk 0:15:35]} 4. O-O {[%clk 0:15:45]}  Nxe4 {[%clk 0:15:43]} 5. Re1 {[%clk 0:00:00]}  Nd6 {[%clk 0:15:52]} 6. Nxe5 {[%clk 0:00:08]}  Be7 {[%clk 0:16:01]} 7. Bf1 {[%clk 0:00:13]}  Nxe5 {[%clk 0:16:09]} 8. Rxe5 {[%clk 0:00:21]}  O-O {[%clk 0:16:18]} 9. d4 {[%clk 0:00:30]}  Bf6 {[%clk 0:16:20]} 10. Re1 {[%clk 0:00:39]}  Re8 {[%clk 0:16:25]} 11. Bf4 {[%clk 0:00:31]}  Rxe1 {[%clk 0:16:14]} 12. Qxe1 {[%clk 0:00:00]}  Ne8 {[%clk 0:16:23]} 13. c3 {[%clk 0:00:08]}  d5 {[%clk 0:16:19]} 14. Bd3 {[%clk 0:16:55]}  g6 {[%clk 0:16:19]} 15. Nd2 {[%clk 0:17:00]}  c6 {[%clk 0:16:14]} 16. Nf3 {[%clk 0:16:10]}  Ng7 {[%clk 0:16:21]} 17. Qe2 {[%clk 0:16:02]}  Bf5 {[%clk 0:16:23]} 18. Bxf5 {[%clk 0:16:11]}  Nxf5 {[%clk 0:16:32]} 19. Re1 {[%clk 0:16:20]}  Ng7 {[%clk 0:15:15]} 20. Be5 {[%clk 0:15:21]}  Bxe5 {[%clk 0:14:37]} 21. Nxe5 {[%clk 0:15:28]}  Qe7 {[%clk 0:13:30]} 22. Qd2 {[%clk 0:16:35]}  Re8 {[%clk 0:13:33]} 23. Nd3 {[%clk 0:16:35]}  Qd8 {[%clk 0:13:30]} 24. Rxe8+ {[%clk 0:16:42]}  Nxe8 {[%clk 0:13:26]} 25. Qe2 {[%clk 0:16:45]}  Nd6 {[%clk 0:13:31]} 26. g3 {[%clk 0:16:54]}  Kf8 {[%clk 0:13:12]} 27. Kf1 {[%clk 0:15:53]}  Qe7 {[%clk 0:13:15]} 28. f3 {[%clk 0:14:33]}  f6 {[%clk 0:13:16]} 29. Kf2 {[%clk 0:14:35]}  Kf7 {[%clk 0:13:25]} 30. g4 {[%clk 0:14:16]}  g5 {[%clk 0:13:28]} 31. Qxe7+ {[%clk 0:14:22]}  Kxe7 {[%clk 0:13:37]} 32. f4 {[%clk 0:14:26]}  h6 {[%clk 0:13:35]} 33. f5 {[%clk 0:14:05]}  Nc4 {[%clk 0:13:38]} 34. Ke2 {[%clk 0:14:09]}  b6 {[%clk 0:13:29]} 35. b3 {[%clk 0:14:34]}  Nd6 {[%clk 0:13:36]} 36. Nf2 {[%clk 0:14:43]}  Kf7 {[%clk 0:13:27]} 37. Kd3 {[%clk 0:14:49]}  b5 {[%clk 0:13:22]} 38. Nd1 {[%clk 0:14:50]}  h5 {[%clk 0:13:22]} 39. h3 {[%clk 0:14:51]}  h4 {[%clk 0:13:26]} 40. Ne3 {[%clk 0:14:23]}  Ne4 {[%clk 0:13:19]} 41. Nd1 {[%clk 0:14:32]}  Nd6 {[%clk 0:11:11]} 42. Ne3 {[%clk 0:14:39]}  Ne4 {[%clk 0:11:20]} 43. Nd1 {[%clk 0:14:48]}  Nd6 {[%clk 0:11:28]} 1/2-1/2

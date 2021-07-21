@@ -142,10 +142,10 @@ env = gym.make('Chess-v0')
 state = env.reset()
 
 cnt = 0
-string = "e4 c5 Nc3 Nc6 Qf3 e5"
 string = "e4 e5 Nf3 Qf6 c3 d5 d3 Bd7 exd5 Qd6 c4 Qb4+ Qd2 Qxd2+ Nfxd2 Bc8 Nf3 Bb4+ Bd2 Bd6"
 string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7"
-string = "e4"
+string = "e4 c5 Nc3 Nc6 Qf3 e5"
+#string = "e4"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -179,6 +179,8 @@ df1 = pd.read_pickle("../data/pgn/chess_deep_memory.pkl")
 
 move_white_memory = []
 move_black_memory = []
+
+white_next_moves = []
 
 while not state.is_game_over():
         print(env.render())
@@ -248,6 +250,7 @@ while not state.is_game_over():
         #    print("MinMax Tree: ", best_move)
 
         #Player
+        print(cnt)
         if cnt % 2 == 0:
             player = 'white'
             #df2 = df1[df1['white'].isin(['Kasparov, Garry','Kasparov, G.','Kasparov Garry (RUS)'])]
@@ -277,14 +280,35 @@ while not state.is_game_over():
             else:
                 move_black_memory.append(0)
             
-            best_move2 = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+            best_move2 = calculate_min_max_tree2(state, env, player, depth=1, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
             print("Player: ", best_move2)
             
         
         #MCTS
         #root,selected_node,weights,material_adv = MCTS.calculate_MCTS(state = state, env = env,filter_prop='next_piece' ,filter_moves=pieces_ordered, par='material_adv')
-        #print("MCTS: ",selected_node.parent_action)
-        #print(selected_node.steps)
+        if len(white_next_moves) > 0 and player == 'white':
+            print("Next moves memory: ", white_next_moves)
+            if white_next_moves[0] in [state.san(x) for x in env.legal_moves]:
+                best_move = white_next_moves[0]
+                print("Next move memory: ", white_next_moves[0])
+                white_next_moves = white_next_moves[2:]
+            else:
+                print("Generate next checkpoint plan..")
+                white_next_moves = []
+                          
+        if len(df2) == 0 and player == 'white' and len(white_next_moves) == 0:
+            if cnt % 2 == 0:
+                #root,selected_node,weights,material_adv = MCTS.calculate_MCTS_checkpoint(state = state, env = env, memory = df1[(df1['result'] == '1-0')|(df1['result'] == '1/2-1/2')], engine=engine) #df1
+                root,selected_node,weights,material_adv = MCTS.calculate_MCTS_checkpoint(state = state, env = env, memory = df1, engine=None)
+            else:
+                #root,selected_node,weights,material_adv = MCTS.calculate_MCTS_checkpoint(state = state, env = env, memory = df1[(df1['result'] == '0-1')|(df1['result'] == '1/2-1/2')], engine=engine)
+                root,selected_node,weights,material_adv = MCTS.calculate_MCTS_checkpoint(state = state, env = env, memory = df1, engine=engine)
+            print("MCTS: ",selected_node.parent_action)
+            print("Next checkpoint on: ",len(selected_node.steps))
+            best_move = selected_node.parent_action
+            white_next_moves = selected_node.steps
+            white_next_moves = white_next_moves[1:]
+            #best_move2 = best_move
         #print(selected_node.material_adv)
         #print(material_adv)
 

@@ -1,0 +1,690 @@
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.16"]
+[Round "4.6"]
+[White "Hansen, SuB"]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "E10"]
+[WhiteElo "2566"]
+[BlackElo "2850"]
+[PlyCount "85"]
+[EventDate "2015.11.13"]
+[EventType "team"]
+[EventRounds "9"]
+[EventCountry "ISL"]
+[Source "Mark Crowther"]
+[SourceDate "2015.11.16"]
+[WhiteTeam "Denmark"]
+[BlackTeam "Norway"]
+[WhiteTeamCountry "DEN"]
+[BlackTeamCountry "NOR"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Bb4+ 5. Bd2 Bd6 6. Bg2 c6 7. O-O Nbd7 8. Nc3
+dxc4 9. Bg5 O-O 10. Qc2 b5 11. a4 Qb6 12. e4 b4 13. a5 Qc7 14. e5 bxc3 15. exd6
+Qxd6 16. bxc3 Ba6 17. Rfe1 Nd5 18. Bc1 Rfb8 19. Ba3 Qc7 20. Ng5 N7f6 21. Bh3
+Bc8 22. Bf1 Rb3 23. Bxc4 Rxc3 24. Qe2 Rb8 25. Nf3 Nb4 26. Rec1 Rxc1+ 27. Bxc1
+Nbd5 28. Qc2 c5 29. Bf1 cxd4 30. Qxc7 Nxc7 31. Nxd4 Ba6 32. Nc6 Rb7 33. Bg2
+Ncd5 34. Ba3 Rc7 35. Rc1 Bb5 36. Bxd5 Nxd5 37. Nxa7 Rxc1+ 38. Bxc1 Bd7 39. Kf1
+Kf8 40. Ke2 Ke8 41. Kd3 Nb4+ 42. Kc4 Nc6 43. Nxc6 1/2-1/2
+
+
+[Event "20th European Teams"]
+[Site "Reykjavik ISL"]
+[Date "2015.11.19"]
+[Round "6.5"]
+[White "Leko, P."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C77"]
+[WhiteElo "2708"]
+[BlackElo "2850"]
+[PlyCount "82"]
+[EventDate "2015.11.13"]
+[EventType "team"]
+[EventRounds "9"]
+[EventCountry "ISL"]
+[Source "Mark Crowther"]
+[SourceDate "2015.11.23"]
+[WhiteTeam "Hungrary"]
+[BlackTeam "Norway"]
+[BlackTeamCountry "NOR"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 b5 7. Bb3 O-O 8. Nc3
+d6 9. a3 Rb8 10. Be3 Na5 11. Ba2 c5 12. Nd5 c4 13. Nxe7+ Qxe7 14. Qd2 Nc6 15.
+h3 Be6 16. b4 Rfc8 17. c3 cxd3 18. Qxd3 Bxa2 19. Rxa2 d5 20. Nd2 Qe6 21. Raa1
+Ne7 22. Bc5 Ng6 23. Rad1 Rd8 24. Qf3 h6 25. Rfe1 Rd7 26. Qf5 Qc6 27. exd5 Rxd5
+28. Nf3 Rbd8 29. Qc2 Rxd1 30. Rxd1 Rxd1+ 31. Qxd1 Ne4 32. Qd8+ Kh7 33. Qb6 Qxb6
+34. Bxb6 Nxc3 35. Nd2 Nf4 36. h4 Kg6 37. f3 Kf5 38. Kf2 Nd3+ 39. Kf1 h5 40. Be3
+Ke6 41. g3 Kd5 0-1
+
+
+[Event "77th Tata Steel GpA"]
+[Site "Wijk aan Zee NED"]
+[Date "2015.01.12"]
+[Round "3.4"]
+[White "Wojtaszek, R."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[ECO "A41"]
+[WhiteElo "2744"]
+[BlackElo "2862"]
+[PlyCount "103"]
+[EventDate "2015.01.10"]
+[EventType "tourn"]
+[EventRounds "13"]
+[EventCountry "NED"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.01.12"]
+
+1. d4 d6 2. Nf3 g6 3. c4 f5 4. b4 Bg7 5. Bb2 a5 6. b5 a4 7. e3 Nf6 8. Be2 c6 9.
+bxc6 bxc6 10. O-O O-O 11. Qc2 Qc7 12. Nc3 a3 13. Bc1 Nbd7 14. Rb1 Ne4 15. Nxe4
+fxe4 16. Nd2 Nf6 17. Rb3 Bf5 18. Rxa3 h5 19. Rxa8 Rxa8 20. a3 h4 21. Bb2 h3 22.
+g3 Qc8 23. Re1 Rb8 24. Bc3 Nh7 25. a4 Ng5 26. Rb1 Ra8 27. Qd1 c5 28. Rb6 Qe6
+29. g4 cxd4 30. Bxd4 Bxd4 31. exd4 e3 32. gxf5 gxf5 33. Nf1 exf2+ 34. Kxf2 Ne4+
+35. Ke1 Qf6 36. Qd3 Rxa4 37. Rb1 Qh4+ 38. Ng3 Kf7 39. Qf3 Kg7 40. Qf4 Qxf4 41.
+Nh5+ Kf7 42. Nxf4 Ng5 43. d5 Kf6 44. Kf2 Ra3 45. Bd3 Ra2+ 46. Kg3 Ra3 47. Re1
+Ne4+ 48. Kf3 Ng5+ 49. Ke3 Ra2 50. Re2 Ra3 51. Rf2 Ne4 52. Rf3 1-0
+
+
+[Event "77th Tata Steel GpA"]
+[Site "Wijk aan Zee NED"]
+[Date "2015.01.10"]
+[Round "1.4"]
+[White "Giri, A."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "A40"]
+[WhiteElo "2784"]
+[BlackElo "2862"]
+[PlyCount "60"]
+[EventDate "2015.01.10"]
+[EventType "tourn"]
+[EventRounds "13"]
+[EventCountry "NED"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.01.12"]
+
+1. d4 g6 2. c4 Bg7 3. e4 d6 4. Nf3 e5 5. Nc3 Nc6 6. Bg5 f6 7. Be3 Nh6 8. h3 Nf7
+9. c5 dxc5 10. dxe5 Nfxe5 11. Nxe5 fxe5 12. Bb5 Bd7 13. Bxc6 Bxc6 14. Bxc5 Bf8
+15. Bxf8 Rxf8 16. O-O Qxd1 17. Rfxd1 Rd8 18. Rxd8+ Kxd8 19. Rd1+ Ke7 20. Nd5+
+Bxd5 21. Rxd5 Ke6 22. f3 c6 23. Rd3 Rf7 24. Kf2 Rd7 25. Rxd7 Kxd7 26. h4 c5 27.
+g3 b5 28. b3 Ke6 29. Ke3 h6 30. f4 h5 1/2-1/2
+
+
+[Event "77th Tata Steel GpA"]
+[Site "Wijk aan Zee NED"]
+[Date "2015.01.24"]
+[Round "12.4"]
+[White "Ding Liren"]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "D37"]
+[WhiteElo "2732"]
+[BlackElo "2862"]
+[PlyCount "71"]
+[EventDate "2015.01.10"]
+[EventType "tourn"]
+[EventRounds "13"]
+[EventCountry "NED"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.01.26"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4 O-O 6. e3 b6 7. Bd3 dxc4 8. Bxc4
+Ba6 9. Qe2 Qc8 10. O-O c5 11. Nb5 Nbd7 12. Rac1 Qb7 13. dxc5 Nxc5 14. b4 Nce4
+15. Nfd4 Rac8 16. a3 Nd5 17. Bd3 Bxb5 18. Nxb5 Nxf4 19. exf4 Nf6 20. f5 exf5
+21. Bxf5 Rxc1 22. Rxc1 a5 23. Rc7 Qd5 24. Bd3 Bd8 25. Bc4 Qg5 26. Rxf7 Qc1+ 27.
+Qf1 Qxf1+ 28. Kxf1 Rxf7 29. Nd6 axb4 30. Nxf7 Be7 31. Nd8+ Kf8 32. Ne6+ Kf7 33.
+Nc7+ Kg6 34. axb4 Bxb4 35. Nd5 Nxd5 36. Bxd5 1/2-1/2
+
+
+[Event "77th Tata Steel GpA"]
+[Site "Wijk aan Zee NED"]
+[Date "2015.01.21"]
+[Round "10.1"]
+[White "Ivanchuk, V."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "D38"]
+[WhiteElo "2715"]
+[BlackElo "2862"]
+[PlyCount "35"]
+[EventDate "2015.01.10"]
+[EventType "tourn"]
+[EventRounds "13"]
+[EventCountry "NED"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.01.26"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 h6 6. Bxf6 Qxf6 7. e3 O-O 8. Rc1
+dxc4 9. Bxc4 c5 10. O-O cxd4 11. Nxd4 Bd7 12. Qb3 Nc6 13. Nxc6 Bxc3 14. Rxc3
+Bxc6 15. Bb5 Bd5 16. Bc4 Bc6 17. Bb5 Bd5 18. Bc4 1/2-1/2
+
+
+[Event "3rd GRENKE Chess Classic"]
+[Site "Baden Baden GER"]
+[Date "2015.02.02"]
+[Round "1.3"]
+[White "Aronian, L."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "D36"]
+[WhiteElo "2777"]
+[BlackElo "2865"]
+[PlyCount "127"]
+[EventDate "2015.02.02"]
+[EventType "tourn"]
+[EventRounds "7"]
+[EventCountry "GER"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.02.02"]
+
+1. c4 e6 2. Nc3 d5 3. d4 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 Nbd7 8.
+Bd3 h6 9. Bh4 Nh5 10. Bxe7 Qxe7 11. O-O-O Nb6 12. Nf3 Bg4 13. Kb1 Nf6 14. Rc1
+Nfd7 15. Ka1 O-O-O 16. Nd2 Kb8 17. Na4 Nxa4 18. Qxa4 Qh4 19. Rcf1 Qf6 20. Qc2
+Rc8 21. Nb3 Rc7 22. Rc1 Rhc8 23. h3 Be6 24. Rhf1 h5 25. f4 g6 26. f5 gxf5 27.
+g4 hxg4 28. hxg4 Nb6 29. gxf5 Bd7 30. Nc5 Re8 31. Rce1 Qd6 32. a3 Bc8 33. Qf2
+Nd7 34. e4 dxe4 35. Nxe4 Qf8 36. Rg1 Rd8 37. Qh2 Qh8 38. Qxh8 Rxh8 39. Rg7 Nb6
+40. Nf6 Rd8 41. Rg4 c5 42. Ne8 Rcd7 43. dxc5 Rxd3 44. cxb6 axb6 45. Rf4 R8d5
+46. Ref1 Rd1+ 47. Rxd1 Rxd1+ 48. Ka2 Rd5 49. Ng7 Bd7 50. Kb3 Kc7 51. Re4 Kd6
+52. Ne8+ Kc6 53. Ng7 Rd3+ 54. Kb4 Rg3 55. Rc4+ Kd6 56. Rd4+ Kc7 57. Nh5 Rg2 58.
+Nf6 Bc6 59. b3 b5 60. Ng4 Re2 61. Nh6 Be8 62. Ng4 Bd7 63. Nh6 Be8 64. Ng4
+1/2-1/2
+
+
+[Event "3rd GRENKE Classic TB"]
+[Site "Baden Baden GER"]
+[Date "2015.02.09"]
+[Round "4"]
+[White "Naiditsch, A."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "C67"]
+[WhiteElo "2706"]
+[BlackElo "2865"]
+[PlyCount "136"]
+[EventDate "2015.02.08"]
+[EventType "match (blitz)"]
+[EventRounds "5"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.02.09"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5
+8. Qxd8+ Kxd8 9. c4 Ke8 10. Nc3 Be6 11. b3 Be7 12. Ne4 Rd8 13. Bb2 h5 14. Rad1
+b5 15. Nfg5 Bxg5 16. Nxg5 a6 17. Bc3 c5 18. Rxd8+ Kxd8 19. Rd1+ Ke7 20. Ne4
+bxc4 21. Nxc5 cxb3 22. axb3 Rb8 23. b4 Rb6 24. Kf1 Bc4+ 25. Ke1 Bb5 26. f3 h4
+27. Kf2 Rc6 28. Bb2 Ke8 29. Rc1 Ne7 30. Nb3 Nd5 31. Rxc6 Bxc6 32. Ba3 Nf4 33.
+g3 Nd3+ 34. Ke3 hxg3 35. hxg3 Nxe5 36. Kf4 Nxf3 37. Bb2 f6 38. Nd4 Ne1 39. Ke3
+Bd5 40. Ke2 Ng2 41. Kf2 Kd7 42. Bc3 g6 43. Nf3 g5 44. Bxf6 Bxf3 45. Kxf3 Ne1+
+46. Ke2 Nc2 47. Bxg5 Nxb4 48. Bf4 Nd5 49. Bd2 Ke6 50. Kd3 Nf6 51. Bc1 Kd5 52.
+Bg5 Ng4 53. Kc3 c5 54. Kb3 Kc6 55. Ka4 Ne5 56. Ka5 Kb7 57. Bh6 Nc6+ 58. Ka4 c4
+59. g4 Kc8 60. Bg7 Kd7 61. Bf6 Ke6 62. g5 Kf5 63. Ka3 Ne5 64. Kb4 a5+ 65. Kc3
+a4 66. Bxe5 Kxe5 67. Kxc4 Kf5 68. Kb4 Kxg5 1/2-1/2
+
+
+[Event "3rd GRENKE Classic TB"]
+[Site "Baden Baden GER"]
+[Date "2015.02.08"]
+[Round "2"]
+[White "Naiditsch, A."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[ECO "C49"]
+[WhiteElo "2706"]
+[BlackElo "2865"]
+[PlyCount "135"]
+[EventDate "2015.02.08"]
+[EventType "match (blitz)"]
+[EventRounds "5"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.02.09"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nc3 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. Re1
+c6 9. Ba4 Ng6 10. Bb3 h6 11. Bd2 Bg4 12. h3 Bh5 13. g3 d5 14. Kg2 d4 15. Ne2
+Bxf3+ 16. Kxf3 Bxd2 17. Qxd2 Nd7 18. a3 Kh8 19. Kg2 Nc5 20. Ba2 f5 21. exf5
+Rxf5 22. Rf1 Qf6 23. f4 Rf8 24. Rae1 h5 25. Rf3 h4 26. g4 Nxf4+ 27. Kh2 Rg5 28.
+Nxf4 exf4 29. b4 Nd7 30. Re6 Qd8 31. Qe1 Rb5 32. a4 Rb6 33. Re7 Nf6 34. Qxh4+
+Nh7 35. Be6 Rf6 36. Bf5 Rh6 37. Qe1 Qd6 38. Re8+ Nf8 39. Qe7 Qxe7 40. Rxe7 Rxb4
+41. Re8 Rf6 42. Rxf4 g6 43. g5 Rf7 44. Rh4+ Kg7 45. Be4 Rb2 46. Kg3 Rxc2 47.
+Rf4 Rc5 48. h4 Ra5 49. Rxf7+ Kxf7 50. Rb8 b5 51. Rb7+ Ke6 52. axb5 cxb5 53. Kf4
+Ra2 54. Rxb5 Rf2+ 55. Kg3 Re2 56. Ra5 Nd7 57. Ra6+ Ke7 58. Bxg6 Ne5 59. Be4
+Nxd3 60. Bxd3 Re3+ 61. Kf4 Rxd3 62. h5 Rh3 63. h6 d3 64. Rxa7+ Ke6 65. Ra6+ Kf7
+66. g6+ Ke7 67. g7 d2 68. g8=Q 1-0
+
+
+[Event "3rd GRENKE Chess Classic"]
+[Site "Baden Baden GER"]
+[Date "2015.02.04"]
+[Round "3.3"]
+[White "Naiditsch, A."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[ECO "B06"]
+[WhiteElo "2706"]
+[BlackElo "2865"]
+[PlyCount "121"]
+[EventDate "2015.02.02"]
+[EventType "tourn"]
+[EventRounds "7"]
+[EventCountry "GER"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.02.09"]
+
+1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 a6 5. a4 Nf6 6. h3 O-O 7. g4 e5 8. d5 c6 9.
+Nge2 cxd5 10. exd5 Bxg4 11. hxg4 Nxg4 12. Qd2 Nd7 13. Ne4 f5 14. Bg5 Qb6 15.
+Bh3 Ndf6 16. Nxf6+ Nxf6 17. Nc3 Qxb2 18. Rb1 Qa3 19. Rxb7 Rf7 20. Rb3 Qc5 21.
+Qe3 Qc7 22. Qb6 e4 23. Qc6 Rc8 24. O-O Qxc6 25. dxc6 Rxc6 26. Rfb1 h6 27. Bxf6
+Bxf6 28. Nxe4 Be5 29. Nd2 Rxc2 30. Nf3 Ra2 31. Bg2 Bf6 32. Nh2 Kg7 33. Bd5 Re7
+34. Rb4 Rd2 35. Bc4 a5 36. Rb7 Rd4 37. Rxe7+ Bxe7 38. Bb5 h5 39. Nf3 Rf4 40.
+Kg2 h4 41. Rd1 Rg4+ 42. Kf1 h3 43. Rd3 Bf6 44. Nh2 Rh4 45. Kg1 Bd4 46. Rf3 Kf6
+47. Nf1 Be5 48. Ne3 Kg5 49. Kh1 Kf6 50. Nc4 g5 51. Nxa5 g4 52. Rd3 f4 53. Nc4
+Rh7 54. Nxe5 dxe5 55. a5 Rc7 56. Ra3 Rc1+ 57. Kh2 Rc2 58. a6 Rxf2+ 59. Kh1 g3
+60. a7 Rd2 61. Ra1 1-0
+
+
+[Event "3rd GRENKE Chess Classic"]
+[Site "Baden Baden GER"]
+[Date "2015.02.06"]
+[Round "4.3"]
+[White "Anand, V."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "A90"]
+[WhiteElo "2797"]
+[BlackElo "2865"]
+[PlyCount "72"]
+[EventDate "2015.02.02"]
+[EventType "tourn"]
+[EventRounds "7"]
+[EventCountry "GER"]
+[EventCategory "20"]
+[Source "Mark Crowther"]
+[SourceDate "2015.02.09"]
+
+1. d4 f5 2. g3 Nf6 3. Bg2 e6 4. c4 c6 5. Nf3 d5 6. O-O Bd6 7. b3 Qe7 8. Ne5 O-O
+9. Nd2 a5 10. Bb2 Nbd7 11. Qc2 a4 12. Ndf3 Ne4 13. e3 a3 14. Bc3 Nxe5 15. Nxe5
+Bd7 16. Nxd7 Qxd7 17. c5 Bc7 18. b4 h5 19. Be1 e5 20. dxe5 Bxe5 21. Rd1 Qe6 22.
+f3 Nf6 23. Bh3 g6 24. e4 dxe4 25. fxe4 Bb2 26. exf5 Qxa2 27. Bf2 g5 28. Rfe1
+Qf7 29. Re6 Ng4 30. Bxg4 hxg4 31. Rg6+ Kh7 32. Rd7 Qxd7 33. f6 Qd1+ 34. Qxd1
+Kxg6 35. Qd3+ Kh6 36. h4 gxh3 0-1
+
+
+[Event "Vugar Gashimov Mem 2015"]
+[Site "Shamkir AZE"]
+[Date "2015.04.23"]
+[Round "6.3"]
+[White "Giri, A."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "D38"]
+[WhiteElo "2790"]
+[BlackElo "2863"]
+[PlyCount "74"]
+[EventDate "2015.04.17"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "AZE"]
+[EventCategory "21"]
+[Source "Mark Crowther"]
+[SourceDate "2015.04.27"]
+
+1. d4 e6 2. c4 Nf6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 h6 6. Bxf6 Qxf6 7. e3 O-O 8. Rc1
+dxc4 9. Bxc4 c5 10. dxc5 Nd7 11. c6 Ne5 12. Nxe5 Qxe5 13. O-O bxc6 14. Qe2 Rd8
+15. Rfd1 Bb7 16. Rxd8+ Rxd8 17. Rd1 Rxd1+ 18. Qxd1 Qc7 19. h3 Bxc3 20. bxc3 c5
+21. Qa4 Qc6 22. Qxc6 Bxc6 23. Bd3 e5 24. f4 f6 25. Kf2 Kf7 26. h4 Ke6 27. g3 g5
+28. hxg5 hxg5 29. fxg5 fxg5 30. Ke1 Bd5 31. a3 e4 32. Be2 Ke5 33. Kd2 Be6 34.
+Ke1 Kd6 35. Kd2 Ke5 36. Ke1 Kd6 37. Kd2 Ke5 1/2-1/2
+
+
+[Event "Vugar Gashimov Mem 2015"]
+[Site "Shamkir AZE"]
+[Date "2015.04.25"]
+[Round "8.3"]
+[White "So, W."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "A29"]
+[WhiteElo "2788"]
+[BlackElo "2863"]
+[PlyCount "81"]
+[EventDate "2015.04.17"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "AZE"]
+[EventCategory "21"]
+[Source "Mark Crowther"]
+[SourceDate "2015.04.27"]
+
+1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bb4 5. Bg2 O-O 6. O-O Re8 7. Nd5 Nxd5 8.
+cxd5 Nd4 9. Nxd4 exd4 10. Qa4 a5 11. e3 b5 12. Qc2 Bb7 13. b3 Qg5 14. a3 Bf8
+15. Bb2 Bxd5 16. e4 Bb7 17. Bxd4 c5 18. Be3 Qg6 19. d3 a4 20. Rab1 axb3 21.
+Rxb3 b4 22. axb4 cxb4 23. Bd2 Bc6 24. Rb2 Ba4 25. Qc4 Rec8 26. Qd4 Bc5 27. Qd5
+b3 28. d4 Bb6 29. Be3 h6 30. e5 Bc6 31. Qxb3 Bxg2 32. Kxg2 Bxd4 33. Bxd4 Qe4+
+34. Qf3 Qxd4 35. Rb5 Qc3 36. Rd1 Qxf3+ 37. Kxf3 Rc7 38. Rbd5 Raa7 39. Kg4 Ra2
+40. R1d2 Rxd2 41. Rxd2 1/2-1/2
+
+
+[Event "3rd Norway Chess 2015"]
+[Site "Stavanger NOR"]
+[Date "2015.06.19"]
+[Round "4.3"]
+[White "Anand, V."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[ECO "C84"]
+[WhiteElo "2804"]
+[BlackElo "2876"]
+[PlyCount "93"]
+[EventDate "2015.06.16"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "NOR"]
+[EventCategory "22"]
+[Source "Mark Crowther"]
+[SourceDate "2015.06.22"]
+[WhiteTeamCountry "CZE"]
+[BlackTeamCountry "CRO"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3 d6 7. c3 O-O 8. Nbd2
+Re8 9. Re1 b5 10. Bc2 Bf8 11. Nf1 g6 12. h3 Bb7 13. Ng3 Nb8 14. d4 Nbd7 15. a4
+c5 16. d5 c4 17. Bg5 Bg7 18. Qd2 Rb8 19. Nh2 Bc8 20. Ng4 Nc5 21. Nh6+ Bxh6 22.
+Bxh6 bxa4 23. Ra2 a3 24. bxa3 Nfd7 25. f4 a5 26. Rf1 f6 27. f5 Nd3 28. Bxd3
+cxd3 29. Qd1 Re7 30. Raf2 Rf7 31. Qxd3 Nc5 32. Qf3 Ba6 33. Qg4 g5 34. h4 Bxf1
+35. Rxf1 Qd7 36. hxg5 fxg5 37. Qh5 Kh8 38. f6 Rg8 39. Bg7+ Rfxg7 40. fxg7+ Qxg7
+41. Nf5 Qg6 42. Qxg6 Rxg6 43. Ne7 Kg7 44. Nxg6 Kxg6 45. Rf8 a4 46. c4 h5 47.
+Kf2 1-0
+
+
+[Event "3rd Norway Chess 2015"]
+[Site "Stavanger NOR"]
+[Date "2015.06.23"]
+[Round "7.3"]
+[White "Vachier Lagrave, M."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "D43"]
+[WhiteElo "2723"]
+[BlackElo "2876"]
+[PlyCount "34"]
+[EventDate "2015.06.16"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "NOR"]
+[EventCategory "22"]
+[Source "Mark Crowther"]
+[SourceDate "2015.06.29"]
+[WhiteTeamCountry "SLO"]
+[BlackTeamCountry "CZE"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 5. Bg5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Nxe4
+dxe4 9. Nd2 Qxd4 10. e3 Qxb2 11. Rb1 Qc3 12. Be2 Nd7 13. O-O Nc5 14. Nb3 Nd3
+15. Nd2 Nc5 16. Nb3 Nd3 17. Nd2 Nc5 1/2-1/2
+
+
+[Event "3rd Sinquefield Cup 2015"]
+[Site "Saint Louis USA"]
+[Date "2015.08.24"]
+[Round "2.4"]
+[White "Caruana, F."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C78"]
+[WhiteElo "2808"]
+[BlackElo "2853"]
+[PlyCount "80"]
+[EventDate "2015.08.23"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[EventCategory "22"]
+[Source "Mark Crowther"]
+[SourceDate "2015.08.31"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bb7 7. d3 Be7 8. Nc3
+O-O 9. a3 d6 10. Re1 Qd7 11. Ne2 Nd8 12. Ng3 Ne6 13. Ba2 Rfe8 14. Ng5 d5 15.
+Nxe6 Qxe6 16. Bg5 h6 17. Bxf6 Bxf6 18. Qf3 c6 19. c4 Rad8 20. cxd5 cxd5 21. Nf5
+Bg5 22. h4 Bd2 23. Re2 dxe4 24. dxe4 Qf6 25. g3 Kf8 26. h5 Bg5 27. a4 b4 28. a5
+Kg8 29. Bc4 Rd7 30. Ra4 Kh8 31. Rxb4 g6 32. hxg6 fxg6 33. Qb3 Bc6 34. Ne3 Bxe4
+35. Bd5 Bxd5 36. Nxd5 Qc6 37. Nc3 Qf3 38. Qc2 Red8 39. Rbe4 Rd2 40. Rxd2 Rxd2
+0-1
+
+
+[Event "3rd Sinquefield Cup 2015"]
+[Site "Saint Louis USA"]
+[Date "2015.08.26"]
+[Round "4.2"]
+[White "Giri, A."]
+[Black "Carlsen, M."]
+[Result "1/2-1/2"]
+[ECO "B33"]
+[WhiteElo "2793"]
+[BlackElo "2853"]
+[PlyCount "61"]
+[EventDate "2015.08.23"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[EventCategory "22"]
+[Source "Mark Crowther"]
+[SourceDate "2015.08.31"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8.
+Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c3 Ne7 12. Nc2 Nxd5 13. Qxd5 Rb8 14. Nb4
+Bb7 15. Qd3 O-O 16. Be2 a5 17. Nd5 b4 18. O-O bxc3 19. bxc3 Bg5 20. Rab1 Qd7
+21. Rb3 Bc6 22. Rfb1 Rxb3 23. Rxb3 g6 24. Rb6 Rc8 25. h3 Bxd5 26. Qxd5 Rxc3 27.
+Rxd6 Qe7 28. Bd1 Rc7 29. g3 Kg7 30. Ba4 Bc1 31. Rc6 1/2-1/2
+
+
+[Event "World Rapid 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.10"]
+[Round "3.1"]
+[White "Vallejo Pons, F."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C95"]
+[WhiteElo "2684"]
+[BlackElo "2850"]
+[PlyCount "95"]
+[EventDate "2015.10.10"]
+[EventType "swiss (rapid)"]
+[EventRounds "15"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.12"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3
+O-O 9. h3 Nb8 10. d4 Nbd7 11. c4 c6 12. Nc3 b4 13. Na4 c5 14. d5 Re8 15. a3 a5
+16. Bc2 Nf8 17. b3 Ng6 18. Nb2 Bd7 19. Be3 h6 20. Ra2 Nh7 21. Qd2 Ng5 22. Nxg5
+Bxg5 23. axb4 Bxe3 24. Qxe3 axb4 25. Rea1 Rxa2 26. Rxa2 Nf4 27. Nd3 Qg5 28.
+Nxf4 exf4 29. Qd3 Qe5 30. Qd1 Kf8 31. Kf1 Bc8 32. f3 Qg5 33. Qa1 Qg3 34. Bd1 h5
+35. Ra7 h4 36. Qa5 Bxh3 37. gxh3 Qxh3+ 38. Ke1 Qg3+ 39. Kd2 h3 40. Qc7 Qg6 41.
+Bc2 h2 42. e5 Qg2+ 43. Kc1 h1=Q+ 44. Kb2 Qh5 45. Qxd6+ Kg8 46. Qe7 Qxc2+ 47.
+Kxc2 Rxe7 48. Ra1 0-1
+
+
+[Event "World Blitz 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.14"]
+[Round "13.1"]
+[White "Radjabov, T."]
+[Black "Carlsen, M."]
+[Result "1-0"]
+[ECO "D02"]
+[WhiteElo "2738"]
+[BlackElo "2850"]
+[PlyCount "81"]
+[EventDate "2015.10.13"]
+[EventType "swiss (blitz)"]
+[EventRounds "21"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.19"]
+
+1. Nf3 d5 2. d4 a6 3. e3 Nf6 4. c4 e6 5. b3 c5 6. Bb2 cxd4 7. exd4 Nc6 8. Nbd2
+g6 9. Bd3 Bg7 10. O-O O-O 11. Rc1 b6 12. Re1 Bb7 13. a3 Rc8 14. Qe2 dxc4 15.
+bxc4 Re8 16. h3 Qc7 17. Qe3 Ne7 18. Ne5 Nf5 19. Bxf5 exf5 20. Ndf3 Bxf3 21.
+Qxf3 Ne4 22. Re2 Qd6 23. Qb3 Bxe5 24. dxe5 Qc6 25. Qe3 Rcd8 26. f3 Nc5 27. e6
+Nd3 28. Rd1 Nf4 29. Ree1 Rxd1 30. Rxd1 Nxe6 31. Qc3 f6 32. Qxf6 Rf8 33. Qh8+
+Kf7 34. Qxh7+ Ke8 35. Qxg6+ Ke7 36. Kh1 Qxc4 37. Be5 Rf7 38. Bd6+ Ke8 39. Qg8+
+Nf8 40. Bxf8 Qe2 41. Bb4+ 1-0
+
+
+[Event "World Blitz 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.13"]
+[Round "10.1"]
+[White "Socko, B."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C53"]
+[WhiteElo "2599"]
+[BlackElo "2850"]
+[PlyCount "54"]
+[EventDate "2015.10.13"]
+[EventType "swiss (blitz)"]
+[EventRounds "21"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.19"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5 d5 7. Be2 Ne4 8. cxd4
+Bb6 9. Nc3 O-O 10. Be3 Ne7 11. O-O c6 12. Rc1 Bf5 13. Qb3 Bg4 14. h3 Bh5 15.
+Rfe1 Nf5 16. Na4 Bxf3 17. Bxf3 Ng5 18. Bg4 Nxd4 19. Bxd4 Bxd4 20. Qxb7 Ne4 21.
+Re2 h5 22. Bxh5 Qh4 23. Bxf7+ Rxf7 24. Qxa8+ Kh7 25. Rcc2 Rxf2 26. Rxf2 Bxf2+
+27. Kf1 Qf4 0-1
+
+
+[Event "World Blitz 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.13"]
+[Round "8.1"]
+[White "Andreikin, D."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C49"]
+[WhiteElo "2720"]
+[BlackElo "2850"]
+[PlyCount "66"]
+[EventDate "2015.10.13"]
+[EventType "swiss (blitz)"]
+[EventRounds "21"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.19"]
+
+1. Nc3 Nf6 2. e4 e5 3. Nf3 Nc6 4. Bb5 Bb4 5. O-O O-O 6. d3 Bxc3 7. bxc3 d6 8.
+h3 Ne7 9. Re1 a6 10. Bc4 b5 11. Bb3 c5 12. Bg5 Ng6 13. Bd5 Rb8 14. a4 h6 15.
+Bxf6 Qxf6 16. axb5 axb5 17. Nh2 Qg5 18. Re3 Nf4 19. Rg3 Qe7 20. Bb3 Kh7 21. Ng4
+f5 22. exf5 d5 23. c4 bxc4 24. dxc4 d4 25. Qe1 Bxf5 26. Ra6 e4 27. Qd2 Bxg4 28.
+Rxg4 e3 29. fxe3 dxe3 30. Qe1 e2 31. Kh2 Nh5 32. c3 Qe5+ 33. g3 Rxb3 0-1
+
+
+[Event "World Blitz 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.13"]
+[Round "1.1"]
+[White "Nikolic, Pr"]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "D30"]
+[WhiteElo "2603"]
+[BlackElo "2850"]
+[PlyCount "44"]
+[EventDate "2015.10.13"]
+[EventType "swiss (blitz)"]
+[EventRounds "21"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.19"]
+
+1. d4 d5 2. c4 e6 3. Nf3 a6 4. e3 Nf6 5. Nc3 dxc4 6. Bxc4 b5 7. Be2 Bb7 8. O-O
+Nbd7 9. Bd2 Bd6 10. Rc1 O-O 11. Qe1 Qe7 12. Nb1 e5 13. Ba5 exd4 14. Nxd4 Qe5
+15. g3 c5 16. Bf3 Bxf3 17. Nxf3 Qxb2 18. e4 Rfe8 19. Bc3 Qxa2 20. e5 Qd5 21.
+Qd1 Qxd1 22. Rfxd1 Bxe5 0-1
+
+
+[Event "World Rapid 2015"]
+[Site "Berlin GER"]
+[Date "2015.10.12"]
+[Round "11.1"]
+[White "Zhigalko, S."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "C88"]
+[WhiteElo "2656"]
+[BlackElo "2850"]
+[PlyCount "88"]
+[EventDate "2015.10.10"]
+[EventType "swiss (rapid)"]
+[EventRounds "15"]
+[EventCountry "GER"]
+[Source "Mark Crowther"]
+[SourceDate "2015.10.12"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. h3
+Bb7 9. d3 d6 10. a3 Nb8 11. Nbd2 Nbd7 12. Nf1 Re8 13. Ng3 Bf8 14. Ng5 d5 15.
+exd5 Nc5 16. c4 Nxb3 17. Qxb3 c6 18. dxc6 Bxc6 19. cxb5 Bd5 20. Qd1 axb5 21.
+N5e4 h6 22. Qf3 Ra6 23. Bd2 Ba8 24. Bb4 Nd5 25. Bxf8 Rxf8 26. d4 exd4 27. Nf5
+Ne7 28. Rad1 Nxf5 29. Qxf5 Re6 30. f3 d3 31. Qxb5 Bxe4 32. Rxe4 Rxe4 33. fxe4
+Qd4+ 34. Kh1 Rd8 35. Qb4 Qe3 36. Qa5 Rd4 37. Qd2 Qxe4 38. Re1 Qd5 39. Re3 Kh7
+40. b4 Qg5 41. Kg1 Rd6 42. a4 Qxe3+ 43. Qxe3 d2 44. Qe4+ g6 0-1
+
+
+[Event "Qatar Masters Open 2015"]
+[Site "Doha QAT"]
+[Date "2015.12.28"]
+[Round "8.1"]
+[White "Mamedyarov, S."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "D38"]
+[WhiteElo "2748"]
+[BlackElo "2834"]
+[PlyCount "50"]
+[EventDate "2015.12.20"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "QAT"]
+[Source "Mark Crowther"]
+[SourceDate "2015.12.28"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 h6 6. Bxf6 Qxf6 7. e3 O-O 8. Rc1
+dxc4 9. Bxc4 c5 10. O-O cxd4 11. Ne4 Qe7 12. exd4 Rd8 13. Qe2 Nc6 14. Rfd1 Ba5
+15. Ng3 Bb6 16. Qe4 Bd7 17. h4 Be8 18. a3 Rd6 19. Qg4 Rad8 20. d5 Qf8 21. Qe4
+Ne7 22. Bd3 f5 23. Qe5 Nxd5 24. Bxf5 exf5 25. Nxf5 Rc6 0-1
+
+
+[Event "Qatar Masters Open 2015"]
+[Site "Doha QAT"]
+[Date "2015.12.23"]
+[Round "4.2"]
+[White "Duda, J."]
+[Black "Carlsen, M."]
+[Result "0-1"]
+[ECO "B92"]
+[WhiteElo "2663"]
+[BlackElo "2834"]
+[PlyCount "84"]
+[EventDate "2015.12.20"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "QAT"]
+[Source "Mark Crowther"]
+[SourceDate "2015.12.28"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. Bg5
+Nc6 9. Qd3 Nb4 10. Qd2 h6 11. Bxf6 Bxf6 12. Nd5 Nxd5 13. Qxd5 Qc7 14. O-O-O Be7
+15. Kb1 Be6 16. Qd3 O-O 17. f4 exf4 18. Nd4 Bd7 19. Rhf1 Bf6 20. Rxf4 Be5 21.
+Rff1 Rac8 22. c3 b5 23. Nf3 Be6 24. Nd4 Bc4 25. Qf3 b4 26. cxb4 Qb6 27. Bxc4
+Rxc4 28. Nc2 Rfc8 29. Rd2 Qc6 30. Qxf7+ Kh8 31. Qf2 a5 32. a3 axb4 33. Nxb4
+Qxe4+ 34. Ka2 Rxb4 35. axb4 Ra8+ 36. Kb3 Rb8 37. Ka2 Qxb4 38. Rc1 Qa4+ 39. Kb1
+Qe4+ 40. Rcc2 Bxb2 41. Qf3 Qe1+ 42. Rd1 Bd4+ 0-1
