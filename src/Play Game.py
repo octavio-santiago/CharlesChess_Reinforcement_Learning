@@ -30,6 +30,7 @@ import chess.engine
 from gym_chess.alphazero import BoardEncoding
 
 from chessRL import make_matrix
+from chessRL import get_moves_by_similarity
 import copy
 
 class DeepModel:
@@ -144,8 +145,9 @@ state = env.reset()
 cnt = 0
 string = "e4 e5 Nf3 Qf6 c3 d5 d3 Bd7 exd5 Qd6 c4 Qb4+ Qd2 Qxd2+ Nfxd2 Bc8 Nf3 Bb4+ Bd2 Bd6"
 string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7"
-string = "e4 c5 Nc3 Nc6 Qf3 e5"
-#string = "e4"
+#string = "e4 c5 Nc3 Nc6 Qf3 e5"
+string = "e4 c5 Nf3 e6"
+#string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4 Bf6 Re1 Re8 c3 Rxe1 Qxe1 Ne8 Bf4 d5 Bd3 g6 Nd2 Ng7 Nf3 Bf5 Bxf5 Nxf5 Qe2 Qd7 Ne5 Qe7 h3 Re8 Re1 c6 Qd1 Qd8 Qd2 h5 Re2 Ng7 Nd3 Rxe2 Qxe2 Qe7 Be5 Nf5 a3 Bg7 Kf1 Bxe5 Nxe5 Qf6 Nd7 Ng3+ Ke1 Qd8 fxg3 Qxd7 Qe5 a5 Kf2 Qd8 h4 a4 Qe2 Kf8 Kg1 Qe7 Qf2 g5 Kf1 Kg7 Kg1 Qf6 Qe1 Kg6 Kh2 gxh4 gxh4 Qf4+ Kh3 Qg4+ Kh2 f6 Qe7 Qxh4+ Kg1 b6 Qe8+ Kg7 Qd8 Qe4 Qc7+ Kg6 Qxc6 h4 Qc8 Kg5 Qb7 Qb1+ Kh2 Qf5 Qa8 Qf4+ Kh1 Qe4 Qb7 Kf4 Qxb6 Qf5 Qd6+ Ke3 Kg1 Qb1+ Kh2 Qf5 Kg1 Qf2+ Kh2 Qf5 c4 Kxd4 c5 Qe5+ Kh1 Qe1+ Kh2 Qg3+ Kg1 Qe1+ Kh2 Qe5+ Kh1 f5 Qd7 f4 c6 h3 Qxh3 Kc5 Qc8 Qh5+ Kg1 Qd1+ Kf2 Qc2+ Kg1 Qe4 b4+ axb3 Qf8+ Kxc6 Qc8+ Kd6 Qd8+ Kc5 Qf8+ Kb5 Qb8+ Kc4 Qb4+ Kd3 Qxb3+ Kd2 Qb2+ Kd1 Qa1+ Kc2 Qa2+ Kc3 a4 Qe3+ Kh2 Qg3+ Kh1 Kb4 a5 Qe1+ Kh2 Qg3+ Kg1 Qe3+ Kh2 Qg3+ Kg1 Qe3+ Kh2 d4 a6 d3 Qd5 Qg3+ Kh1 Qe3 Qb7+ Kc4 Qc7+ Kb3 Qb8+ Kc2 Qc7+ Kb1 Qb7+ Kc2 Qc7+ Kb3 Qb8+ Ka2"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -181,15 +183,20 @@ move_white_memory = []
 move_black_memory = []
 
 white_next_moves = []
+move_ratio = []
+mode = 1
 
 while not state.is_game_over():
+        move_memory = False
         print(env.render())
         board_txt = state.fen().split()[0]
         board_encoded = ''.join(str(ord(c)) for c in board_txt)
         obs = make_matrix(state)
         print(str(obs))
+        final_moves = []
         
         if cnt % 2 == 0:
+            print(" ")
             print("White") #board, player, oppening
             player = 'white'
             #board_state = [np.reshape(obs, [1, 64]), 1, 0]
@@ -201,6 +208,7 @@ while not state.is_game_over():
             #print(obs)
             #print(board_state)
         else:
+            print(" ")
             print("Black")
             player = 'black'
             #board_state = [np.reshape(obs, [1, 64]), 0, 0]
@@ -212,24 +220,24 @@ while not state.is_game_over():
         legal_moves = [state.san(x) for x in env.legal_moves]
 
         #Next Piece predict
-        X = board_state
-        max_val,act_values_pieces = model.predict(np.reshape(X, [1, 66]))
-        print("Next Piece: ",max_val,act_values_pieces )
+        #X = board_state
+        #max_val,act_values_pieces = model.predict(np.reshape(X, [1, 66]))
+        #print("Next Piece: ",max_val,act_values_pieces )
 
         #Result predict
-        X = board_state
-        max_val,act_values = model_result.predict(np.reshape(X, [1, 66]))
-        print("Result: ",max_val,act_values)
+        #X = board_state
+        #max_val,act_values = model_result.predict(np.reshape(X, [1, 66]))
+        #print("Result: ",max_val,act_values)
         
-        act_values = list(act_values[0])
-        pieces_ordered = []
-        for i in act_values:
-            max_val = max(act_values)
-            pieces_ordered.append(act_values.index(max_val))
-            act_values[act_values.index(max_val)] = -1
+        #act_values = list(act_values[0])
+        #pieces_ordered = []
+        #for i in act_values:
+        #    max_val = max(act_values)
+        #    pieces_ordered.append(act_values.index(max_val))
+        #    act_values[act_values.index(max_val)] = -1
             
-        pieces_ordered = [pieces_dict[str(x)] for x in pieces_ordered]
-        pieces_ordered = pieces_ordered[:4]
+        #pieces_ordered = [pieces_dict[str(x)] for x in pieces_ordered]
+        #pieces_ordered = pieces_ordered[:4]
 
         #LSTM ML predict
         string_moves = ''
@@ -242,6 +250,8 @@ while not state.is_game_over():
         next_moves = lstm_predict(seq_len, lstm_model, tokenizer, string_moves)
         next_moves = [x.capitalize() if len(x) > 2 else x for x in next_moves]
         print("LSTM: ",next_moves)
+        for mv in next_moves:
+            final_moves.append(mv)
 
         #MinMaxTree
         #best_move = calculate_min_max_tree(state, env, player, depth=2, mode='stockfish', engine=engine)
@@ -258,15 +268,23 @@ while not state.is_game_over():
             df2 = df2[df2['board'] == str(obs)]
             next_moves = []
             if len(df2) >0:
+                move_memory = True
                 move_white_memory.append(1)
                 next_moves = list(set(list(df2['next_move'])))
                 print('Next moves Player: ', next_moves)
+                for mv in next_moves:
+                    final_moves.append(mv)
             else:
-                move_white_memory.append(0)                
-            best_move = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
-            print("Player: ", best_move)
+                move_white_memory.append(0)
+            '''if move_memory:
+                #best_move = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+                best_move = calculate_min_max_tree2(state, env, player, depth=0, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=None)
+                next_move_memory = best_move
+                print("Player: ", best_move)
+                final_moves.append(best_move)'''
+            
         else:
-            player = 'black'
+            '''player = 'black'
             #df2 = df1[df1['black'].isin(['Carlsen, Magnus','Carlsen, M.','Carlsen,M'])]
             df2 = df1[df1['white'].isin(['Kasparov, Garry','Kasparov, G.','Kasparov Garry (RUS)'])]
             #df2 = df1[df1['white'].isin(['Wesley So','So, W.','So, Wesley'])]
@@ -274,18 +292,25 @@ while not state.is_game_over():
             df2 = df2[df2['board'] == str(obs)]
             next_moves = []
             if len(df2) >0:
+                move_memory = True
                 move_black_memory.append(1)
                 next_moves = list(set(list(df2['next_move'])))
                 print('Next moves Player: ', next_moves)
+                for mv in next_moves:
+                    final_moves.append(mv)
             else:
                 move_black_memory.append(0)
             
             best_move2 = calculate_min_max_tree2(state, env, player, depth=1, mode='stockfish', engine=engine,list_moves=next_moves, next_pieces=list(act_values_pieces[0]))
+            next_move_memory = best_move2
             print("Player: ", best_move2)
+            final_moves.append(best_move2)'''
+            final_moves.append(legal_moves[random.randrange(len(legal_moves))])
+            
             
         
         #MCTS
-        #root,selected_node,weights,material_adv = MCTS.calculate_MCTS(state = state, env = env,filter_prop='next_piece' ,filter_moves=pieces_ordered, par='material_adv')
+        '''#root,selected_node,weights,material_adv = MCTS.calculate_MCTS(state = state, env = env,filter_prop='next_piece' ,filter_moves=pieces_ordered, par='material_adv')
         if len(white_next_moves) > 0 and player == 'white':
             print("Next moves memory: ", white_next_moves)
             if white_next_moves[0] in [state.san(x) for x in env.legal_moves]:
@@ -310,15 +335,72 @@ while not state.is_game_over():
             white_next_moves = white_next_moves[1:]
             #best_move2 = best_move
         #print(selected_node.material_adv)
-        #print(material_adv)
+        #print(material_adv)'''
+
+        #Similarity
+        if not move_memory:
+            if cnt % 2 == 0:
+                next_moves = get_moves_by_similarity(state,legal_moves)
+                for mv in next_moves:
+                    final_moves.append(mv)
+
+
+        #get best final move
+        a = 2
+        if move_memory and a != 2:
+            best_move = next_move_memory
+        else:
+            for mv in legal_moves:
+                if '#' in mv:
+                    final_moves.append(mv)
+                elif '+' in mv:
+                    final_moves.append(mv)
+                elif 'x' in mv:
+                    final_moves.append(mv)
+            final_moves = list(set(final_moves))
+            final_moves = [x for x in final_moves if x in legal_moves]
+            print('Final Moves: ',final_moves)
+            final_moves_scores = []
+            for mv in final_moves:
+                new_state = copy.deepcopy(state)
+                action = new_state.push_san(mv)
+                info = engine.analyse(new_state, chess.engine.Limit(time=0.1))
+                mate = info["score"].white().mate()
+                if mate != None:
+                    if mate < 0:
+                        score = -((20-(-mate)) * 1000)
+                    else:
+                        score = (20-mate) * 1000
+                else:
+                    score = info["score"].white().score()
+                    
+                score = score if score != None else 0
+                final_moves_scores.append(score)
+            
+            best_move = final_moves[np.argmax(final_moves_scores)]
+
+        print('--------------')
+        print("Best Move Scores: ", final_moves_scores)
+        print("Best Move Stacked: ", best_move)
+        print("Legal Moves ", len(legal_moves), " Final moves ", len(final_moves), " Prop % ",100*(len(final_moves)/len(legal_moves)), " %")
+        
 
         if cnt % 2 == 0:
             move = best_move
+            move_ratio.append((len(final_moves)/len(legal_moves)))
         else:
             #legal_moves = [state.san(x) for x in env.legal_moves]
             #move = legal_moves[random.randrange(len(legal_moves))]
-            #move = input("Insira um valor: ")
-            move = best_move2
+            #move = best_move2
+            #move = best_move
+            if mode == 1:
+                result = engine.play(state, chess.engine.Limit(time=0.1)) #stock
+                move = state.san(result.move)
+            else:
+                move = input("Insira um valor: ")
+                
+            print("Black final move: ", move)
+            
         history_move.append(move)
         action = state.push_san(move)
         cnt +=1
@@ -335,6 +417,6 @@ plt.xlabel("move")
 plt.title("move_white_memory")
 
 plt.subplot(222)
-plt.plot([i for i in range(len(move_black_memory))], move_black_memory)
-plt.title("move_black_memory")
+plt.plot([i for i in range(len(move_ratio))], move_ratio)
+plt.title("Move Ratio White - Final moves / Legal Moves")
 plt.show()

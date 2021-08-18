@@ -10,3 +10,5 @@ from chessRL.chessRL_agent import DQNAgent
 from chessRL.chessRL_actions import similar
 from chessRL.chessRL_actions import act
 
+from chessRL.chessRL_similarities import get_moves_by_similarity
+

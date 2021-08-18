@@ -48,7 +48,7 @@ state = env.reset()
 cnt = 0
 
 string = "e4 c5 Nc3 Nc6 Qf3 e5"
-string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O"
+string = "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4 Bf6 Re1 Re8 Bf4 Rxe1"
 game = string.split(' ')
 for move in game:
     #move = state.san(action)
@@ -66,7 +66,10 @@ board_encoded = ''.join(str(ord(c)) for c in board_txt)
 obs = make_matrix(state)
 board_state = [list(np.reshape(obs, [1, 64])[0])]
 print(board_state)
-        
+
+moves = []
+legal_moves = [state.san(x) for x in env.legal_moves]
+
 #position = [0,0,0,0,0,0,0,0]
 
 print('COSINE DISTANCE')
@@ -76,6 +79,10 @@ print(df.iloc[np.argmax(cos_dist),:].next_move)
 
 df['cos_sim'] = cos_dist[0]
 df = df.sort_values('cos_sim', ascending=False)
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
+    
 print(df.head(10))
 
 print(" ")
@@ -87,7 +94,9 @@ print(df.iloc[np.argmax(euc_dist),:].next_move)
 df['euc_sim'] = euc_dist[0]
 df = df.sort_values('euc_sim', ascending=False)
 print(df.head(10))
-
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
 
 print(" ")
 print('jaccard DISTANCE')
@@ -98,7 +107,9 @@ print(df.iloc[np.argmax(dist),:].next_move)
 df['jacc_sim'] = dist[0]
 df = df.sort_values('jacc_sim', ascending=False)
 print(df.head(10))
-
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
 
 print(" ")
 print('correlation DISTANCE')
@@ -109,7 +120,9 @@ print(df.iloc[np.argmax(dist),:].next_move)
 df['corr_sim'] = dist[0]
 df = df.sort_values('corr_sim', ascending=False)
 print(df.head(10))
-
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
 
 print(" ")
 print('chebyshev DISTANCE')
@@ -120,6 +133,9 @@ print(df.iloc[np.argmax(dist),:].next_move)
 df['cheb_sim'] = dist[0]
 df = df.sort_values('cheb_sim', ascending=False)
 print(df.head(10))
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
 
 print(" ")
 print("King Position")
@@ -138,4 +154,6 @@ def get_king_pos(row, king_now):
 df['king_pos'] = df.apply(lambda row: get_king_pos(row, king_now) , axis=1)
 df = df.sort_values('king_pos', ascending=False)
 print(df.head(10))
-
+n_moves = list(df[['next_move']].iloc[:20,:].next_move)
+n_moves = [x for x in n_moves if x in legal_moves]
+print(n_moves)
