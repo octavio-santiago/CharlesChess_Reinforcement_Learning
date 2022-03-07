@@ -8,7 +8,7 @@ from keras.layers import Dense
 from keras.layers import LSTM
 from keras.layers import Embedding
 from keras.preprocessing.sequence import pad_sequences
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras import backend as K
 from sklearn.preprocessing import LabelEncoder
 

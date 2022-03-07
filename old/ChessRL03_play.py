@@ -3,7 +3,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 import numpy as np
 import re
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 import pandas as pd
 import pickle
 

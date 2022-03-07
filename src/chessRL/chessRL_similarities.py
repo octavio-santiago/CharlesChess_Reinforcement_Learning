@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 #from keras.layers import LSTM
 #from keras.layers import Embedding
 #from keras.preprocessing.sequence import pad_sequences
-#from keras.optimizers import Adam
+#from tensorflow.keras.optimizers import Adam
 #from keras import backend as K
 #from sklearn.preprocessing import LabelEncoder
 
@@ -36,7 +36,7 @@ from scipy.spatial.distance import cdist
 
 
 def get_moves_by_similarity(state, legal_moves):
-    df = pd.read_excel(r'C:\Users\Octavio\Desktop\Projetos Python\Chess-RL\data\pgn\chess_deep_memory_excel.xlsx')
+    df = pd.read_excel(r'..\data\pgn\chess_deep_memory_excel.xlsx')
 
     matr = df.loc[:,'s1':]
 

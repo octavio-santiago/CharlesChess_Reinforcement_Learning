@@ -8,7 +8,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 import numpy as np
 import re
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 import pandas as pd
 import pickle
 from matplotlib import style
@@ -20,7 +20,7 @@ from keras.layers import Dense
 from keras.layers import LSTM
 from keras.layers import Embedding
 from keras.preprocessing.sequence import pad_sequences
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras import backend as K
 
 import tensorflow as tf
