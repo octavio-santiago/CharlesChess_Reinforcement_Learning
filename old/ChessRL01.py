@@ -18,7 +18,7 @@ from matplotlib import style
 from collections import deque
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras import backend as K
 
 import tensorflow as tf
